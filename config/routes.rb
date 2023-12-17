@@ -51,45 +51,5 @@ Rails.application.routes.draw do
   #get 'quiz-confirmation', to: 'quiz_results#confirmation', as: :quiz_confirmation
 
   # Static Pages
-  #get 'stratus-finance', to: 'pages#stratus', as: :stratus
-  #get 'meritize', to: 'pages#meritize', as: :meritize
-  #get 'accelerated-pilot-training', to: 'pages#accelerated', as: :accelerated
-  #get 'flexible-pilot-training', to: 'pages#flexible', as: :flexible
-  #get 'why-simplifly', to: 'pages#why_simplifly', as: :why_simplifly
-  #get 'financing', to: 'pages#financing', as: :financing
-  #get 'pilot-training-pricing-calculator', to: 'pages#cost' 
-  #get 'approximate-pilot-training-costs', to: 'pages#cost', as: :cost
-  #get 'timeline-to-be-a-pilot', to: 'pages#timeline', as: :timeline
-  #get 'multi-engine-rating', to: 'pages#multi', as: :multi
-  #get 'commercial-pilot-training', to: 'pages#commercial', as: :commercial
-  #get 'instrument-rating', to: 'pages#instrument', as: :instrument
-  #get 'private-pilot-training', to: 'pages#private_pilot', as: :private_pilot
-  #get 'pilot-training', to: 'pages#pilot_training', as: :pilot_training
-  #get 'airline-pilot-courses', to: 'pages#airline_pilot_courses', as: :airline_pilot_courses
-  #get 'pilot-programs', to: 'pages#pilot_programs', as: :programs
-  #get 'our-team', to: 'pages#our_team', as: :our_team
-  #get 'terms-of-service-privacy-policy', to: 'pages#tos', as: :tos
-  #get 'aircraft-rental', to: 'pages#aircraft_rental', as: :aircraft_rental
-  #get 'fixed-wing-airplane-fleet', to: 'pages#fixed_wing', as: :fixed_wing
-  #get 'rotary-wing-helicopter-fleet', to: 'pages#rotary_wing', as: :rotary_wing
-  #get 'airplane-pilot-training', to: 'pages#airplane_training', as: :airplane_training
-  #get 'helicopter-pilot-training', to: 'pages#helicopter_training', as: :helicopter_training
-  #get 'about-ideal-aviation', to: 'pages#about_us', as: :about_us
-  #get 'advanced_training', to: 'pages#advanced_training', as: :advanced_training
-  #get 'pilot-resources', to: 'pages#pilot_resources', as: :pilot_resources
-  #get 'careers', to: 'pages#careers', as: :careers
   
-
-  # Previous Site's Routes
-  #get 'home/flight-training', to: 'pages#why_simplifly'
-  #get 'program-pricing', to: 'pages#cost'
-  #get 'programs', to: 'pages#pilot_training'
-  #get 'book-a-flight', to: 'discover_flights#new'
-  #get 'locations', to: 'messages#location'
-  #get 'contact-us', to: 'messages#new'
-  #get 'simplifying-your-training', to: 'pages#why_simplifly'
-  #get 'flight-instructors', to: 'pages#our_team'
-  #get 'category/pilot', to: 'pages#airline_pilot_courses'
-  #get 'becoming-a-pilot-timeline', to: 'pages#timeline'
-  #get 'private-pilots-license', to: 'pages#private_pilot'
 end
