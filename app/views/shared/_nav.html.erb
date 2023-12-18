@@ -1,5 +1,5 @@
-<header class="bg-sky-800">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global" x-data="{ mobileMenu : false }">
+<header class="bg-sky-800" x-data="{ mobileMenu : false }">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"  x-on:click=" mobileMenu = ! mobileMenu ">
     <div class="flex flex-1">
       <div class="hidden lg:flex lg:gap-x-12"
         x-data="{
@@ -289,25 +289,33 @@
 
       </div>
 
-
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
     </div>
+
+
 
     <%# CENTER LOGO %>
     <%= link_to root_path, class: "-m-1.5" do%>
       <span class="sr-only">Blue Skies Above</span>
-      <%= image_tag "blue-skies-logo.webp", class: "h-24 w-auto duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
+      <%# desktop logo %>
+      <%= image_tag "blue-skies-logo.webp", class: "hidden lg:block h-24 w-auto duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
     <%end%>
+    <div class="">
+      <%# mobile logo %>
+      <%= image_tag "blue-skies-logo-side-800-smaller.webp", class: "lg:hidden", alt: "Blue Skies Above logo"%>
+    </div>  
+
+    <%# HAMBURGER BUTTON %>
+    <%# <div class="flex lg:hidden" x-on:click="mobileMenu = ! mobileMenu">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>  %>
 
     <%# RIGHT LINKS %>
-    <div class="flex flex-1 justify-end lg:gap-x-12">
+    <div class="hidden lg:flex flex-1 justify-end lg:gap-x-12">
       <%= link_to root_path, class: "text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
         VISIT <br>SCHOOL
       <% end %>
@@ -322,33 +330,65 @@
 
 
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true" 
-  x-show="mobileMenu"
-  >
-    <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10"></div>
-    <div class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-sky-800 px-6 py-6">
+  <div class="lg:hidden" role="dialog" aria-modal="true" >
+    <div class="mt-16 fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6"
+    
+    x-show="mobileMenu"
+    x-cloak
+    x-transition:enter="transition ease-out duration-300 transform"
+    x-transition:enter-start="translate-y-full opacity-0"
+    x-transition:enter-end="translate-y-0 opacity-100"
+    x-transition:leave="transition ease-in duration-300 transform"
+    x-transition:leave-start="translate-y-0 opacity-100"
+    x-transition:leave-end="translate-y-full opacity-0"
+    >
       <div class="flex items-center justify-between">
         <div class="flex flex-1">
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" x-on:click=" mobileMenu = false">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Blue Skies Above</span>
-          <%= image_tag "blue-skies-logo.webp", class: "h-8 w-auto w-auto duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
-        </a>
+
         <div class="flex flex-1 justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Scheduler <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="mt-6 space-y-2">
-        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+      <div class="mt-6 space-y-2"
+        x-data="{
+          new2flyingMobile : false, 
+          trainingProgramMobile : false, 
+          aboutMobile : false, 
+        }"
+      >
+        <%# Mobile links %>
+        <%= button_to "Home", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Discovery flight", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Visit School", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Why become a pilot?", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Pilot Training Process", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" x-on:click="trainingProgramMobile = ! trainingProgramMobile">Training programs</button>
+        
+        <%# Training Programs expand %>
+        <div x-show="trainingProgramMobile">
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Private Pilot</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Instrument Rating</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Commercial Pilot</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">CFI</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">CFII</button>
+        </div>
+
+        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About us</button>
+        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Visit school</button>
+        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Discovery flight</button>
+        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact us</button>
+
+
+
+        <%# Training Programs expand %>
+        <%# Hover expand %>
       </div>
     </div>
   </div>
