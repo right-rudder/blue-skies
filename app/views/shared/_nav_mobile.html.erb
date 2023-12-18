@@ -27,7 +27,6 @@
       </div>
       <div class="mt-6 space-y-2"
         x-data="{
-          new2flyingMobile : false, 
           trainingProgramMobile : false, 
           aboutMobile : false, 
         }"
@@ -35,22 +34,40 @@
         <%# Mobile links %>
         <%= button_to "Home", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <%= button_to "Discovery flight", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Visit School", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Visit school", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <%= button_to "Why become a pilot?", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Pilot Training Process", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <div class="flex">
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" x-on:click="trainingProgramMobile = ! trainingProgramMobile">Training programs</button>
+        <%= button_to "Pilot training process", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <div class="flex items-center justify-between" x-on:click="trainingProgramMobile = ! trainingProgramMobile">
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Training programs</button>
+          <div aria-hidden="true" class="" x-transition x-bind:class="{'rotate-[135deg] duration-300' : !trainingProgramMobile, 'duration-300 rotate[0deg]' : trainingProgramMobile}">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
         </div>
         <%# Training Programs expand %>
         <div x-show="trainingProgramMobile">
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Private Pilot</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Instrument Rating</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">Commercial Pilot</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">CFI</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50">CFII</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Private Pilot</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Instrument Rating</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Commercial Pilot</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">CFI</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">CFII</button>
         </div>
-
-        <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About us</button>
+        <div class="flex items-center justify-between" x-on:click="aboutMobile = ! aboutMobile">
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About us</button>
+          <div aria-hidden="true" class="" x-transition x-bind:class="{'rotate-[135deg] duration-300' : !aboutMobile, 'duration-300 rotate[0deg]' : aboutMobile}">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+        </div>
+        <%# About expand %>
+        <div x-show="aboutMobile">
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Our Team</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Why Blue Skies Above?</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Join the team</button>
+          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Blog</button>
+        </div>
         <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact us</button>
 
 
