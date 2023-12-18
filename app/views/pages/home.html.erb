@@ -35,9 +35,9 @@
         about : false }"
       >
         <%# Links %>
-        <button class="text-base font-semibold leading-6 text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to Flying?</button>
-        <button class="text-base font-semibold leading-6 text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training Programs</button>
-        <button class="text-base font-semibold leading-6 text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About</button>
+        <button class="text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to Flying?</button>
+        <button class="text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training Programs</button>
+        <button class="text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About Us</button>
         
         
         <%# Popup Menus %>
@@ -327,14 +327,27 @@
       </div>
     </div>
 
+    <%# CENTER LOGO %>
     <%= link_to root_path, class: "-m-1.5" do%>
       <span class="sr-only">Blue Skies Above</span>
       <%= image_tag "blue-skies-logo.webp", class: "h-24 w-auto duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
     <%end%>
-    <div class="flex flex-1 justify-end">
-      <a href="#" class="text-base font-semibold leading-6 text-white">Contact Us <span aria-hidden="true">&rarr;</span></a>
+
+    <%# RIGHT LINKS %>
+    <div class="flex flex-1 justify-end lg:gap-x-12">
+      <%= link_to root_path, class: "text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+        VISIT <br>SCHOOL
+      <% end %>
+      <%= link_to root_path, class: "text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+        DISCOVERY <br>FLIGHT
+      <% end %>
+      <%= link_to root_path, class: "text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+        CONTACT <br>US
+      <% end %>
     </div>
   </nav>
+
+
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div class="lg:hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
@@ -366,5 +379,32 @@
   </div>
 </header>
 
-<section class="bg-white h-screen"></section>
+
+<div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-20">
+  <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-6 pb-32 sm:pb-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Your Pilot Training Academy</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <h2 class="text-lg leading-8 text-gray-600">Flight school between Alabama and Georgia</h2>
+          <h3 class="text-lg leading-8 text-gray-600">Nestled in the heart of Lanett, Alabama </h3>
+          <h4 class="text-lg leading-8 text-gray-600">Lanett Municipal Airport 7A3</h4>
+          
+          <div class="mt-10 flex items-center gap-x-6">
+            <a href="#" class="rounded-md bg-sky-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <%= image_tag "blue-skies-private-pilot-checkride-pass-600.webp", alt: "", class: "mt-10 sm:mt-16 lg:mt-0 xl:mt-0 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover  lg:max-w-none xl:row-span-2 xl:row-end-2 "%>
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+  </div>
+</div>
+
+
+
+
 <section class="bg-sky-500 h-screen"></section>
+
+<section class="bg-white h-screen"></section>
