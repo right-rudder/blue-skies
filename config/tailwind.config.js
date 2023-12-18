@@ -38,7 +38,14 @@ module.exports = {
         'custom-800': '#0f4b6f',
         'custom-900': '#08293d',
       },
+
       keyframes: {
+        'bounce-right' : {
+          '0%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(30%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+
         'plane-enter': {
           '0%': {
             opacity: 0,
@@ -101,6 +108,9 @@ module.exports = {
         },
       },
       animation: {
+
+        'bounce-right' : 'bounce-right 0.8s ease-in-out infinite',
+
         'plane-enter': 'plane-enter 0.7s ease-out forwards',
         'plane-leave': 'plane-leave 0.3s ease-out forwards',
 
