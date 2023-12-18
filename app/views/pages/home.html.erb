@@ -391,13 +391,14 @@
           <h4 class="text-lg leading-8 text-gray-600">Lanett Municipal Airport 7A3</h4>
           
           <div class="mt-10 flex items-center gap-x-6">
-            <a href="#" class="rounded-md bg-sky-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">Get started</a>
-            <a href="#" class="group text-sm font-semibold leading-6 text-gray-900">
-              <div class="flex">
-                <div class="mr-3">Learn more </div>
+            
+            <%= link_to "Enroll Today", root_path, class: "btn-primary"%>
+            <%= link_to class: "text-sm font-semibold leading-6 text-gray-900" do%>
+              <div class="flex group ">
+                <div class="mr-3">Our Programs</div>
                 <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
               </div>
-            </a>
+            <% end %>
           </div>
         </div>
         <%= image_tag "blue-skies-private-pilot-checkride-pass-600.webp", alt: "", class: "mt-10 sm:mt-16 lg:mt-0 xl:mt-0 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover  lg:max-w-none xl:row-span-2 xl:row-end-2 "%>
@@ -408,7 +409,7 @@
 </div>
 
 
-<section class="bg-gradient-to-b from-sky-300 to-sky-50 relative pt-24 sm:pt-32 lg:pt-40">
+<section class="bg-gradient-to-b from-sky-300 to-sky-50 relative pt-24 sm:pt-32 lg:pt-20">
   <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
     <h2 class="text-lg font-semibold text-sky-600">Start Flying</h2>
     <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The best time to start flying is now</p>
