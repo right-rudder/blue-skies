@@ -32,11 +32,11 @@
         }"
       >
         <%# Mobile links %>
-        <%= button_to "Home", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Discovery flight", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Visit school", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Why become a pilot?", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Pilot training process", pilot_programs_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Home", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Discovery flight", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Visit school", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Why become a pilot?", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Pilot training process", pilot_programs_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <div class="flex items-center justify-between" x-on:click="trainingProgramMobile = ! trainingProgramMobile">
           <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Training programs</button>
           <div aria-hidden="true" class="" x-transition x-bind:class="{'rotate-[135deg] duration-300' : !trainingProgramMobile, 'duration-300 rotate[0deg]' : trainingProgramMobile}">
