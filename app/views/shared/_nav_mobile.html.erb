@@ -32,11 +32,11 @@
         }"
       >
         <%# Mobile links %>
-        <%= button_to "Home", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Discovery flight", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Visit school", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Why become a pilot?", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Pilot training process", root_path, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Home", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Discovery flight", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Visit school", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Why become a pilot?", root_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Pilot training process", pilot_programs_path, data: { turbo: false }, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <div class="flex items-center justify-between" x-on:click="trainingProgramMobile = ! trainingProgramMobile">
           <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Training programs</button>
           <div aria-hidden="true" class="" x-transition x-bind:class="{'rotate-[135deg] duration-300' : !trainingProgramMobile, 'duration-300 rotate[0deg]' : trainingProgramMobile}">
@@ -47,11 +47,11 @@
         </div>
         <%# Training Programs expand %>
         <div x-show="trainingProgramMobile">
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Private Pilot</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Instrument Rating</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">Commercial Pilot</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">CFI</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="trainingProgramMobile" x-transition x-bind:class="{'animate-slide-out-left': !trainingProgramMobile}">CFII</button>
+          <%= button_to "Private Pilot", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "trainingProgramMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !trainingProgramMobile}"  %>
+          <%= button_to "Instrument Rating", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "trainingProgramMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !trainingProgramMobile}"  %>
+          <%= button_to "Commercial Pilot", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "trainingProgramMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !trainingProgramMobile}"  %>
+          <%= button_to "CFI", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "trainingProgramMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !trainingProgramMobile}"  %>
+          <%= button_to "CFII", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "trainingProgramMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !trainingProgramMobile}"  %>
         </div>
         <div class="flex items-center justify-between" x-on:click="aboutMobile = ! aboutMobile">
           <button class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About us</button>
@@ -63,12 +63,14 @@
         </div>
         <%# About expand %>
         <div x-show="aboutMobile">
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Our Team</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Why Blue Skies Above?</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Join the team</button>
-          <button class="-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left" x-show="aboutMobile" x-transition x-bind:class="{'animate-slide-out-left': !aboutMobile}">Blog</button>
+          <%= button_to "Our Team", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
+          <%= button_to "Why Blue Skies Above?", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
+          <%= button_to "Join the team", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
+          <%= button_to "Blog", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
         </div>
-        <button class="-ml-3 btn-primary">Contact us</button>
+
+        <%= button_to "Contact us", root_path, data: { turbo: false }, method: :get, class: "-ml-3 btn-primary" %>
+
 
 
 

@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   devise_for :admins, controllers: { registrations: "registrations", sessions: "sessions" }
   root "pages#home"
 
+  # Static Pages
+  get 'pilot-training-programs-and-courses', to: 'pages#pilot_programs', as: :pilot_programs
+
   #post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   #get 'blog', to: 'posts#index', as: :blog
   #resources :posts
@@ -50,6 +53,6 @@ Rails.application.routes.draw do
   #get 'quiz', to: 'quiz_results#new', as: :quiz
   #get 'quiz-confirmation', to: 'quiz_results#confirmation', as: :quiz_confirmation
 
-  # Static Pages
+  
   
 end

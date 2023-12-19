@@ -49,10 +49,10 @@
                   </svg>
                 </div>
                 <div class="flex-auto">
-                  <a href="#" class="block font-semibold text-gray-900">
+                  <%= link_to pilot_programs_path, data: { turbo: false }, class: "block font-semibold text-gray-900" do%>
                     Pilot Training Process
                     <span class="absolute inset-0"></span>
-                  </a>
+                  <% end %>
                   <p class="mt-1 text-gray-600">Learn how to become a pilot</p>
                 </div>
               </div>
@@ -266,7 +266,7 @@
 
 
     <%# CENTER LOGO %>
-    <%= link_to root_path, class: "-m-1.5 hidden lg:block " do%>
+    <%= link_to root_path, data: { turbo: false }, class: "-m-1.5 hidden lg:block " do%>
       <span class="sr-only">Blue Skies Above</span>
       <%# desktop logo %>
       <%= image_tag "blue-skies-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
@@ -288,13 +288,13 @@
 
     <%# RIGHT LINKS %>
     <div class="hidden lg:flex flex-1 justify-end lg:gap-x-12">
-      <%= link_to root_path, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
         VISIT <br>SCHOOL
       <% end %>
-      <%= link_to root_path, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
         DISCOVERY <br>FLIGHT
       <% end %>
-      <%= link_to root_path, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
         CONTACT <br>US
       <% end %>
     </div>
