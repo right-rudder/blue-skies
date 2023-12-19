@@ -24,7 +24,7 @@
       <% if content_for?(:title) %>
         <%= yield(:title) %>
       <% else %>
-        Flight School
+        Blue Skies Above Professional Flight Instruction in Lanett, AL
       <% end %>
     </title>
 
@@ -49,9 +49,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <%####### UPDATE TITLE/DESC/KEYWORDS%>
-    <meta name="title" content="<%= if content_for?(:title) then yield(:title) else 'Flight School Title' end %>">
-    <meta name="description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Flight School Description' end %>">
-    <meta name="keywords" content="<%= if content_for?(:meta_keywords) then yield(:meta_keywords) else 'right rudder marketing, tim jedrek' end %>">
+    <meta name="title" content="<%= if content_for?(:title) then yield(:title) else 'Blue Skies Above Professional Flight Instruction in Lanett, AL' end %>">
+    <meta name="description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Blue Skies Above is your pilot training academy nestled in Lanett, AL serving the Auburn, Opelika, and Columbus areas.  From private pilot certification to advanced training in instrument, commercial, and CFI courses, Blue Skies Above is where to complete your professional pilot training.' end %>">
+    <meta name="keywords" content="<%= if content_for?(:meta_keywords) then yield(:meta_keywords) else 'Lanett flight school, professional aviation instruction, Alabama pilot certifications, flight training programs, CFI mentorship, aviation education Alabama, flight school Lanett, checkride success, right rudder marketing, tim jedrek' end %>">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
@@ -61,17 +61,17 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= request.original_url %>">
-    <meta property="og:title" content="<%= if content_for?(:title) then yield(:title) else 'Flight School Title' end %>">
-    <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Flight School Description' end %>">
-    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('') end %>">
+    <meta property="og:title" content="<%= if content_for?(:title) then yield(:title) else 'Blue Skies Above Professional Flight Instruction in Lanett, AL' end %>">
+    <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Blue Skies Above is your pilot training academy nestled in Lanett, AL serving the Auburn, Opelika, and Columbus areas.  From private pilot certification to advanced training in instrument, commercial, and CFI courses, Blue Skies Above is where to complete your professional pilot training.' end %>">
+    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('/blue-skies-logo-black-600.webp') end %>">
 
     <%###### UPDATE TITLE/DESC/IMAGE%>
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<%= request.original_url %>">
-    <meta property="twitter:title" content="<%= if content_for?(:title) then yield(:title) else "Flight School Title" end %>">
-    <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Flight School Description' end %>">
-    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('') end %>">
+    <meta property="twitter:title" content="<%= if content_for?(:title) then yield(:title) else "Blue Skies Above Professional Flight Instruction in Lanett, AL" end %>">
+    <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'Blue Skies Above is your pilot training academy nestled in Lanett, AL serving the Auburn, Opelika, and Columbus areas.  From private pilot certification to advanced training in instrument, commercial, and CFI courses, Blue Skies Above is where to complete your professional pilot training.' end %>">
+    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('/blue-skies-logo-black-600.webp') end %>">
 
     <!--CSS-->
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
