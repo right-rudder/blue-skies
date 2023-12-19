@@ -134,6 +134,8 @@ module.exports = {
       },
       backgroundImage : {
         'home' : "url('blue-skies-overflying-opelika-in-a-cessna.webp')",
+        // 'cessna-ramp' : "url('blue-skies-cessna-sunset.webp')", 
+        'ifr' : "url('blue-skies-cessna-in-clouds.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',
