@@ -28,7 +28,7 @@
           <div class="mt-10 flex items-center gap-x-6">
             
             <%= link_to "Enroll Today", root_path, class: "btn-primary"%>
-            <%= link_to class: "text-sm font-semibold leading-6 text-gray-900" do%>
+            <%= link_to pilot_programs_path, class: "text-sm font-semibold leading-6 text-gray-900" do%>
               <div class="flex group ">
                 <div class="mr-3">Our Programs</div>
                 <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
@@ -242,13 +242,13 @@
       <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-200">Visit our flight school, start pilot training and join the family, like & follow us on social media.  We're excited to partner with you and be a part of your aviation journey.  Let's go flying together!</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:scale-105 duration-300">Visit School</a>
-      
-        <a href="#" class="text-sm font-semibold leading-6 text-white">
+
+        <%= link_to pilot_programs_path, class: "text-sm font-semibold leading-6 text-white" do%>
           <div class="group flex items-center">
             <div class="mr-3">Our Programs </div>
             <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
           </div>
-        </a>
+        <% end %>
         
       </div>
     </div>
