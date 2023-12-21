@@ -133,9 +133,11 @@ module.exports = {
         'slide-out-left5': 'slide-out-left 0.7s ease-out',
       },
       backgroundImage : {
-        'home' : "url('blue-skies-overflying-opelika-in-a-cessna.webp')",
+        // NOT IN USE IS COMMENTED OUT
         // 'cessna-ramp' : "url('blue-skies-cessna-sunset.webp')", 
+        'home' : "url('blue-skies-overflying-opelika-in-a-cessna.webp')",
         'ifr' : "url('blue-skies-cessna-in-clouds.webp')",
+        'sunset-flight' : "url('blue-skies-overflying-columbus-during-sunset.webp')"
       },
       height: theme => ({
         'screen-1/2': '50vh',
