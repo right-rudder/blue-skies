@@ -1,4 +1,4 @@
-<header class="bg-gradient-to-b from-sky-600 to-sky-900" x-data="{ mobileMenu : false }">
+<header class="bg-gradient-to-b from-custom-500 to-sky-700" x-data="{ mobileMenu : false }">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"  x-on:click=" mobileMenu = ! mobileMenu ">
     <div class="flex flex-1">
       <div class="hidden lg:flex lg:gap-x-12"
@@ -269,7 +269,9 @@
     <%= link_to root_path, data: { turbo: false }, class: "-m-1.5 hidden lg:block " do%>
       <span class="sr-only">Blue Skies Above</span>
       <%# desktop logo %>
-      <%= image_tag "blue-skies-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
+      <%#= image_tag "blue-skies-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
+      <%= image_tag "blue-skies-reverse-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-110", alt: "Blue Skies Above logo"%>
+      
     <%end%>
     <div class="grid place-items-center w-full lg:hidden">
       <%# mobile logo %>
