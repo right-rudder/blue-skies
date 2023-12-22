@@ -11,8 +11,6 @@ class Enrollment < ApplicationRecord
     self.phone = phone.to_s.gsub(/[-() ]/, "")
   end
 
-  
-
   def to_lacrm
     api_key = ENV['LACRM_API']
     # Set the endpoint and headers
