@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   # Static Pages
   get 'pilot-training-programs-and-courses', to: 'pages#pilot_programs', as: :pilot_programs
+  get 'private-pilot-certificate-ppl', to: 'pages#private_pilot', as: :ppl
 
   #post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   #get 'blog', to: 'posts#index', as: :blog
