@@ -14,7 +14,7 @@
       <h2 class="mt-6 text-xl leading-8 text-gray-200">Steps to become a certified pilot in the Lanett, Alabama</h2>
       <div class="flex flex-row lg:flex-row items-center mt-5">
         <%= link_to "Visit School", "", target: "blank", data: { turbo: false }, class: "btn-primary " %>
-        <%= link_to root_path do %>
+        <%= link_to discovery_flight_path do %>
           <div class="ml-5 flex group items-center">
             <div class="mr-3">Discovery Flight</div>
             <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
@@ -69,7 +69,7 @@
           <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">What Happens After the Discovery Flight?</h2>
           <p class="mt-6">Upon completing your introductory discovery flight, there are two possible outcomes: either you discover that aviation isn't your passion, or you find that you have a genuine interest in pursuing a future in flight.  If you find that you want to become a pilot, then we'll pair you up with a Certified Flight Instructor (CFI).  Together you two, along with the support of the entire Blue Skies Above team, will create a plan to complete your aviation goals successfully.  </p>
           <p class="mt-6 mb-10">Take the first step and book a discovery flight today.  You'll meet with the Blue Skies Above team, tour the classroom, and then fly a plane.</p>
-          <%= button_to "Discovery Flight", "", target: "blank", method: :get, data: { turbo: false }, class: "btn-primary " %>
+          <%= button_to "Discovery Flight", discovery_flight_path, target: "blank", method: :get, data: { turbo: false }, class: "btn-primary " %>
         </div>
       </div>
     </div>

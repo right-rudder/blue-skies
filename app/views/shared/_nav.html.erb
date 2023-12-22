@@ -65,10 +65,10 @@
 
                 </div>
                 <div class="flex-auto">
-                  <a href="#" class="block font-semibold text-gray-900">
+                  <%= link_to discovery_flight_path, class: "block font-semibold text-gray-900" do%>
                     Discovery Flight
                     <span class="absolute inset-0"></span>
-                  </a>
+                  <% end %>
                   <p class="mt-1 text-gray-600">Your first flight lesson.  You fly the plane</p>
                 </div>
               </div>
@@ -294,7 +294,7 @@
       <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
         VISIT <br>SCHOOL
       <% end %>
-      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to discovery_flight_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
         DISCOVERY <br>FLIGHT
       <% end %>
       <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
