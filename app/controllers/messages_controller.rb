@@ -11,9 +11,9 @@ class MessagesController < ApplicationController
   def confirmation
   end
 
-  def home2
-    @message = Message.new
-  end
+  #def home2
+  #  @message = Message.new
+  #end
 
   # GET /messages/1 or /messages/1.json
   def show

@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'messages#new', as: :contact
   get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
   #get 'visit-simplifly', to: 'messages#location', as: :location
-  #get 'instruct-at-simplifly', to: 'messages#cfi', as: :cfi
+  get 'join-team', to: 'messages#cfi', as: :cfi
 
   # Book Download
   #get 'book-download-confirmation', to: 'book_downloads#confirmation', as: :book_download_confirmation
