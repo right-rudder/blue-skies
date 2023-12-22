@@ -1,8 +1,45 @@
-<%= turbo_frame_tag 'form-section' do %>
-  <div class="flex flex-col justify-center h-full">
-    <p class="px-5">
-      Thank you for contacting Pitcairn Flight.  We are looking forward to working with you soon.  We will review your message and get back with you within 1-5 business days.  <br><br>
-      You can also give us a call at <%=link_to "(610) 495-7000", "tel:1-610-495-7000" %> or email us at <%= mail_to 'marisa@pitcairnflight.com', class: "text-slate-800 hover:underline"%>
+<%= render "shared/nav" %>
+<main class="bg-gray-100 w-full flex flex-col items-center justify-center">
+  <!--Container for contents-->
+  <div class="text-center lg:w-3/5 md:w-4/5">
+    
+    <h1 class="font-bold text-4xl py-10">Your message has been sent!</h1>
+    
+    <!--Container for check-->
+    <div class="flex flex-row justify-center">
+      <!--circle of check-->
+      <div class="bg-sky-200 rounded-full py-3 px-4 mb-10">
+        <!--check itself-->
+        <div class="text-sky-700 text-5xl font-sans">✓</div>
+      </div>
+    </div>
+    
+    
+    <%#-- The message (lol, i used a "notice" to bring the message data to this page hahahaha) --%>
+    <% if notice.present?%>
+    <p class="font-semibold">Your Message:</p>
+    <div class="mb-5 px-5 italic text-gray-500 text-sm">
+      <%= notice %>
+      </div>
+    <% end %>
+  
+    
+    <p class="px-5 p-text">
+    Thank you for contacting Blue Skies Above.  We are looking forward to working with you soon.  We will review your message and get back with you within 1-5 business days.  <br><br>
+    You can also give us a call at <%=link_to "1-334-449-7600", "tel:1-334-449-7600" %> or email us at <%= mail_to 'connect@flytheblueskies.com', class: "text-slate-800 hover:underline"%>
     </p>
+
+    <div class="pt-10 flex flex-row justify-center">
+    <%= link_to root_path do %>
+      <div class="btn-primary mb-10 w-52">
+        HOME
+      </div>
+    <% end %>
+    </div>
+    
+
+    <%#= link_to 'Back to messages', messages_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
-<% end %>
+</main>
+
+<%= render "shared/footer"%>

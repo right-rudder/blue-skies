@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   
   resources :discover_flights
   resources :checkouts
-  #resources :messages
+  resources :messages
   #resources :enrollments
   #resources :book_downloads
   #resources :quiz_results
@@ -33,9 +33,9 @@ Rails.application.routes.draw do
   #get 'enroll-at-simplifly', to: 'enrollments#new', as: :enroll
   #get 'enrollment-confirmation', to: 'enrollments#confirmation', as: :enroll_confirmation
 
-  # Contact form
-  #get 'contact', to: 'messages#new', as: :contact
-  #get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
+  #Contact form
+  get 'contact', to: 'messages#new', as: :contact
+  get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
   #get 'visit-simplifly', to: 'messages#location', as: :location
   #get 'instruct-at-simplifly', to: 'messages#cfi', as: :cfi
 
