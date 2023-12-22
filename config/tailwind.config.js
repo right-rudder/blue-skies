@@ -13,6 +13,8 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         paragraph: ['Inter var', ...defaultTheme.fontFamily.sans],
         header: ['Orbitron', ...defaultTheme.fontFamily.sans],
+        custom: ['eurostile', ...defaultTheme.fontFamily.sans],
+        custom2: ['EuroStyle Normal', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         /* Previous color scheme.. Blake said its too dark and not blue/light enough... uh huh ..

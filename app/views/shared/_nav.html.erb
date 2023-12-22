@@ -8,9 +8,9 @@
         about : false }"
       >
         <%# Links %>
-        <button class="text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to Flying?</button>
-        <button class="text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training Programs</button>
-        <button class="text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About Us</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to Flying?</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training Programs</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About Us</button>
         
         
         <%# Popup Menus %>
@@ -288,13 +288,13 @@
 
     <%# RIGHT LINKS %>
     <div class="hidden lg:flex flex-1 justify-end lg:gap-x-12">
-      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
         VISIT <br>SCHOOL
       <% end %>
-      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
         DISCOVERY <br>FLIGHT
       <% end %>
-      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-xl font-header uppercase text-white hover:scale-125 duration-300 text-center" do %>
+      <%= link_to root_path, data: { turbo: false }, class: "text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
         CONTACT <br>US
       <% end %>
     </div>

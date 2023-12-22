@@ -117,3 +117,9 @@
   .bg-sky-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  }
+
+    body {
+      font-family: eurostile, Orbitron , sans-serif, Helvetica, Arial;
+      letter-spacing: 0.025em;
+    }
