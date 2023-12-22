@@ -34,7 +34,7 @@
         <%# Mobile links %>
         <%= button_to "Home", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <%= button_to "Discovery flight", discovery_flight_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
-        <%= button_to "Visit school", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
+        <%= button_to "Visit school", visit_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <%= button_to "Why become a pilot?", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <%= button_to "Pilot training process", pilot_programs_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"%>
         <div class="flex items-center justify-between" x-on:click="trainingProgramMobile = ! trainingProgramMobile">

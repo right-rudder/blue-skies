@@ -34,12 +34,12 @@
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">Visit our flight school and see our planes.  Fly with one of our CFIs to start training and flying planes at Blue Skies Above.</p>
             <div class="mt-6 group">
-              <a href="#" class="text-sm font-semibold leading-6 text-sky-600">
+              <%= link_to visit_path, class: "text-sm font-semibold leading-6 text-sky-600" do%>
                 <div class="flex">
                   Visit Us 
                   <div aria-hidden="true" class="ml-3 group-hover:animate-bounce-right">→</div>
                 </div>
-                </a>
+              <% end %>
             </div>
           </dd>
         </div>
