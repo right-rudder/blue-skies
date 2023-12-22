@@ -1,11 +1,15 @@
 class CheckoutEmailMailer < ApplicationMailer
 
-  default from: 'no-reply@idealaviationstlouis.com'
+  default from: 'no-reply@flyblueskiesabove.com'
 
   def checkout_email(checkout)
     @checkout = checkout
 
-    mail(to: @checkout.email, bcc: ["info@idealaviationstlouis.com", "info@idealaviationstl.com"], subject: "✈️ Ideal Aviation Aircraft Checkout Request")
+    if Rails.env.production?
+      mail(to: @checkout.email, bcc: ["no-reply@flyblueskiesabove.com", "connect@flytheblueskies.com"], reply_to: "connect@flytheblueskies.com", subject: "✈️ Your Visit at Blue Skies Above")
+    else
+      mail(to: @checkout.email, bcc: ["no-reply@flyblueskiesabove.com"], reply_to: "connect@flytheblueskies.com", subject: "✈️ Your Visit at Blue Skies Above")
+    end
   end
 
 

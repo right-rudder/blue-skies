@@ -1,6 +1,6 @@
 class Enrollment < ApplicationRecord
   before_validation :strip_phone_number
-  after_save :to_lacrm
+  #after_save :to_lacrm
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -10,6 +10,8 @@ class Enrollment < ApplicationRecord
   def strip_phone_number
     self.phone = phone.to_s.gsub(/[-() ]/, "")
   end
+
+  
 
   def to_lacrm
     api_key = ENV['LACRM_API']
