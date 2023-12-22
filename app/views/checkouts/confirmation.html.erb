@@ -3,17 +3,17 @@
   <!--Container for contents-->
   <div class="lg:w-3/5 md:w-4/5 pb-10">
     <h1 class="font-bold text-4xl py-10 text-center">Get ready to fly!</h1>  
-    <p class="px-5 p-text pb-5">
+    <p class="px-5 text-lg text-gray-800 pb-5">
     Thank you<%if notice.present?%>, <%= notice %>,<%end%> for requesting to do a visit Blue Skies Above.  We're excited to share our passion for flying with you.
     A member of our team will be in touch shortly to confirm your flight details. You can also give us a call at <%=link_to "1-334-449-7600", "tel:1-334-449-7600" %> or email us at <%= mail_to 'connect@flytheblueskies.com', class: "text-slate-800 hover:underline"%>
     </p>
   </div>
 
-  <div class="flex flex-col lg:flex-row">
+  <div class="flex flex-col lg:flex-row pb-20">
     <div class="lg:w-1/2 lg:px-10">
-      <h2 class="font-bold text-2xl py-10 text-center">What to Expect From Ideal Aviation</h2>
-      <p class="p-text px-5">
-        At Ideal Aviation, we are committed to providing our customers with exceptional service and support at every step of their journey. From the moment you walk through our doors, you can expect a friendly and knowledgeable staff who will help guide you through the rental and/or flight training process and answer any questions you may have. We pride ourselves on maintaining a fleet of wellmaintained and reliable aircraft. Our commitment to safety is unwavering, and we maintain rigorous training standards for our pilots and staff. Whether you are a seasoned pilot or a beginner, we look forward to helping you achieve your goals and experience the thrill of flight. Thank you for choosing Ideal Aviation!
+      <h2 class="font-bold text-2xl py-10 text-center">What to Expect From Blue Skies Above</h2>
+      <p class="text-lg text-gray-800 px-5">
+        At Blue Skies Above, we are committed to providing our students with exceptional training and support at every step of their pilot training journey. From the moment you walk through our doors, you can expect friendly and knowledgeable staff who will help guide you through the flight training process and answer any questions you may have. We pride ourselves on maintaining a fleet of well maintained and reliable aircraft. Our commitment to safety is unwavering, and we maintain rigorous training standards for our pilots and staff. Whether you are a seasoned pilot or a beginner, we look forward to helping you achieve your goals and experience the thrill of flight. Thank you for choosing Blue Skies Above!
       </p>
       <div class="pt-10 flex flex-row gap-3 justify-center">
         <%= link_to pilot_programs_path do %>
@@ -32,7 +32,7 @@
     </div>
     
     <div class="lg:w-1/2">
-      <%= image_tag "", class: "lg:w-3/4", alt: "fly over St. Louis Gateway Arch during sunset"%>
+      <%= image_tag "blue-skies-fly-sunset-dark.webp", class: "lg:w-3/4 lg:rounded-[10%]", alt: "fly over Columbus, Georgia during sunset"%>
     </div>
   </div>
 
