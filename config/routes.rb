@@ -23,10 +23,10 @@ Rails.application.routes.draw do
   #resources :posts
   
   resources :discover_flights
+  resources :checkouts
   #resources :messages
   #resources :enrollments
   #resources :book_downloads
-  #resources :checkouts
   #resources :quiz_results
 
   # Enrollment form
@@ -44,11 +44,11 @@ Rails.application.routes.draw do
 
   # Discovery flight form
   get 'discovery-flight', to: 'discover_flights#new', as: :discovery_flight
-  get 'discovery-flight-confirmation', to: 'discover_flights#confirmation', as: :discovery_confirmation
+  #get 'discovery-flight-confirmation', to: 'discover_flights#confirmation', as: :discovery_confirmation
 
-  # Check out form
-  #get 'rental-checkout', to: 'checkouts#new', as: :rental_checkout
-  #get 'rental-checkout-confirmation', to: 'checkouts#confirmation', as: :checkout_confirmation
+  # Check out form (USE THIS AS VISIT SHCOOL FORM)
+  get 'visit-flight-school', to: 'checkouts#new', as: :visit
+  get 'visit-flight-school-confirmation', to: 'checkouts#confirmation', as: :visit_confirmation
 
   # Quiz form
   #get 'quiz', to: 'quiz_results#new', as: :quiz
