@@ -37,11 +37,16 @@ class MessagesController < ApplicationController
   # POST /messages or /messages.json
   def create
     @message = Message.new(message_params)
+    page = params[:message][:page] || 'new' # Default to 'new' if 'page' is not provided
+    # Set a session variable to store the page information
+    session[:page] = page
     #success = verify_recaptcha(action: 'message', minimum_score: 0.2, secret_key: ENV['RECAPTCHA_SECRET_KEY'])
     #checkbox_success = verify_recaptcha unless success
 
     respond_to do |format|
       if @message.save #&& (success || checkbox_success)
+        # Clear the 'page' session variable when it's no longer needed
+        session[:page] = nil
         MessageConfirmationMailer.message_confirmation_email(@message).deliver_later
         format.html { redirect_to contact_confirmation_path, notice: @message.body }
         #format.json { render :show, status: :created, location: @message }
@@ -50,7 +55,14 @@ class MessagesController < ApplicationController
           #if !success
           #  @show_checkbox_recaptcha = true
           #end
-          render :new, status: :unprocessable_entity  }
+          
+          case page
+          when 'cfi'
+            render :cfi, status: :unprocessable_entity
+          else
+            render :new, status: :unprocessable_entity  
+          end
+          }
         format.json { render json: @message.errors, status: :unprocessable_entity }
       end
     end
