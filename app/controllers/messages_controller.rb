@@ -56,6 +56,7 @@ class MessagesController < ApplicationController
           #  @show_checkbox_recaptcha = true
           #end
           
+          # render correct page
           case page
           when 'cfi'
             render :cfi, status: :unprocessable_entity
