@@ -8,15 +8,15 @@
 <%= render "shared/phone_banner"%>
 <%= render "shared/nav"%>
 
-<header class="w-full bg-cessna-ramp bg-cover bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center text-white">
+<header class="w-full bg-ifr-bg bg-cover bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
   <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
-      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">How to get your instrument rating</h1>
-      <h2 class="mt-6 text-xl leading-8 text-gray-200">Steps to become a certified pilot in the Lanett, Alabama</h2>
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-black">How to get your instrument rating</h1>
+      <h2 class="mt-6 text-xl leading-8 text-gray-800">Get your instrument rating in Lanett, Alabama</h2>
       <div class="flex flex-row lg:flex-row items-center mt-5">
-        <%= link_to "Visit School", visit_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
-        <%= link_to discovery_flight_path do %>
+        <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
+        <%= link_to visit_path do %>
           <div class="ml-5 flex group items-center">
-            <div class="mr-3">Discovery Flight</div>
+            <div class="mr-3">Visit School</div>
             <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
           </div>
         <%end%>
@@ -26,9 +26,9 @@
 
 <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
-    <p class="text-base font-semibold leading-7 text-sky-600">How to become a pilot</p>
-    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Private Pilot Certificate</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">A Private Pilot Certificate, also known as a Private Pilot License (PPL), <br class="hidden lg:block">allows for you to be pilot in command (PIC) and carry passengers.</p>
+    <p class="text-base font-semibold leading-7 text-sky-600">Become an instrument rated pilot</p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Instrument Rating</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">An Instrument Rating is a rating that grants you the privileges <br class="hidden md:block">to fly in IFR (Instrument Flight Rules) weather.</p>
   </div>
 </div>
 
@@ -42,7 +42,7 @@
     </div>
     <div class="px-6 lg:contents">
       <div class="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-        <p class="text-base font-semibold leading-7 text-sky-600">Private Pilot</p>
+        <p class="text-base font-semibold leading-7 text-sky-600">Instrument Rated</p>
         <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">4 Steps to Become a Private Pilot</h1>
         <p class="mt-6 text-xl leading-8 text-gray-700">A Private Pilot Certificate grants individuals the authority to fly aircraft for non-commercial purposes. Although this doesn't permit pilots to receive compensation for their flights or to fly for commercial purposes, a Private Pilot Certificate allows pilots to operate aircraft for leisure and personal travel.</p>
         <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
@@ -163,6 +163,7 @@
 
 
 
-<%= render "shared/cta_3_steps" %>
+
 <%= render "shared/cta_were_experts" %>
+<%= render "shared/cta_next_steps" %>
 <%= render "shared/footer"%>
