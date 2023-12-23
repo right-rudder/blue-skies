@@ -27,7 +27,7 @@
           
           <div class="mt-10 flex items-center gap-x-6">
             
-            <%= link_to "Enroll Today", root_path, class: "btn-primary"%>
+            <%= link_to "Enroll Today", enroll_path, class: "btn-primary"%>
             <%= link_to pilot_programs_path, class: "text-sm font-semibold leading-6 text-gray-900" do%>
               <div class="flex group ">
                 <div class="mr-3">Our Programs</div>
@@ -64,7 +64,7 @@
               <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Start a Conversation</h3>
               <p class="mt-5 text-base leading-7 text-gray-600">The first step in pilot training is reaching out to a flight school.  Blue Skies Above welcomes you to the world of aviation.</p>
               <div class="mt-5">
-                <%= button_to "Contact Us", root_path, method: :get, data: {turbo: false}, class: "btn-primary"%>
+                <%= button_to "Contact Us", contact_path, method: :get, data: {turbo: false}, class: "btn-primary"%>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
               <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Take Your First Flight Lesson</h3>
               <p class="mt-5 text-base leading-7 text-gray-600">Also known as a discovery flight, take the controls of the aircraft and fly the plane.  See if becoming a pilot is right for you.</p>
               <div class="mt-5">
-                <%= button_to "Schedule Visit", discovery_flight_path, method: :get, data: {turbo: false}, class: "btn-primary"%>
+                <%= button_to "Schedule Lesson", discovery_flight_path, method: :get, data: {turbo: false}, class: "btn-primary"%>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@
               <p class="mt-4 text-xl text-gray-600">Reaching out to a flight school to understand how the pilot training process works is the first step in your pilot training journey.</p>
               <p class="mt-6 text-base leading-7 text-gray-600">Speaking with a real live team member helps demystify any questions you may have and gets you answers quickly.  Determine what your ambitions, goals, and timelines are in relation to flight training.  You've got the entire team here at Blue Skies Above to help you reach your goals.  Let's work together to come up with a plan for flight training that suits your needs.</p>
               <div class="mt-6">
-                <a href="#" class="inline-block rounded-md border border-transparent bg-sky-600 px-8 py-3 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300">Contact Us</a>
+                <%= link_to "Contact us", contact_path,  data: {turbo: false}, class: "inline-block rounded-md border border-transparent bg-sky-600 px-8 py-3 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300"%>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@
               <p class="mt-4 text-xl text-gray-600">You'll pair up and work with a CFI (Certified Flight Instructor) to start flight training.  Gain the necessary skills and knowledge to pass your written and practical exams.</p>
               <p class="mt-6 text-base leading-7 text-gray-600">The first certificate pilots get is called the private pilot certificate, also known as the PPL or private pilot license.  Obtaining this certification involves passing multiple exams including the medical exam, the written exam, and the practical exam - commonly referred as the checkride.  You and your instructor will come up with a plan that fits your schedule to get this complete.  We're excited to be a part of your aviation journey.</p>
               <div class="mt-6">
-                <a href="#" class="inline-block rounded-md border border-transparent bg-sky-600 px-8 py-3 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300">Enroll Today</a>
+                <%= link_to "Enroll Today", enroll_path, turbo: {data: false}, class: "inline-block rounded-md border border-transparent bg-sky-600 px-8 py-3 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300"%>
               </div>
             </div>
           </div>
