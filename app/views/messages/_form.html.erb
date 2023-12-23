@@ -29,15 +29,15 @@
   </div>
 
   <div class="my-5">
-    <% if current_page?(cfi_path)%>
-      <span class="">Tell us about yourself and why you want to be a Join the Blue Skies Above team</span>
+    <% if current_page?(join_team_path)%>
+      <span class="">Tell us about yourself and why you want to be a join the Blue Skies Above team</span>
     <% else %>
       <%= form.label "Your message", class: "" %>
     <%end%>
     <%= form.text_area :body, rows: 4, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" %>
   </div>
 
-  <% if current_page?(cfi_path)%>
+  <% if current_page?(join_team_path)%>
     <%= form.hidden_field :page, value: 'cfi' %>
   <% end %>
 

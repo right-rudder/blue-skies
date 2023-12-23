@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   #Contact form
   get 'contact', to: 'messages#new', as: :contact
   get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
-  get 'join-team', to: 'messages#cfi', as: :cfi
+  get 'join-team', to: 'messages#cfi', as: :join_team
 
   # Book Download
   #get 'book-download-confirmation', to: 'book_downloads#confirmation', as: :book_download_confirmation
