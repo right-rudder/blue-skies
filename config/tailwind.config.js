@@ -135,6 +135,8 @@ module.exports = {
         'checkride' : "url('blue-skies-checkride-commercial-pass-opelika.webp')",
         'checkride2' : "url('blue-skies-checkride-commercial-pass-opelika-2.webp')",
         'ifr-bg' : "url('blue-skies-ifr-flying-opelika.webp')",
+        'auburn-bg' : "url('blue-skies-auburn-university-student-pass-checkride-bg.webp')",
+        
         
       },
       height: theme => ({
