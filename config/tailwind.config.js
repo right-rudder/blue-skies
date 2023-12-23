@@ -132,8 +132,8 @@ module.exports = {
         'sunset-flight' : "url('blue-skies-overflying-columbus-during-sunset.webp')",
         'cessna-ramp' : "url('blue-skies-cessna-ramp-bg.webp')",
         'sunset' : "url('blue-skies-sunset-bg-auburn.webp')",
-        
-        
+        'checkride' : "url('blue-skies-checkride-commercial-pass-opelika.webp')",
+        'checkride2' : "url('blue-skies-checkride-commercial-pass-opelika-2.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',
