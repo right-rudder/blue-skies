@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'pilot-training-programs-and-courses', to: 'pages#pilot_programs', as: :pilot_programs
   get 'private-pilot-certificate-ppl', to: 'pages#private_pilot', as: :ppl
   get 'instrument-rating-ifr', to: 'pages#instrument_rating', as: :ifr
+  get 'commercial-pilot-certificate-cpl', to: 'pages#commercial_pilot', as: :cpl
 
   #post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   #get 'blog', to: 'posts#index', as: :blog
