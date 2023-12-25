@@ -137,6 +137,7 @@ module.exports = {
         'ifr-bg' : "url('blue-skies-ifr-flying-opelika.webp')",
         'auburn-bg' : "url('blue-skies-auburn-university-student-pass-checkride-bg.webp')",
         'commercial' : "url('blue-skies-commercial-pilot-training-opelika.webp')",
+        'cfi' : "url('blue-skies-cfi-bg-dual-recieved-instructor-auburn.webp')",
         
         
         
