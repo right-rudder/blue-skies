@@ -138,9 +138,7 @@ module.exports = {
         'auburn-bg' : "url('blue-skies-auburn-university-student-pass-checkride-bg.webp')",
         'commercial' : "url('blue-skies-commercial-pilot-training-opelika.webp')",
         'cfi' : "url('blue-skies-cfi-bg-dual-recieved-instructor-auburn.webp')",
-        
-        
-        
+        'cfii' : "url('blue-skies-cfii-bg.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',

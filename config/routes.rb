@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'instrument-rating-ifr', to: 'pages#instrument_rating', as: :ifr
   get 'commercial-pilot-certificate-cpl', to: 'pages#commercial_pilot', as: :cpl
   get 'certified-flight-instructor-cfi', to: 'pages#cfi', as: :cfi
+  get 'flight-instructor-instrument-cfii', to: 'pages#cfii', as: :cfii
 
   #post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   #get 'blog', to: 'posts#index', as: :blog
