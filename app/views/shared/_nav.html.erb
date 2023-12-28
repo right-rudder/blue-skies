@@ -35,10 +35,10 @@
                   </svg>
                 </div>
                 <div class="flex-auto">
-                  <a href="#" class="block font-semibold text-gray-900">
+                  <%= link_to why_pilot_path, data: { turbo: false }, class: "block font-semibold text-gray-900" do%>
                     Why Become a Pilot?
                     <span class="absolute inset-0"></span>
-                  </a>
+                  <% end %>
                   <p class="mt-1 text-gray-600">Now is the best time to become a pilot</p>
                 </div>
               </div>
