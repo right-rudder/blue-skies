@@ -53,12 +53,13 @@
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
             <p class="flex-auto">Whether you're flying for a career or flying for fun, Blue Skies Above will help you acquire the skills and knowledge to become a safe proficient pilot.</p>
             <div class="mt-6 group">
-              <a href="#" class="text-sm font-semibold leading-6 text-sky-600">
+              <%= link_to enroll_path, class: "text-sm font-semibold leading-6 text-sky-600" do%>
+              
                 <div class="flex">
                   Enroll today 
                   <div aria-hidden="true" class="ml-3 group-hover:animate-bounce-right">→</div>
                 </div>
-                </a>
+              <% end %>
             </div>
           </dd>
         </div>
