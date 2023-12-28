@@ -1,0 +1,287 @@
+<%= render "shared/nav" %>
+
+<div class="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32">
+  
+  <%= image_tag "blue-skies-pilot-back-bg.webp", alt: "back of pilot flying", class: "absolute inset-0 -z-10 h-full w-full object-cover object-center"%>
+  
+  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-sky-500 to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-sky-500 to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Why Become a Pilot?</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-200 font-header">A combination of factors such as mandatory retirement ages, COVID-induced early retirements, and the surging demand for pilots, indicates a pilot supply challenge in the aviation industry. Forecasts from experts suggest that, within the coming year or two, global demand for pilots will outstrip the available supply, and this trend is expected to persist over the next decade.</p>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-header text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+        <%= link_to "Discovery Flight #{content_tag(:span, "→".html_safe)}".html_safe, discovery_flight_path, target: "blank", class: "hover:text-sky-500 duration-300" %>
+        <%= link_to "Training Program #{content_tag(:span, "→".html_safe)}".html_safe, pilot_programs_path, class: "hover:text-sky-500 duration-300" %>
+        <%= link_to "Enroll Today #{content_tag(:span, "→".html_safe)}".html_safe, enroll_path, target: "blank", class: "hover:text-sky-500 duration-300" %>
+        <%= link_to "Contact Us #{content_tag(:span, "→".html_safe)}".html_safe, contact_path, class: "hover:text-sky-500 duration-300" %>
+
+      </div>
+      <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col-reverse">
+          <dt class="text-base leading-7 text-gray-300 font-header">Pilots needed in the next 10 years</dt>
+          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">280,000</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="text-base leading-7 text-gray-300 font-header">Pilots over 50 years old</dt>
+          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">38%</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="text-base leading-7 text-gray-300 font-header">Pilots retiring in the next 10 years</dt>
+          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">45,000</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="text-base leading-7 text-gray-300 font-header">Growth in pilot demand</dt>
+          <dd class="text-2xl font-bold leading-9 tracking-tight text-white">39%</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="flex flex-row justify-end">
+    <div class="text-gray-500 mt-20 mb-10 mr-10 italic text-sm">
+      <a href="https://www.cae.com/media/documents/ATF/Aviation-Talent-Forecast-2023.pdf" target="blank">Source: 2023 CAE Aviation Talent Forcast</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="overflow-hidden bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div class="lg:pr-8 lg:pt-4">
+        <div class="lg:max-w-lg">
+          <h2 class="text-base font-semibold leading-7 text-sky-500">The time is now</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-header">Start training today</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Contrary to popular belief, training to become a pilot is easier than ever.  All it takes commitment, dedication, and a strong passion to study and gain the necessary skills.</p>
+          <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg id="plane" viewBox="0 0 18.998 17.118" class="fill-sky-500 h-5 absolute left-1 top-1">
+                  <path d="M19 8.562c0 .434-1.155 1.463-2.978 1.463h-4a.089.089 0 0 1-.023.034l-4.221 5.567-.005.006-1.023 1.355a.35.35 0 0 1-.269.131H5.115a.331.331 0 0 1-.28-.154.356.356 0 0 1-.051-.183.291.291 0 0 1 .028-.137l1.029-2.235c.188-.366.36-.737.514-1.12l1.5-3.264H4.018a9.281 9.281 0 0 1-1.029-.1l-1.6 2.343a.163.163 0 0 1-.138.075H.171a.162.162 0 0 1-.131-.063.165.165 0 0 1-.04-.1v-.04l1.526-3.578L0 4.978a.162.162 0 0 1 .04-.143.161.161 0 0 1 .131-.062h1.08a.162.162 0 0 1 .138.074l1.6 2.353c.251-.029.851-.1 1.029-.1h3.835L6.287 3.681l-.36-.781L4.812.475a.3.3 0 0 1-.028-.138.359.359 0 0 1 .051-.183.331.331 0 0 1 .28-.154h1.366a.351.351 0 0 1 .269.132l.994 1.308L12 7.059a.1.1 0 0 1 .023.034h4c1.82 0 2.977 1.029 2.977 1.469"></path>
+                </svg>
+                Fly for fun.
+              </dt>
+              <dd class="inline">Earning your wings let's you see the world in a new perspective.  It's fun and the views are breathtaking.</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg id="plane" viewBox="0 0 18.998 17.118" class="fill-sky-500 h-5 absolute left-1 top-1">
+                  <path d="M19 8.562c0 .434-1.155 1.463-2.978 1.463h-4a.089.089 0 0 1-.023.034l-4.221 5.567-.005.006-1.023 1.355a.35.35 0 0 1-.269.131H5.115a.331.331 0 0 1-.28-.154.356.356 0 0 1-.051-.183.291.291 0 0 1 .028-.137l1.029-2.235c.188-.366.36-.737.514-1.12l1.5-3.264H4.018a9.281 9.281 0 0 1-1.029-.1l-1.6 2.343a.163.163 0 0 1-.138.075H.171a.162.162 0 0 1-.131-.063.165.165 0 0 1-.04-.1v-.04l1.526-3.578L0 4.978a.162.162 0 0 1 .04-.143.161.161 0 0 1 .131-.062h1.08a.162.162 0 0 1 .138.074l1.6 2.353c.251-.029.851-.1 1.029-.1h3.835L6.287 3.681l-.36-.781L4.812.475a.3.3 0 0 1-.028-.138.359.359 0 0 1 .051-.183.331.331 0 0 1 .28-.154h1.366a.351.351 0 0 1 .269.132l.994 1.308L12 7.059a.1.1 0 0 1 .023.034h4c1.82 0 2.977 1.029 2.977 1.469"></path>
+                </svg>
+                Develop your skills.
+              </dt>
+              <dd class="inline">Training to a pilot means developing and strengthening your critical thinking skills and aeronautical decision making.</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg id="plane" viewBox="0 0 18.998 17.118" class="fill-sky-500 h-5 absolute left-1 top-1">
+                  <path d="M19 8.562c0 .434-1.155 1.463-2.978 1.463h-4a.089.089 0 0 1-.023.034l-4.221 5.567-.005.006-1.023 1.355a.35.35 0 0 1-.269.131H5.115a.331.331 0 0 1-.28-.154.356.356 0 0 1-.051-.183.291.291 0 0 1 .028-.137l1.029-2.235c.188-.366.36-.737.514-1.12l1.5-3.264H4.018a9.281 9.281 0 0 1-1.029-.1l-1.6 2.343a.163.163 0 0 1-.138.075H.171a.162.162 0 0 1-.131-.063.165.165 0 0 1-.04-.1v-.04l1.526-3.578L0 4.978a.162.162 0 0 1 .04-.143.161.161 0 0 1 .131-.062h1.08a.162.162 0 0 1 .138.074l1.6 2.353c.251-.029.851-.1 1.029-.1h3.835L6.287 3.681l-.36-.781L4.812.475a.3.3 0 0 1-.028-.138.359.359 0 0 1 .051-.183.331.331 0 0 1 .28-.154h1.366a.351.351 0 0 1 .269.132l.994 1.308L12 7.059a.1.1 0 0 1 .023.034h4c1.82 0 2.977 1.029 2.977 1.469"></path>
+                </svg>
+                Fly for a career.
+              </dt>
+              <dd class="inline">As pilot demand goes up, so does pilot salaries making becoming a pilot a lucrative career choice.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <%= image_tag "blue-skies-airliner-cockpit.webp", alt: "Airliner Cockpit", class: "w-48rem sm:w-57rem hidden lg:block max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10  md:-ml-4 lg:-ml-0" %>
+    </div>
+  </div>
+</div>
+<%= image_tag "blue-skies-airliner-cockpit.webp", alt: "Airliner Cockpit", class: "lg:hidden w-full" %>
+
+
+
+<section class="p-5 py-20">
+  <div class="flex justify-center items-start my-2">
+    <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+      <h2 class="text-2xl font-semibold font-header mb-2">Frequently Asked Questions</h2>
+      <ul class="flex flex-col">
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>What are the requirements to start flying?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            x-ref="tab"
+            :style="handleToggle()"
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+          >
+            <p class="p-3 text-gray-900">
+              Be at least 16 years old (14 years old for operating a glider or balloon).
+              Be able to read, speak, write, and understand the English language.
+              You do not need an FAA medical certificate from an Aviation Medical Examiner (AME) for the first few lessons, but you will need get your medical certificate prior to soloing.
+
+            </p>
+          </div>
+        </li>
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>What is a Discovery Flight?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+            x-ref="tab"
+            :style="handleToggle()"
+          >
+            <p class="p-3 text-gray-900">
+              A short introductory flight for anyone interested in learning about flying or taking the first step toward earning their pilot's license.
+            </p>
+          </div>
+        </li>
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>What should I bring to training?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+            x-ref="tab"
+            :style="handleToggle()"
+          >
+            <p class="p-3 text-gray-900">
+              You've completed a Discovery Flight and are ready for your first lesson. A couple of basic things to have when starting flight training are: A headset and extra batteries (because you never know when your batteries can fail), a logbook, and a pen and paper for notes. Of course, you don't need to go out and buy a headset right away, we have rentals. Once you're more established with flying, you can build your flight bag as recommended and have the necessary tools you'll need for the rating you're working on.
+            </p>
+          </div>
+        </li>
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>What is a typical lesson like?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+            x-ref="tab"
+            :style="handleToggle()"
+          >
+            <p class="p-3 text-gray-900">
+              For the minimum time of 2 hours, if you and the instructor go flying, you will have a short ground lesson and flight lesson brief, then fly and debrief at the end. The beginning ground lesson will cover the expected plan. Then your instructor will make sure that you have all of your documents uploaded to Flight Schedule Pro as well as the condition and availability of the aircraft. You will both then head out to the airplane for your flight lesson. Once you come back, you’ll debrief on the ramp, before heading back in to go over what you’ll be doing on your next lesson. Depending on how far you are in the syllabus and weather,  you may have to receive ground instruction for an entire lesson.
+            </p>
+          </div>
+        </li>
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>What is ground school?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+            x-ref="tab"
+            :style="handleToggle()"
+          >
+            <p class="p-3 text-gray-900">
+              Classroom learning. You will study aviation related topics such as aerodynamics, airport rules, aircraft instruments, and weather. This is one on one with your instructor. However, if there are enough students a group class will be offered. 
+            </p>
+          </div>
+        </li>
+        <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+          <h2
+            @click="handleClick()"
+            class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+          >
+            <span>How many hours does it take to get my private pilot license?</span>
+            <svg
+              :class="handleRotate()"
+              class="fill-current text-sky-700 h-6 w-6 transform transition-transform duration-500"
+              viewBox="0 0 20 20"
+            >
+              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+            </svg>
+          </h2>
+          <div
+            class="border-l-2 border-sky-600 overflow-hidden max-h-0 duration-500 transition-all"
+            x-ref="tab"
+            :style="handleToggle()"
+          >
+            <p class="p-3 text-gray-900">
+              That matters on your availability and how often you can fly. The FAA minimum for the private license is 40 hours but the national average is just over 65 hours. 
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<%= render "shared/visit_school"%>
+<%= render "shared/cta_3_steps"%>
+<%= render "shared/cta_were_experts"%>
+<%= render "shared/footer"%>
+
+
+  
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('accordion', {
+        tab: 0
+      });
+      
+      Alpine.data('accordion', (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+        }
+      }));
+    })
+  </script>
