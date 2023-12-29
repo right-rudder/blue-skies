@@ -6,10 +6,10 @@ Rails.application.routes.draw do
     match "/404", to: "errors#not_found", via: :all
     match "/500", to: "errors#internal_server_error", via: :all
   
-  #devise_scope :admins do
-  #  # Redirests signing out users back to sign-in
-  #  get "admins", to: "devise/sessions#new"
-  #end
+  devise_scope :admins do
+  # Redirests signing out users back to sign-in
+    get "admins", to: "devise/sessions#new"
+  end
 
   devise_for :admins, controllers: { registrations: "registrations", sessions: "sessions" }
   root "pages#home"
@@ -23,9 +23,9 @@ Rails.application.routes.draw do
   get 'flight-instructor-instrument-cfii', to: 'pages#cfii', as: :cfii
   get 'should-i-become-a-pilot', to: 'pages#why_pilot', as: :why_pilot
 
-  #post 'uploader/image', to: 'uploader#image' #add upload image to posts 
-  #get 'blog', to: 'posts#index', as: :blog
-  #resources :posts
+  post 'uploader/image', to: 'uploader#image' #add upload image to posts 
+  get 'blog', to: 'posts#index', as: :blog
+  resources :posts
   
   resources :discover_flights
   resources :checkouts
