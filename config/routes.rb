@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'certified-flight-instructor-cfi', to: 'pages#cfi', as: :cfi
   get 'flight-instructor-instrument-cfii', to: 'pages#cfii', as: :cfii
   get 'should-i-become-a-pilot', to: 'pages#why_pilot', as: :why_pilot
+  get 'privacy-policy-terms-of-service', to: 'pages#tos', as: :tos
 
   post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   get 'blog', to: 'posts#index', as: :blog
