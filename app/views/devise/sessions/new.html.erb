@@ -1,4 +1,4 @@
-<%= render "shared/header"%>
+<%= render "shared/nav"%>
 <main class="bg-zinc-50 w-full h-screen flex flex-col items-center justify-center pb-10">
   <!--Container for contents-->
   <div class="lg:w-3/5 md:w-4/5">
@@ -24,12 +24,12 @@
 
         <div class="my-5">
           <%= form.label :Email %>
-          <%= form.email_field :email, placeholder: "Email", class: "placeholder-gray-300 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full focus:border-blue-800 focus:ring-blue-800" %>
+          <%= form.email_field :email, placeholder: "Email", class: "placeholder-gray-300 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" %>
         </div>
 
         <div class="my-5">
           <%= form.label "Password" %>
-          <%= form.password_field :password, placeholder: "Password", class: "placeholder-gray-300 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full focus:border-blue-800 focus:ring-blue-800" %>
+          <%= form.password_field :password, placeholder: "Password", class: "placeholder-gray-300 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" %>
         </div>
 
         <% if @show_checkbox_recaptcha %>
@@ -40,7 +40,7 @@
         <% end %>
 
         <div class="inline">
-          <%= form.submit "Sign In", class: "rounded-lg py-3 px-5 w-full bg-blue-800 text-white inline-block font-medium cursor-pointer hover:bg-blue-700 active:bg-blue-600" %>
+          <%= form.submit "Sign In", class: "rounded-lg py-3 px-5 w-full bg-custom-500 text-white inline-block font-medium cursor-pointer hover:bg-sky-700 active:bg-sky-600" %>
         </div>
       </div>
     <% end %>
