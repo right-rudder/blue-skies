@@ -93,16 +93,16 @@ Rails.application.configure do
 
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: 'pitcairnmailer.com' }
+  config.action_mailer.default_url_options = { host: 'flyblueskiesabove.com' }
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
     address: "mail.smtp2go.com",
     port: 80,
-    domain: "pitcairnmailer.com",
+    domain: "flyblueskiesabove.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "no-reply@pitcairnmailer.com",
+    user_name: "default-798886",
     password: ENV["SMTP2GO_PASS"]
   }
 end
