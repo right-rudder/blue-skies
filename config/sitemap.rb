@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "simpliflyco.com"
+SitemapGenerator::Sitemap.default_host = "flytheblueskies.com"
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
@@ -25,34 +25,30 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
 
-  #Static Pages
-  add '/stratus-finance'
-  add '/meritize'
-  add '/accelerated-pilot-training'
-  add '/flexible-pilot-training'
-  add '/why-simplifly'
-  add '/financing'
-  add '/pilot-training-pricing-calculator'
-  add '/approximate-pilot-training-costs'
-  add '/timeline-to-be-a-pilot'
-  add '/multi-engine-rating'
-  add '/commercial-pilot-training'
-  add '/instrument-rating'
-  add '/private-pilot-training'
-  add '/pilot-training'
-  add '/airline-pilot-courses'
-  add '/pilot-programs'
-  add '/our-team'
+  # Sitemap entries
 
-  #Blog
-  add '/blog'
+add '/pilot-training-programs-and-courses'
+add '/private-pilot-certificate-ppl'
+add '/instrument-rating-ifr'
+add '/commercial-pilot-certificate-cpl'
+add '/certified-flight-instructor-cfi'
+add '/flight-instructor-instrument-cfii'
+add '/should-i-become-a-pilot'
+add '/privacy-policy-terms-of-service'
+add '/why-choose-blue-skies-above'
+add '/about-us'
 
-  #Forms
-  add '/enroll-at-simplifly'
-  add '/contact'
-  add '/visit-simplifly'
-  add '/instruct-at-simplifly'
-  add '/discovery-flight'
+add '/blog'
+
+#forms
+add '/enroll-at-blue-skies'
+#add '/enrollment-confirmation'
+add '/contact'
+#add '/contact-confirmation'
+add '/join-team'
+add '/discovery-flight'
+add '/visit-flight-school'
+#add '/visit-flight-school-confirmation'
 
 
 end
