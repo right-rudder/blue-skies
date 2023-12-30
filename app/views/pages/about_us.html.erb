@@ -1,38 +1,38 @@
 <%# Head / Meta Data %>
-<% title("Ideal Aviation Team") %>
-<% meta_description("Meet our team at Ideal Aviation.  We are a team of knowledgeble and safe flight instructors and aviation professionals.") %>
-<% meta_keywords("Helicopter CFI st louis, airplane CFI st louis, CFI st louis, CFII in st louis") %>
+<% title("Blue Skies Above Team") %>
+<% meta_description("Meet our team at Blue Skies Above.  We are a team of knowledgeable and safe flight instructors and aviation professionals.") %>
+<% meta_keywords("fixed wing CFI Columbus Georgia, airplane CFI Auburn, CFI Opelika, CFII in Lafayette") %>
 <%# og_image(image_url("meta_pic_rrm.webp")) %>
 <%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
 
 <%= render "shared/nav"%>
 <section class="bg-white">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 p-text">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl  font-bold text-slate-900 font-sans">Leadership Team</h2>
-          <p class="font-light text-slate-500 lg:mb-16 lg:text-xl font-sans">Our leadership team is comprised of experienced aviation professionals who are passionate about aviation and committed to providing the highest level of training and support to our students.</p>
+          <h2 class="mb-4 text-4xl font-bold text-slate-900 ">Leadership Team</h2>
+          <p class="font-light text-slate-500 lg:mb-16 lg:text-xl ">Our leadership team is comprised of experienced aviation professionals who are passionate about aviation and committed to providing the highest level of training and support to our students.</p>
       </div> 
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-          <div class="items-center bg-slate-100 rounded-lg shadow  ">
-              <%= image_tag "", class: "w-full rounded-t-lg", alt: "Bill Macon"%>
-              <div class="p-5">
-                <h3 class="text-xl font-semibold  text-slate-900 font-sans">
-                    Bill Macon
-                </h3>
-                <span class="text-slate-500 ">Managing Director</span>
-                <p class="mt-3 mb-4 font-light text-slate-500 font-sans">Bill comes from a family with a long history of aviation in St. Louis  Bill began his flight training when he acquired Ideal Aviation in 2011.</p>
-              </div>
-          </div> 
-          <div class="items-center bg-slate-100 rounded-lg shadow">
-              <%= image_tag "", class: "w-full rounded-t-lg", alt: "Kimberly Nagel"%>
-              <div class="p-5">
-                <h3 class="text-xl font-semibold  text-slate-900 font-sans">
-                    Kimberly Nagel
-                </h3>
-                <span class="text-slate-500 ">Director of Administration</span>
-                <p class="mt-3 mb-4 font-light text-slate-500 font-sans">Kimberly Nagel is a management and accounting professional and joined Ideal Aviation in 2012. Kimberly has flown a variety of aircraft.</p>
-              </div>
-          </div> 
+        <div class="items-center bg-slate-100 rounded-lg shadow  ">
+          <%= image_tag "blue-skies-matt-600.webp", class: "w-full rounded-t-lg", alt: "Matthew Bourguignon"%>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold  text-slate-900 ">
+                Matthew Bourguignon
+            </h3>
+            <span class="text-slate-500 ">CFI | Founder</span>
+            <p class="mt-3 mb-4 font-light text-slate-500 ">Matt is an aviation enthusiast driven by a childhood dream inspired by his model airplane-flying grandfather from Long Island. Despite initially aiming for aviation college, concerns about student debt led him to the tech industry after graduating in 2011. The 2020 pandemic reignited Matt's passion for flight, and he embarked on training to become a commercial pilot, discovering a deep love for general aviation. Now as a Certified Flight Instructor (CFI), Matt finds great satisfaction in helping others succeed. In February 2023, he founded Blue Skies Above, quickly growing with a dedicated team to fulfill his dream of growing a community of pilots.</p>
+          </div>
+        </div> 
+        <div class="items-center bg-slate-100 rounded-lg shadow">
+          <%= image_tag "blue-skies-sam-600.webp", class: "w-full rounded-t-lg", alt: "Samantha Mott"%>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold  text-slate-900 ">
+                Samantha Mott
+            </h3>
+            <span class="text-slate-500 ">Training Coordinator</span>
+            <p class="mt-3 mb-4 font-light text-slate-500 ">Sam is a pilot and the training coordinator at Blue Skies Above. Her passion for aviation was ignited at an early age, and she pursued her dream with unwavering determination. Inspired by the vast expanse of the skies, Sam honed her skills to become a proficient pilot. With a commitment to excellence, she took on the role of training coordinator at Blue Skies Above, where she plays a pivotal role in shaping the next generation of aviators. Sam's journey is a testament to her love for flying and her dedication to fostering a thriving aviation community.</p>
+          </div>
+        </div> 
       </div>  
   </div>
 </section>
@@ -41,18 +41,26 @@
   <div class="pb-8 px-4 mx-auto max-w-screen-xl text-center lg:pb-16 lg:px-6">
       <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
         <h2 class="mb-4 text-4xl tracking-tight font-bold text-slate-900 ">Our Instructors</h2>
-        <p class="font-light text-slate-500 sm:text-xl dark:text-slate-400">Our experienced instructors at Ideal Aviation are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.</p>
+        <p class="font-light text-slate-500 sm:text-xl dark:text-slate-400">Our experienced instructors at Blue Skies Above are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.</p>
       </div> 
-      <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+      <%# Change these col numbers if more CFIs %>
+      <div class="grid gap-8 lg:gap-16 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
         <div class="text-center text-slate-500 dark:text-slate-400">
-          <%= image_tag "silhouette.webp", class: "mx-auto mb-4 w-36 h-36 rounded-full", alt: "Dillon J."%>
+          <%= image_tag "blue-skies-matt-300.webp", class: "mx-auto mb-4 w-36 h-36 rounded-full", alt: "Matt Bourguignon"%>
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-slate-900 ">
+              Matt Bourguignon
+          </h3>
+          <p>Fixed Wing CFI</p>
+        </div>
+        <div class="text-center text-slate-500 dark:text-slate-400">
+          <%= image_tag "silhouette.webp", class: "mx-auto mb-4 w-36 h-36 rounded-full", alt: "Joe CFI"%>
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-slate-900 ">
               Joe
           </h3>
           <p>Fixed Wing CFI</p>
         </div>
         <div class="text-center text-slate-500 dark:text-slate-400">
-          <%= image_tag "silhouette.webp", class: "mx-auto mb-4 w-36 h-36 rounded-full", alt: "Jake W."%>
+          <%= image_tag "silhouette.webp", class: "mx-auto mb-4 w-36 h-36 rounded-full", alt: "Russ CFI"%>
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-slate-900 ">
               Russ
           </h3>
