@@ -66,7 +66,7 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">About</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-sky-600">Our Team</a>
+                <%= link_to "Our Team", about_us_path, data: {turbo: false}, class: "text-sm leading-6 text-gray-600 hover:text-sky-600" %>
               </li>
               <%# <li>
                 <a href="#" class="text-sm leading-6 text-gray-600 hover:text-sky-600">Why Blue Skies Above?</a>

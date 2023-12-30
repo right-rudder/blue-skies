@@ -63,7 +63,7 @@
         </div>
         <%# About expand %>
         <div x-show="aboutMobile">
-          <%= button_to "Our Team", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
+          <%= button_to "Our Team", about_us_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
           <%#= button_to "Why Blue Skies Above?", root_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
           <%= button_to "Join the team", join_team_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
           <%= button_to "Blog", blog_path, data: { turbo: false }, method: :get, class: "-mx-3 block rounded-lg px-3 py-2 text-base ml-2 font-semibold leading-7 text-gray-800 hover:bg-gray-50 animate-slide-in-left", "x-show": "aboutMobile", "x-transition": "", "x-bind:class": "{'animate-slide-out-left': !aboutMobile}" %>
