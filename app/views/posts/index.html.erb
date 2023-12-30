@@ -9,13 +9,13 @@
   <div class="containr px-6 mx-auto">
 
     <!-- Section: Design Block -->
-    <section class="mb-32 text-gray-800 pt-12 lg:pt-24 text-center md:text-left">
+    <section class="pb-32 text-gray-800 pt-12 lg:pt-24 text-center md:text-left">
 
       <h2 class="text-3xl font-bold mb-12 text-center">Latest articles</h2>
 
       <% @posts.sort_by(&:post_date).reverse_each do |post| %> 
         
-          <div class="flex flex-wrap mb-6">
+          <div class="flex flex-wrap pb-6">
             <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
               <div
                 class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
