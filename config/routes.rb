@@ -61,6 +61,10 @@ Rails.application.routes.draw do
   #get 'quiz', to: 'quiz_results#new', as: :quiz
   #get 'quiz-confirmation', to: 'quiz_results#confirmation', as: :quiz_confirmation
 
-  
+  #previous routes
+  get 'private-pilot', to: 'pages#private_pilot'
+  get 'instrument-rating', to: 'pages#instrument_rating'
+  get 'contact-us', to: 'messages#new'
+  get 'discovery-flights', to: 'discover_flights#new'
   
 end
