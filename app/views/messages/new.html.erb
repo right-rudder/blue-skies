@@ -4,16 +4,37 @@
 <% meta_keywords("Contact Simplifly, Flight School Contact, Mesa Flight School, Phoenix Flight School, Scottsdale Flight School, Spanish Fork Flight School, Salt Lake Flight School") %>
 
 <%= render "shared/nav"%>
-<div class="bg-gradient-to-l from-slate-200 to-blue-50">
-  <h1 class="font-bold text-4xl py-10 text-center">Contact Us</h1>
+<div class="bg-gradient-to-l from-slate-200 to-blue-50 lg:pb-10">
+  <h1 class="font-bold text-4xl pt-10 text-center">Contact Us</h1>
   <div class="lg:flex lg:flex-row-reverse items-center lg:items-start">
   
 
-    <div class="mx-10 lg:px-16 lg:w-1/2">
-      <%= render "form", message: @message %>      
+    <div class="lg:mx-10 lg:px-5 lg:w-1/2">
+      <%# PREVIOUS RoR FORM %>
+      <%#= render "form", message: @message %>      
+      <%# GHL FORM %>
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/BnkZMGU9z7mJNepsJu1a"
+        style="width:100%;height:100%;border:none;border-radius:3px"
+        id="inline-BnkZMGU9z7mJNepsJu1a" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Contact Us Form"
+        data-height="680"
+        data-layout-iframe-id="inline-BnkZMGU9z7mJNepsJu1a"
+        data-form-id="BnkZMGU9z7mJNepsJu1a"
+        title="Contact Us Form"
+            >
+      </iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </div>
 
-    <div class="mx-0 lg:mx-10 lg:w-1/2">
+    <div class="mx-0 lg:mx-10 lg:w-1/2 lg:pt-32">
       <%=image_tag "blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp", class: "lg:rounded-xl", alt: "Cessna 172 at Blue Skies Above - Lanett, AL"%>
     </div>
 
