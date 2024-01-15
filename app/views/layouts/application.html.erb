@@ -135,7 +135,7 @@
     <script type="text/javascript" src="//cdn.callrail.com/companies/400810513/51d2a7c293b47e7f67d2/12/swap.js"></script> 
     -->
 
-    <%#### UPDATE COMPANY FOR GTAG 'CURRENT GTAG=PITCAIRN'  %>
+    <%#### UPDATE COMPANY FOR GTAG 'CURRENT GTAG=Blue skies..'  %>
     <%# GOOGLE TAG ONLY SHOW DURING PRODUCTION ENVIRONMENT%>
     <% if Rails.env.production? %>
       <!-- Google tag (gtag.js) -->
@@ -147,6 +147,21 @@
 
         gtag('config', 'G-6DWLY484X9');
       </script>
+
+
+      <%# JASON PPC Scripts %>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TPZNMTN3');</script>
+      <!-- End Google Tag Manager -->
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPZNMTN3"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
     <%end%>
   </body>
 </html>
