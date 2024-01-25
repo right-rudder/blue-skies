@@ -8,7 +8,7 @@
 <%= render "shared/phone_banner"%>
 <%= render "shared/nav"%>
 
-<header class="w-full bg-auburn-bg bg-cover lg:bg-center bg-left h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center text-white">
+<header class="w-full bg-auburn-bg-mobile lg:bg-auburn-bg bg-cover lg:bg-center bg-left h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center text-white">
   <div class="px-5 py-24 lg:py-32 flex flex-col justify-center items-center lg:justify-start lg:items-end h-full w-full text-center lg:text-right">
       <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">How to become a pilot</h1>
       <h2 class="mt-6 text-lg leading-8 text-gray-200">No matter your experience level Blue Skies Above has a pilot program for you</h2>
@@ -39,35 +39,35 @@
       <dt class="font-semibold text-gray-900">Private Pilot Certificate</dt>
       <dd class="mt-1 text-gray-600">All pilot get their private pilot certificate as their first certificate.  A private pilot certificate allows you to be pilot in command of an aircraft and fly passengers.  Learn more about our initial Private Pilot Instruction.</dd>
       <div class="mt-6">
-        <%= link_to "Private Pilot", ppl_path, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Private Pilot", ppl_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">Instrument Rating</dt>
       <dd class="mt-1 text-gray-600">Once you have your private license, the next step is to get your Instrument Rating. An instrument rating gives you the skills needed to fly in less than ideal weather conditions.  Check out what that rating means here.</dd>
       <div class="mt-6">
-        <%= link_to "Instrument Rating", ifr_path, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Instrument Rating", ifr_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">Commercial Pilot Certificate</dt>
       <dd class="mt-1 text-gray-600">Interested in a career in aviation? Look no further than our Commercial Pilot.  Holding a commercial pilot certificate allows for you to fly for compensation and hire.</dd>
       <div class="mt-6 lg:mt-[1.5rem]"> <%# added mt for spacing %>
-        <%= link_to "Commercial Pilot", cpl_path, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Commercial Pilot", cpl_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">CFI</dt>
       <dd class="mt-1 text-gray-600">Now that you're a skilled and proficient pilot, teach the next generation of pilots and gain experience. Learn more about our Certified Flight Instructor (CFI) course here.</dd>
       <div class="mt-6">
-        <%= link_to "CFI Training", "", class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "CFI Training", cfi_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">CFII</dt>
       <dd class="mt-1 text-gray-600">Guiding others to obtain their Instrument Panel Rating is a challenge, but a rewarding one at that. Become CFII certified with Blue Skies Above.</dd>
       <div class="mt-6 lg:mt-[3.2rem]"> <%# added mt for spacing %>
-        <%= link_to "CFII Training", "", class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "CFII Training", cfii_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <%# 6th course placeholder

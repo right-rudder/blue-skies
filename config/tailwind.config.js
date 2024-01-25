@@ -136,6 +136,7 @@ module.exports = {
         'checkride2' : "url('blue-skies-checkride-commercial-pass-opelika-2.webp')",
         'ifr-bg' : "url('blue-skies-ifr-flying-opelika.webp')",
         'auburn-bg' : "url('blue-skies-auburn-university-student-pass-checkride-bg.webp')",
+        'auburn-bg-mobile' : "url('blue-skies-auburn-pilot-program-how-to.webp')",
         'commercial' : "url('blue-skies-commercial-pilot-training-opelika.webp')",
         'cfi' : "url('blue-skies-cfi-bg-dual-recieved-instructor-auburn.webp')",
         'cfii' : "url('blue-skies-cfii-bg.webp')",
