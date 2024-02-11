@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
   def show
     # Load location data from YAML file based on location slug
+    puts "Slug parameter: #{params[:location_slug]}"
     @location = load_location(params[:location_slug])
 
     if @location.nil?
@@ -18,6 +19,9 @@ class LocationsController < ApplicationController
     # Load locations data from YAML file
     locations_file = Rails.root.join('config', 'locations.yml')
     locations_data = YAML.load_file(locations_file)
+
+    puts "Locations data: #{locations_data.inspect}"
+    puts "Requested slug: #{slug}"
 
     # Find the location data based on the provided slug
     locations_data[slug]
