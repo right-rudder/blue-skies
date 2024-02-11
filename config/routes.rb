@@ -67,4 +67,7 @@ Rails.application.routes.draw do
   get 'contact-us', to: 'messages#new'
   get 'discovery-flights', to: 'discover_flights#new'
   
+  # Dynamic Location pages 
+  get '/pilot-training/:location_slug', to: 'locations#show', as: :location
+
 end
