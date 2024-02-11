@@ -1,9 +1,69 @@
 <% title("#{@location['city']}, #{@location['state_short']} Flight School | Blue Skies Above") %>
 <% meta_description("Become a pilot at Blue Skies Above, located in Lanett, Alabama. Offering premier flight training to aspiring pilots in #{@location['city']} and surrounding areas. Our flight school provides comprehensive pilot training programs tailored to your aspirations and schedule. Whether you dream of piloting aircraft as a private pilot or pursuing a career in aviation, our experienced instructors will guide you every step of the way. Gain hands-on experience in our fleet of modern Cessna aircraft and master essential skills such as navigation, flight maneuvers, and aviation safety. From obtaining your private pilot certificate (PPL) to advancing to instrument ratings and commercial certificates, we provide the resources and expertise to help you achieve your aviation goals. Discover the joy of flight and join us at Blue Skies Above today!") %>
 <% meta_keywords("Flight School, #{@location['city']}, #{@location['state_short']}, #{@location['state']}, Pilot Training, Professional Flight Instruction, Learn to Fly, Cessna, Private Pilot Certificate, PPL, Instrument Rating, Commercial Certificate, Certified Flight Instructor, How to Become a Pilot, Pilot School, Aviation Training, Flight Lessons, Aircraft Training, Aviation Career, Flight Simulator Training, Flight Experience, Flight Academy, Aviation Education, Pilot Certification, Flight Training Program, Flight School Near Me, Aviation Courses") %>
+<%# Random header generator %>
+<% random_number = rand(1..10) %>
+<% header_image = case random_number
+                  when 1
+                    "blue-skies-above-clouds-instrument-cfii-training.webp"
+                  when 2
+                    "blue-skies-above-student-pilot-passing-cfi-checkride.webp"
+                  when 3
+                    "blue-skies-airliner-cockpit.webp"
+                  when 4
+                    "blue-skies-cessna-in-clouds.webp"
+                  when 5
+                    "blue-skies-flying-over-atlanta-katl-airport.webp"
+                  when 6
+                    "blue-skies-flying-over-opelika-sunset.webp"
+                  when 7
+                    "blue-skies-ifr-training-opelika.webp"
+                  when 8
+                    "blue-skies-ppl-private-pilot-checkride-pass.webp"
+                  when 9
+                    "blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp"
+                  when 10
+                    "blue-skies-team-of-cfis-and-commercial-pilots.webp"
+                  else
+                    "blue-skies-private-pilot-checkride-pass-600.webp"
+                  end %>
 
-
-
+<%# Start website content %>
+<%= render "shared/nav"%>
+<div class="relative isolate overflow-hidden bg-gradient-to-b from-sky-100/20 lg:pt-20">
+  <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-sky-600/10 ring-1 ring-sky-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-6 pb-8 sm:pb-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Your Pilot Training Academy</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <h2 class="text-lg leading-8 text-gray-600 hidden lg:block">Flight school between Alabama and Georgia</h2>
+          <h3 class="text-lg leading-8 text-gray-600 hidden lg:block">Nestled in the heart of Lanett, Alabama </h3>
+          <h4 class="text-lg leading-8 text-gray-600 hidden lg:block">Lanett Municipal Airport 7A3</h4>
+          <%# Mobile no link breaks %>
+          <span class="text-lg leading-8 text-gray-600 lg:hidden">
+            Flight school between Alabama and Georgia. Nestled in the heart of Lanett, Alabama. Lanett Municipal Airport 7A3
+          </span>
+          
+          <div class="mt-10 flex items-center gap-x-6">
+            
+            <%= link_to "Enroll Today", enroll_path, class: "btn-primary"%>
+            <%= link_to pilot_programs_path, class: "text-sm font-semibold leading-6 text-gray-900" do%>
+              <div class="flex group ">
+                <div class="mr-3">Our Programs</div>
+                <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <%= image_tag header_image, alt: "", class: "mt-10 sm:mt-16 lg:mt-0 xl:mt-0 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover  lg:max-w-none xl:row-span-2 xl:row-end-2 "%>
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+  </div>
+</div>  
+  
+  
+  
   <h1><%= @location['city'] %>, <%= @location['state'] %> Flight School</h1>
   
   <p><strong>City:</strong> <%= @location['city'] %></p>
@@ -13,4 +73,8 @@
     <li><%= @location['point_of_interest_1'] %></li>
     <li><%= @location['point_of_interest_2'] %></li>
   </ul>
+<%= render "shared/cta_were_experts"%>
+<%= render "shared/footer"%>
+
+
   
