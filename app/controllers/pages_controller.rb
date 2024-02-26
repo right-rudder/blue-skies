@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
   
   def home
+    @book_download = BookDownload.new
   end
 
   def stratus
