@@ -1,6 +1,6 @@
 class Message < ApplicationRecord
   before_validation :strip_phone_number
-  #after_save :to_fscrm
+  after_save :to_ghl
   
   validates :name, presence: true
   validates :body, presence: true
@@ -11,22 +11,14 @@ class Message < ApplicationRecord
     self.phone = phone.to_s.gsub(/[-() ]/, "")
   end
 
-  def to_fscrm
-    api_key = ENV['fscrm_key']
-
-    # Set the endpoint and headers
-    endpoint = "https://app.flightschoolcrm.com/api/lead/webhook/store"
-    headers = {
-      "api-key" => api_key,
-      "Content-Type" => "application/json"
-    }
-
-    # Create the contact
-    contact_payload = {
+  def to_ghl
+    ghl_url = ENV['ghl_contact_us']
+    ghl_payload = {
       "name" => "#{self.name}",
-      "Email" => "#{self.email}",
-      "Phone" => "#{self.phone}",
-    }
-    HTTParty.post(endpoint, headers: headers, body: contact_payload.to_json)
-  end  
+      "email" => "#{self.email}",
+      "phone" => "#{self.phone}",
+      "body" => "#{self.body}",
+    }     
+    HTTParty.post(ghl_url, body: ghl_payload.to_json, headers: { "Content-Type" => "application/json" })
+  end
 end
