@@ -3,7 +3,7 @@
 <% meta_description("Enroll at Blue Skies Above, the leading flight school in Lanett, Alabama. Start your pilot training with us and embark on an exciting career in aviation.") %>
 <% meta_keywords("Enroll at Blue Skies Above, Flight School Enrollment, Lanett Flight School, Auburn Flight School, Opelika Flight School, Columbus Flight School, La Fayette Flight School") %>
 
-<header class="w-full bg-checkride2 lg:bg-checkride h-screen lg:h-screen bg-cover bg-center flex flex-col justify-between items-center text-white">
+<header class="w-full bg-checkride2 lg:bg-checkride h-screen lg:h-screen bg-cover bg-center hidden lg:flex flex-col justify-between items-center text-white">
   <div class="px-5 py-40 lg:py-52 flex flex-col justify-center items-start w-full h-full">
       <h1 class="font-semibold text-5xl text-center lg:text-start font-header uppercase">Are you ready to become a pilot?</h1>
       <h2 class="font-bold text-4xl text-center lg:text-start py-10 ">Fill out an application to enroll at Blue Skies Above</h2>
@@ -21,6 +21,18 @@
   <%= render "form", enrollment: @enrollment %>
   </div>
 </header>
+
+<section class="lg:hidden pt-10">
+  <h1 class="font-semibold text-5xl text-center lg:text-start font-header uppercase">Are you ready to become a pilot?</h1>
+  <h2 class="font-bold text-4xl text-center lg:text-start py-10 ">Fill out an application to enroll at Blue Skies Above</h2>
+</section>
+
+<!--Mobile // use turbo frame to keep view in place-->
+<turbo-frame id="quiz-frame">
+  <div class="lg:hidden right-5 top-10 z-50 bg-white pb-5 overflow-y-auto">
+    <%= render "form", enrollment: @enrollment %>
+  </div>
+</turbo-frame>
 
 <section class="flex flex-col items-start bg-gradient-to-b from-sky-200 to slate-400">
   <div class="lg:w-2/3 flex flex-col items-center">
@@ -62,17 +74,31 @@
 
 </section>
 
+<header class="w-full bg-checkride2 lg:bg-checkride h-screen lg:h-screen bg-cover bg-center lg:hidden flex flex-col justify-between items-center text-white">
+  <div class="px-5 py-40 lg:py-52 flex flex-col justify-center items-start w-full h-full">
+      <h1 class="font-semibold text-5xl text-center lg:text-start font-header uppercase">Are you ready to become a pilot?</h1>
+      <h2 class="font-bold text-4xl text-center lg:text-start py-10 ">Fill out an application to enroll at Blue Skies Above</h2>
+      <div class="w-full flex flex-col items-center lg:hidden">
+        <a href="#quiz-frame", class="btn-primary"
+        onclick="event.preventDefault(); document.getElementById('quiz-frame').scrollIntoView({ behavior: 'smooth' });">
+          START NOW
+        </a>
+      </div>
+  </div>
+
+  
+
+  <div class="hidden lg:block lg:fixed  right-5 top-10 z-50 bg-white rounded-xl border pb-5 overflow-y-auto max-h-[88vh] text-black">
+  <%= render "form", enrollment: @enrollment %>
+  </div>
+</header>
+
 <!--desktop-->
   <div class="hidden lg:block w-full px-4 bg-white opacity-50">
     <%= render "shared/footer_bottom"%>
   </div>
 
-<!--Mobile // use turbo frame to keep view in place-->
-<turbo-frame id="quiz-frame">
-  <div class="lg:hidden right-5 top-10 z-50 bg-white pb-5 overflow-y-auto">
-    <%= render "form", enrollment: @enrollment %>
-  </div>
-</turbo-frame>
+
 
 
 
