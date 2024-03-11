@@ -33,41 +33,44 @@
   <div class="mx-auto max-w-2xl lg:mx-0">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Courses</h2>
     <p class="mt-6 text-lg leading-8 text-gray-600">Understanding that each student pilot is unique, our tailored approach ensures personalized guidance throughout your training. From your initial flight with a CFI to advanced training in instrument and commercial, we're committed to your success.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">To become a pilot, you must undergo training which involves flight time where you'll learn how to fly the plane and execute manuevers.  You'll also need to complete ground training where you'll study weather, regulations, aerodynamics and more.  Pilots first start out with their private pilot certificate and then move on to more advanced ratings and certifications depending on your goals.</p>
+    <p class="my-6 text-lg leading-8 text-gray-600">After completing training, you'll need to complete your exams to become a certificated pilot.  There are three main exams you'll need to satisfactorily complete:  The medical exam, the written test, and the practical exam.  When you fly at Blue Skies Above, you'll get one on one mentorship with one of our CFIs (certified flight instructor) that will guide you through every step of the way.  Start today and let's start flying!</p>
+    <%= link_to "Get Started", enroll_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
   </div>
   <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
     <div>
       <dt class="font-semibold text-gray-900">Private Pilot Certificate</dt>
       <dd class="mt-1 text-gray-600">All pilot get their private pilot certificate as their first certificate.  A private pilot certificate allows you to be pilot in command of an aircraft and fly passengers.  Learn more about our initial Private Pilot Instruction.</dd>
       <div class="mt-6">
-        <%= link_to "Private Pilot", ppl_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Private Pilot", ppl_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">Instrument Rating</dt>
       <dd class="mt-1 text-gray-600">Once you have your private license, the next step is to get your Instrument Rating. An instrument rating gives you the skills needed to fly in less than ideal weather conditions.  Check out what that rating means here.</dd>
       <div class="mt-6">
-        <%= link_to "Instrument Rating", ifr_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Instrument Rating", ifr_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">Commercial Pilot Certificate</dt>
       <dd class="mt-1 text-gray-600">Interested in a career in aviation? Look no further than our Commercial Pilot.  Holding a commercial pilot certificate allows for you to fly for compensation and hire.</dd>
       <div class="mt-6 lg:mt-[1.5rem]"> <%# added mt for spacing %>
-        <%= link_to "Commercial Pilot", cpl_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "Commercial Pilot", cpl_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">CFI</dt>
       <dd class="mt-1 text-gray-600">Now that you're a skilled and proficient pilot, teach the next generation of pilots and gain experience. Learn more about our Certified Flight Instructor (CFI) course here.</dd>
       <div class="mt-6">
-        <%= link_to "CFI Training", cfi_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "CFI Training", cfi_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <div>
       <dt class="font-semibold text-gray-900">CFII</dt>
       <dd class="mt-1 text-gray-600">Guiding others to obtain their Instrument Panel Rating is a challenge, but a rewarding one at that. Become CFII certified with Blue Skies Above.</dd>
       <div class="mt-6 lg:mt-[3.2rem]"> <%# added mt for spacing %>
-        <%= link_to "CFII Training", cfii_path, data: { turbo: false }, class: "inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
+        <%= link_to "CFII Training", cfii_path, data: { turbo: false }, class: "uppercase inline-block rounded-md border border-transparent bg-sky-600 px-3 py-1 font-medium text-white hover:bg-sky-700 hover:scale-105 duration-300" %>
       </div>
     </div>
     <%# 6th course placeholder
@@ -79,6 +82,6 @@
 </div>
 
 
-
+<%= render "shared/cta_book"%>
 <%= render "shared/cta_were_experts" %>
 <%= render "shared/footer"%>
