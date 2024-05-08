@@ -47,7 +47,7 @@ class MessagesController < ApplicationController
       if @message.save #&& (success || checkbox_success)
         # Clear the 'page' session variable when it's no longer needed
         session[:page] = nil
-        MessageConfirmationMailer.message_confirmation_email(@message).deliver_later
+        #MessageConfirmationMailer.message_confirmation_email(@message).deliver_later
         format.html { redirect_to contact_confirmation_path, notice: @message.body }
         #format.json { render :show, status: :created, location: @message }
       else
