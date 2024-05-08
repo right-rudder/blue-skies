@@ -30,7 +30,7 @@ class EnrollmentsController < ApplicationController
 
     respond_to do |format|
       if @enrollment.save
-        EnrollmentMailer.enrollment_email(@enrollment).deliver_later
+        #EnrollmentMailer.enrollment_email(@enrollment).deliver_later
         format.html { redirect_to enroll_confirmation_path, notice: @enrollment.first_name }
         #format.json { render :show, status: :created, location: @enrollment }
       else

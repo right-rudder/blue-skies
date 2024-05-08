@@ -31,7 +31,7 @@ class BookDownloadsController < ApplicationController
 
     respond_to do |format|
       if @book_download.save
-        BookDownloadsMailer.book_downloads(@book_download).deliver_later
+        #BookDownloadsMailer.book_downloads(@book_download).deliver_later
         format.html { redirect_to book_download_confirmation_path, notice: @book_download.name }
         #format.json { render :show, status: :created, location: @book_download }
       else
