@@ -159,4 +159,5 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography"),
   ],
+  safelist: ["grid-cols-4"],
 };
