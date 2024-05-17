@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   # Static Pages
   get 'pilot-training-programs-and-courses', to: 'pages#pilot_programs', as: :pilot_programs
   get 'private-pilot-certificate-ppl', to: 'pages#private_pilot', as: :ppl
+  # get 'private-pilot-certificate-ppl-package', to: 'pages#private_pilot_package', as: :ppl_package
   get 'instrument-rating-ifr', to: 'pages#instrument_rating', as: :ifr
   get 'commercial-pilot-certificate-cpl', to: 'pages#commercial_pilot', as: :cpl
   get 'certified-flight-instructor-cfi', to: 'pages#cfi', as: :cfi

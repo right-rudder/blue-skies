@@ -79,4 +79,10 @@ class PagesController < ApplicationController
 
   def careers
   end
+
+  def why_bsa
+  end
+
+  # def private_pilot_package
+  # end
 end

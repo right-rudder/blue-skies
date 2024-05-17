@@ -1,0 +1,206 @@
+<%# Head / Meta Data %>
+<% title("Why Blue Skies Above? | Blue Skies Above") %>
+<% meta_description("Explore the path to a Private Pilot License (PPL), from the flight fitness exam to the aviation knowledge test. Discover the criteria and steps toward becoming a certified pilot.") %>
+<% meta_keywords("cessna 172 pilot training, Auburn aviation education, Columbus flight lessons, Opelika aviation theory, pilot program, pilot syllabus Alabama, recreational flying alabama, aviation certification alabama, piloting skills Lanett, aviation journey start now today") %>
+<%# og_image(image_url("meta_pic_rrm.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
+
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+
+<header class="w-full bg-cessna-airport bg-cover bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center relative">
+  <div class="px-5 py-24 lg:py-10 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Why Blue Skies Above?</h1>
+      <div class="flex flex-row lg:flex-row items-center mt-5">
+        <%= link_to "Visit School", visit_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
+        <%= link_to discovery_flight_path do %>
+          <div class="ml-5 flex group items-center font-bold">
+            <div class="mr-3">Discovery Flight</div>
+            <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+          </div>
+        <%end%>
+      </div>
+  </div>
+</header>
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-base font-semibold leading-7 text-sky-600">Exceptional Flight Training</p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The Flight Training Experts</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">As the only flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.</p>
+  </div>
+</div>
+
+<section class="bg-gradient-to-r from-sky-500 to-sky-800 text-white py-10">
+
+  <div class="flex flex-col lg:flex-row">
+    <div class="lg:w-1/2 flex flex-col items-center justify-center">
+      <p class="text-5xl italic text-center font-semibold pb-10 lg:pb-0">"Blue Skies Await. Don't Wait"</p>
+      <p class="text-3xl text-center pt-10">Professional Flight Instruction</p>
+    </div>
+    <div class="lg:w-1/2 flex flex-col justify-center">
+      <h2 class="font-semibold text-2xl font-header uppercase text-center pb-10 px-5">Knowledgeable Experienced Flight Instructors</h2>
+      <p class="px-10">Our team of highly knowledgeable and experienced flight instructors places an emphasis on safety and professional while making lessons enjoyable and fun. We aim to ensure that you not only excel as a pilot but also prioritize safety in every aspect of your flying.</p>
+      <p class="px-10 pt-5">Our instructors are seasoned aviation professionals dedicated to your success, bringing a wealth of expertise and a commitment to helping you become the best and safest pilot possible.</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col lg:flex-row mt-10 mx-10 lg:mx-40 gap-5" x-data>
+    <div class="lg:w-1/3 lg:hover:scale-105 shadow-2xl transition-all duration-300 rounded-tl-3xl rounded-br-3xl border-4 border-white flex flex-col items-center">
+      <p class="py-3">  
+        <div class="flex flex-row font-bold text-5xl" x-data="{ current: 0, target: 10000, time: 1000}" x-intersect.once="() => {
+          start = current; 
+          const interval = Math.max(time / (target - start), 5); 
+          const step = (target - start) /  (time / interval);  
+          const handle = setInterval(() => {
+              if(current < target) 
+                  current += step
+              else {
+                  clearInterval(handle);
+                  current = target
+              }   
+              }, interval)
+          }">
+          <div class="card"x-text="Math.round(current).toLocaleString()"></div>+
+        </div>
+      </p>
+      <p class="pb-5">Hours of combined experience</p>
+    </div>
+    <div class="lg:w-1/3 lg:hover:scale-105 shadow-2xl transition-all duration-300 rounded-tl-3xl rounded-br-3xl border-4 border-white flex flex-col items-center">
+      <p class="py-3">
+        <div class="flex flex-row font-bold text-5xl" x-data="{ current: 0, target: 95, time: 2000}" x-intersect.once="() => {
+          start = current; 
+          const interval = Math.max(time / (target - start), 5); 
+          const step = (target - start) /  (time / interval);  
+          const handle = setInterval(() => {
+              if(current < target) 
+                  current += step
+              else {
+                  clearInterval(handle);
+                  current = target
+              }   
+              }, interval)
+          }">
+          <div class="card"x-text="Math.round(current)"></div>%
+        </div>
+      </p>
+      <p class="pb-5">Checkride pass rate</p>
+    </div>
+    <div class="lg:w-1/3 lg:hover:scale-105 shadow-2xl transition-all duration-300 rounded-tl-3xl rounded-br-3xl border-4 border-white flex flex-col items-center">
+      <p class="py-3">
+        <div class="flex flex-row font-bold text-5xl" x-data="{ current: 0, target: 100, time: 3000}" x-intersect.once="() => {
+          start = current; 
+          const interval = Math.max(time / (target - start), 5); 
+          const step = (target - start) /  (time / interval);  
+          const handle = setInterval(() => {
+              if(current < target) 
+                  current += step
+              else {
+                  clearInterval(handle);
+                  current = target
+              }   
+              }, interval)
+          }">
+          <div class="card"x-text="Math.round(current)"></div>+
+        </div>
+      </p>
+      <p class="pb-5">Students graduated from Blue Skies Above</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-slate-100 flex flex-col items-center px-5 py-20">
+  <h3 class="font-header uppercase text-4xl lg:text-5xl font-semibold pb-10 text-center">Why choose Blue Skies Above?</h3>
+  
+  <div class="grid grid-cols-1 lg:grid-cols-4 max-w-5xl gap-10">
+
+    <div class="flex flex-row lg:col-span-2">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-location-crosshairs text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Convenient Location</h4>
+        <p>Just 20 minutes from Opelika, 30 minutes from Auburn, and less than an hour from Columbus. Not that far!</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-hourglass-half text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Time and Money Saver</h4>
+        <p>Closer to Opelika and Auburn than flight schools in Alexander City, LaGrange, Columbus, or Montgomery. Save time, save gas, and enjoy your training more..</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-plane-departure text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Quiet and Efficient Airport</h4>
+        <p>Quiet airport with low traffic and no control tower. Simple ramp and short taxi times mean more flying, less waiting, and cost savings, making for a more enjoyable experience.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-tachograph-digital text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Advanced Avionics</h4>
+        <p>Upgraded, advanced avionics equipment with digital displays and partial glass cockpit. Safer, better, and more enjoyable, especially for IR training. Better value for money.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-jet-fighter-up text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Modern Fleet</h4>
+        <p>Some of the newest independent flight training aircraft in the area, adding value to your training experience.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-gauge-simple-high text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Enhanced Performance</h4>
+        <p>Upgraded 180hp engines provide better climb rates and quicker cruise speeds, getting to the training area faster, saving time and money.</p>
+      </div>
+    </div>
+
+    <div class="hidden lg:block"></div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
+      <div class="pr-5 flex-1 flex justify-center">
+        <i class="fa-solid fa-certificate text-5xl text-sky-500"></i>
+      </div>
+      <div class="flex flex-col flex-[4_4_0]">
+        <h4 class="font-header uppercase font-semibold text-xl">Onsite CFI Spin Endorsements</h4>
+        <p>Spin-legal 172s allow for CFI spin endorsements onsite, enhancing the value of your training without needing external arrangements.</p>
+      </div>
+    </div>
+
+    <div class="hidden lg:block"></div>
+    
+  </div>
+</section>
+
+
+
+<!-- Image section -->
+<div class="xl:mx-auto xl:max-w-7xl xl:px-8 py-10">
+  <%= image_tag "blue-skies-student-with-instructor.webp", alt: "Blue Skies Above student pilot passing private pilot checkride at Lanett Municipal Airport", class: "aspect-[5/2] w-full object-cover xl:rounded-3xl"%>
+</div>
+
+
+
+<%= render "shared/testimonials"%>
+<%= render "shared/cta_3_steps" %>
+<%= render "shared/cta_were_experts" %>
+<%= render "shared/footer"%>
