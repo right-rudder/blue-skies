@@ -35,12 +35,13 @@
 
   <div class="flex flex-col lg:flex-row">
     <div class="lg:w-1/2 flex flex-col items-center justify-center">
-      <p class="text-4xl italic text-center font-semibold pb-10 lg:pb-0">"Safety in aviation through education"</p>
+      <p class="text-5xl italic text-center font-semibold pb-10 lg:pb-0">"Blue Skies Await. Don't Wait"</p>
+      <p class="text-3xl text-center pt-10">Professional Flight Instruction</p>
     </div>
     <div class="lg:w-1/2 flex flex-col justify-center">
       <h2 class="font-semibold text-2xl font-header uppercase text-center pb-10 px-5">Knowledgeable Experienced Flight Instructors</h2>
-      <p class="px-10">Our team prioritizes safety to ensure you become not only the best pilot but also the safest pilot possible.</p>
-      <p class="px-10 pt-5">Our instructors are seasoned aviation professionals actively engaged in airline, corporate, and charter operations.</p>
+      <p class="px-10">Our team of highly knowledgeable and experienced flight instructors places an emphasis on safety and professional while making lessons enjoyable and fun. We aim to ensure that you not only excel as a pilot but also prioritize safety in every aspect of your flying.</p>
+      <p class="px-10 pt-5">Our instructors are seasoned aviation professionals dedicated to your success, bringing a wealth of expertise and a commitment to helping you become the best and safest pilot possible.</p>
     </div>
   </div>
 
@@ -67,7 +68,7 @@
     </div>
     <div class="lg:w-1/3 lg:hover:scale-105 shadow-2xl transition-all duration-300 rounded-tl-3xl rounded-br-3xl border-4 border-white flex flex-col items-center">
       <p class="py-3">
-        <div class="flex flex-row font-bold text-5xl" x-data="{ current: 0, target: 93, time: 2000}" x-intersect.once="() => {
+        <div class="flex flex-row font-bold text-5xl" x-data="{ current: 0, target: 95, time: 2000}" x-intersect.once="() => {
           start = current; 
           const interval = Math.max(time / (target - start), 5); 
           const step = (target - start) /  (time / interval);  
@@ -111,9 +112,9 @@
 <section class="bg-slate-100 flex flex-col items-center px-5 py-20">
   <h3 class="font-header uppercase text-4xl lg:text-5xl font-semibold pb-10 text-center">Why choose Blue Skies Above?</h3>
   
-  <div class="grid grid-cols-1 lg:grid-cols-2 max-w-5xl gap-10">
+  <div class="grid grid-cols-1 lg:grid-cols-4 max-w-5xl gap-10">
 
-    <div class="flex flex-row">
+    <div class="flex flex-row lg:col-span-2">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-location-crosshairs text-5xl text-sky-500"></i>
       </div>
@@ -123,7 +124,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-hourglass-half text-5xl text-sky-500"></i>
       </div>
@@ -133,7 +134,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-plane-departure text-5xl text-sky-500"></i>
       </div>
@@ -143,7 +144,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-tachograph-digital text-5xl text-sky-500"></i>
       </div>
@@ -153,7 +154,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-jet-fighter-up text-5xl text-sky-500"></i>
       </div>
@@ -163,7 +164,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-gauge-simple-high text-5xl text-sky-500"></i>
       </div>
@@ -173,7 +174,9 @@
       </div>
     </div>
 
-    <div class="flex flex-row pt-10 lg:pt-0">
+    <div class="hidden lg:block"></div>
+
+    <div class="flex flex-row lg:col-span-2 pt-10 lg:pt-0">
       <div class="pr-5 flex-1 flex justify-center">
         <i class="fa-solid fa-certificate text-5xl text-sky-500"></i>
       </div>
@@ -182,6 +185,9 @@
         <p>Spin-legal 172s allow for CFI spin endorsements onsite, enhancing the value of your training without needing external arrangements.</p>
       </div>
     </div>
+
+    <div class="hidden lg:block"></div>
+    
   </div>
 </section>
 
