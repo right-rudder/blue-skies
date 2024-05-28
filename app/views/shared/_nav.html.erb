@@ -8,14 +8,14 @@
         about : false }"
       >
         <%# Links %>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to <br>Flying?</button>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training <br>Programs</button>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About <br>Us</button>
-        
-        
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to <br>
+          Flying?</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training <br>
+          Programs</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About <br>
+          Us</button>
         <%# Popup Menus %>
         <div class="relative">
-          
           <%# New 2 Flying Menu %>
           <div class="absolute -left-[32rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="new2flying"
@@ -61,8 +61,6 @@
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:text-sky-500">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                   </svg>
-
-
                 </div>
                 <div class="flex-auto">
                   <%= link_to discovery_flight_path, class: "block font-semibold text-gray-900" do%>
@@ -88,7 +86,6 @@
               <% end  %>
             </div>
           </div>
-
           <%# Training Programs Menu %>
           <div class="absolute -left-[29rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="trainProgram"
@@ -177,7 +174,6 @@
               <% end  %>
             </div>
           </div>
-
           <%# About Menu %>
           <div class="absolute -left-[27rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="about"
@@ -200,6 +196,18 @@
                     <span class="absolute inset-0"></span>
                   <% end %>
                   <p class="mt-1 text-gray-600">Meet the team at Blue Skies Above</p>
+                </div>
+              </div>
+              <div class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="w-6 h-6 group-hover:fill-sky-500"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg>
+                </div>
+                <div class="flex-auto">
+                  <%= link_to our_fleet_path, data: {turbo: false}, class: "block font-semibold text-gray-900" do%>
+                    Our Fleet
+                    <span class="absolute inset-0"></span>
+                  <% end %>
+                  <p class="mt-1 text-gray-600">Meet the fleet at Blue Skies Above</p>
                 </div>
               </div>
               <div class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
@@ -255,52 +263,44 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
-
-
     <%# CENTER LOGO %>
     <%= link_to root_path, data: { turbo: false }, class: "-m-1.5 hidden lg:block " do%>
       <span class="sr-only">Blue Skies Above</span>
       <%# desktop logo %>
       <%#= image_tag "blue-skies-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
       <%= image_tag "blue-skies-reverse-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-110", alt: "Blue Skies Above logo"%>
-      
     <%end%>
     <div class="flex flex-row-reverse w-full lg:hidden justify-between">
       <%# mobile logo %>
       <div class=""></div>
       <%= image_tag "blue-skies-reverse-logo.webp", class: "h-20 -ml-8", alt: "Blue Skies Above logo"%>
       <%# HAMBURGER BUTTON %>
-       <div class="flex lg:hidden">
+      <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
           <span class="sr-only">Open main menu</span>
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
-      </div>   
-    </div>  
-
-    
-
+      </div>
+    </div>
     <%# RIGHT LINKS %>
     <div class="hidden lg:flex flex-1 justify-between lg:gap-x-12">
       <%= link_to visit_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        VISIT <br>SCHOOL
+        VISIT <br>
+        SCHOOL
       <% end %>
       <%= link_to discovery_flight_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        DISCOVERY <br>FLIGHT
+        DISCOVERY <br>
+        FLIGHT
       <% end %>
       <%= link_to contact_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        CONTACT <br>US
+        CONTACT <br>
+        US
       <% end %>
     </div>
   </nav>
-
-
   <%= render "shared/nav_mobile"%>
 </header>

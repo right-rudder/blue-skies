@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'should-i-become-a-pilot', to: 'pages#why_pilot', as: :why_pilot
   get 'why-choose-blue-skies-above', to: 'pages#why_bsa', as: :why_bsa
   get 'about-us', to: 'pages#about_us', as: :about_us
+  get 'our-fleet', to: 'pages#our_fleet', as: :our_fleet
   get 'privacy-policy-terms-of-service', to: 'pages#tos', as: :tos
 
   post 'uploader/image', to: 'uploader#image' #add upload image to posts 
