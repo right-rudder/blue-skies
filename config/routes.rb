@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'why-choose-blue-skies-above', to: 'pages#why_bsa', as: :why_bsa
   get 'about-us', to: 'pages#about_us', as: :about_us
   get 'privacy-policy-terms-of-service', to: 'pages#tos', as: :tos
+  get 'pricing', to: 'pages#pricing', as: :pricing
 
   post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   get 'blog', to: 'posts#index', as: :blog

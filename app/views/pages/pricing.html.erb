@@ -1,0 +1,282 @@
+<%# Head / Meta Data %>
+<% title("Pricing") %>
+<% meta_description("Pricing page") %>
+<% meta_keywords("fixed wing CFI Columbus Georgia, airplane CFI Auburn, CFI Opelika, CFII in Lafayette") %>
+<%# og_image(image_url("meta_pic_rrm.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+<section class="bg-white">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <h2 class="mb-6 text-4xl mx-auto w-fit tracking-tight font-bold text-slate-900 ">Pricing</h2>
+    <div class="text-slate-900 grid grid-cols-2 text-xl mx-auto border max-w-3xl border-custom-500 *:border *:border-custom-500 *:p-3">
+      <p class="font-bold flex items-center">Fuel surcharge</p>
+      <div class="flex gap-2 items-center">
+        <p class="line-through text-slate-500">$15/hour</p>
+        <p class="font-bold text-custom-700 text-3xl">FREE</p>
+      </div>
+      <p class="font-bold flex items-center">Headset Rental</p>
+      <div class="flex gap-2 items-center">
+        <p class="line-through text-slate-500">$10/hour</p>
+        <p class="font-bold text-custom-700 text-3xl">FREE</p>
+      </div>
+      <p class="font-bold flex items-center">180HP Upgrade</p>
+      <div class="flex gap-2 items-center">
+        <p class="line-through text-slate-500">$20/hour</p>
+        <p class="font-bold text-custom-700 text-3xl">FREE</p>
+      </div>
+      <p class="font-bold flex items-center">Instructor Fee</p>
+      <div class="flex flex-col">
+        <p>$65/hour for private/instrument</p>
+        <p>$70/hour for commercial/CFI</p>
+      </div>
+      <p class="font-bold flex items-center">Snacks and drinks</p>
+      <p class="">Included</p>
+    </div>
+  </div>
+</section>
+<section class="bg-gradient-to-br from-sky-200 to-gray-100 py-24 sm:py-32 ">
+  <div class="mx-auto px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-sky-600">Pricing</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Learn More About Our Training Packages</p>
+    </div>
+    <div class="grid 2xl:grid-cols-2">
+      <div class="isolate mx-auto mt-10 flex flex-col items-center max-w-md gap-8 md:max-w-2xl lg:max-w-4xl xl:mx-0 xl:max-w-none">
+        <div class="bg-white rounded-3xl lg:w-[700px] p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col lg:flex-row justify-center lg:gap-10">
+          <div class="lg:w-1/2">
+            <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Private Pilot Certificate</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-600">FAA Minimums</p>
+            <p class="mt-4 text-sm leading-6 text-gray-600">*13 weeks to complete (approximately)</p>
+            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$11,400</span>
+            </p>
+            <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
+            <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+          </div>
+          <div class="lg:w-1/2">
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                3 lessons per week
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                40 hours of flight time
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                30 hours of flight instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                30 hours of ground instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Ground school kit included
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Pay up front or incrementally
+              </li>
+            </ul>
+            <p class="pt-10 italic text-gray-500">Note: Price is based on FAA minimums.  On average, student pilots require 65 hours to complete their private certificate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isolate mx-auto mt-10 flex flex-col items-center max-w-md gap-8 md:max-w-2xl lg:max-w-4xl xl:mx-0 xl:max-w-none">
+        <div class="bg-white rounded-3xl lg:w-[700px] p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col lg:flex-row justify-center lg:gap-10">
+          <div class="lg:w-1/2">
+            <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Instrument Rating</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-600">Take your pilot skills to the next level with Instrument Rating</p>
+            <p class="mt-4 text-sm leading-6 text-gray-600">*27 weeks to complete (approximately)</p>
+            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$12,050</span>
+            </p>
+            <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
+            <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+          </div>
+          <div class="lg:w-1/2">
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                3 lessons per week
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                40 hours of flight time
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                40 hours of flight instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                30 hours of ground instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Ground school kit included
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Pay up front or incrementally
+              </li>
+            </ul>
+            <p class="pt-10 italic text-gray-500">Note: FAA requires 50 flight hours of cross country time to meet requirements.  Additional time building may be required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isolate mx-auto mt-10 flex flex-col items-center max-w-md gap-8 md:max-w-2xl lg:max-w-4xl xl:mx-0 xl:max-w-none">
+        <div class="bg-white rounded-3xl lg:w-[700px] p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col lg:flex-row justify-center lg:gap-10">
+          <div class="lg:w-1/2">
+            <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Commercial Pilot Certificate</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-600">Make flying your career with Commercial Pilot Certificate</p>
+            <p class="mt-4 text-sm leading-6 text-gray-600">*35 weeks to complete (approximately)</p>
+            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$25,150</span>
+            </p>
+            <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
+            <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+          </div>
+          <div class="lg:w-1/2">
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                3 lessons per week
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                88 hours of syllabus flights
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                17 hours of added time-building
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                55 hours of flight instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                30 hours of ground instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Ground school kit included
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Pay up front or incrementally
+              </li>
+            </ul>
+            <p class="pt-10 italic text-gray-500">Note: FAA requires 50 flight hours of cross country time to meet requirements.  Additional time building may be required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isolate w-full mx-auto mt-10 flex flex-col items-center max-w-md gap-8 md:max-w-2xl lg:max-w-4xl xl:mx-0 xl:max-w-none">
+        <div class="2xl:items-center w-full 2xl:h-full bg-white rounded-3xl lg:w-[700px] p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col lg:flex-row justify-center lg:gap-10">
+          <div class="lg:w-1/2">
+            <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Certified Flight Instructor</h3>
+            <p class="mt-4 text-sm leading-6 text-gray-600">FAA Minimums</p>
+            <p class="mt-4 text-sm leading-6 text-gray-600">*5 weeks to complete (approximately)</p>
+            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$9,330</span>
+            </p>
+            <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
+            <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+          </div>
+          <div class="lg:w-1/2">
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                3 lessons per week
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                25 hours of flight time
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                22 hours of flight instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                50 hours of ground instruction
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Ground school kit included
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                Pay up front or incrementally
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= render "shared/cta_were_experts"%>
+<%= render "shared/footer"%>
