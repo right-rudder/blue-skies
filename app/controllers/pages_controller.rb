@@ -85,4 +85,7 @@ class PagesController < ApplicationController
 
   # def private_pilot_package
   # end
+
+  def financing
+  end
 end

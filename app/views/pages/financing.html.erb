@@ -1,0 +1,68 @@
+<%# Head / Meta Data %>
+<% title("CFI - Certified Flight Instructor | Blue Skies Above") %>
+<% meta_description("Start working towards becoming a Certified Flight Instructor (CFI). Continue the tradition of instruction by guiding the next class of pilots in Lanett, AL.") %>
+<% meta_keywords("Certified Flight Instructor (CFI) Opelika, CFI certification requirements Columbus, Flight instructor training Auburn University, CFI written exam 7A3, Aviation teaching methods, Flight instruction techniques, PTS practical test standards cfi
+") %>
+<%# og_image(image_url("meta_pic_rrm.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+<section class="bg-gradient-to-b from-slate-50 to-sky-200 flex flex-col items-center">
+  <div class="max-w-4xl flex flex-col py-10 px-5">
+    <h3 class="text-5xl font-header uppercase font-semibold">Financing Your Flight Training</h3>
+    <h4 class="text-2xl text-gray-800 py-5">Affordable Options to Kickstart Your Aviation Career</h4>
+    <p class="text-lg text-gray-700">Dreaming of a career in aviation but concerned about the cost? At Blue Skies Above, we offer a variety of financing options to help make your pilot training more affordable. Our goal is to provide flexible solutions that fit your financial situation, ensuring you can focus on achieving your aviation dreams without the added stress of financial constraints.</p>
+    <p class="text-lg text-gray-700 pt-10">
+      Whether you're looking for traditional student loans, personal loans, or specialized aviation financing programs, we have partnerships with several financial institutions to offer competitive rates and terms. We also provide guidance and support through the application process, making it easier for you to secure the funds needed for your flight training.
+    </p>
+    <p class="text-lg text-gray-700 pt-10">
+      Additionally, we offer scholarships and grants for eligible students. Our financial aid advisors are here to help you explore all available options, ensuring you can take the first step towards your career in aviation with confidence. Get in touch with us today to learn more about our financing options and start your journey to becoming a pilot.
+    </p>
+  </div>
+</section>
+<section class="bg-white py-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-5xl font-header uppercase font-semibold text-center">Our Partnerships</h3>
+    <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <!-- Meritize Card -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <%= image_tag "meritize-logo.webp", class:"h-80 object-contain bg-gray-100" %>
+        <div class="p-6 flex flex-col flex-grow">
+          <h4 class="text-2xl font-semibold mb-2">Meritize</h4>
+          <p class="text-gray-700 mb-4 flex-grow">Meritize provides innovative financing solutions for students and professionals pursuing training in high-demand fields. Explore financing options specifically designed for aspiring pilots.</p>
+          <a href="https://www.meritize.com" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
+        </div>
+      </div>
+      <!-- FAA Card -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <%= image_tag "faa-logo.svg", class:"h-80 w-full object-contain bg-gray-100" %>
+        <div class="p-6 flex flex-col flex-grow">
+          <h4 class="text-2xl font-semibold mb-2">FAA</h4>
+          <p class="text-gray-700 mb-4 flex-grow">The Federal Aviation Administration sets the standards for pilot training and certification. Our partnership ensures our programs meet the highest industry standards.</p>
+          <a href="https://www.faa.gov" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
+        </div>
+      </div>
+      <!-- AOPA Card -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <%= image_tag "aopa-logo.png", class:"h-80 w-full object-contain bg-gray-100" %>
+        <div class="p-6 flex flex-col flex-grow">
+          <h4 class="text-2xl font-semibold mb-2">AOPA</h4>
+          <p class="text-gray-700 mb-4 flex-grow">The Aircraft Owners and Pilots Association advocates for the interests of general aviation pilots. Through our partnership, we offer resources and support for your aviation journey.</p>
+          <a href="https://www.aopa.org" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
+        </div>
+      </div>
+      <!-- EAA Card -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <%= image_tag "eaa-logo.webp", class:"h-80 w-full object-contain bg-gray-100" %>
+        <div class="p-6 flex flex-col flex-grow">
+          <h4 class="text-2xl font-semibold mb-2">EAA</h4>
+          <p class="text-gray-700 mb-4 flex-grow">The Experimental Aircraft Association promotes the spirit of aviation through events, education, and community. Our collaboration opens doors to unique opportunities in aviation.</p>
+          <a href="https://www.eaa.org" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= render "shared/cta_3_steps" %>
+<%= render "shared/cta_were_experts" %>
+<%= render "shared/footer"%>
