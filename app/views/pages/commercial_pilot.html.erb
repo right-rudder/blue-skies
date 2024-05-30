@@ -5,35 +5,31 @@
 ") %>
 <%# og_image(image_url("meta_pic_rrm.webp")) %>
 <%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
-
 <%= render "shared/phone_banner"%>
 <%= render "shared/nav"%>
-
 <header class="w-full bg-commercial bg-cover bg-right lg:bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
   <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
-      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Commercial Pilot Certificate</h1>
-      <h2 class="mt-6 text-xl leading-8 text-gray-200">Start your pilot career with your commercial pilot certificate</h2>
-      <div class="flex flex-row lg:flex-row items-center mt-5">
-        <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
-        <%= link_to visit_path do %>
-          <div class="ml-5 flex group items-center text-white">
-            <div class="mr-3">Visit School</div>
-            <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
-          </div>
-        <%end%>
-      </div>
+    <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Commercial Pilot Certificate</h1>
+    <h2 class="mt-6 text-xl leading-8 text-gray-200">Start your pilot career with your commercial pilot certificate</h2>
+    <div class="flex flex-row lg:flex-row items-center mt-5">
+      <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
+      <%= link_to visit_path do %>
+        <div class="ml-5 flex group items-center text-white">
+          <div class="mr-3">Visit School</div>
+          <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+        </div>
+      <%end%>
+    </div>
   </div>
 </header>
-
 <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
     <p class="text-base font-semibold leading-7 text-sky-600">Become a commercial pilot</p>
     <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Commercial Pilot Certificate</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">A commercial pilot certificate allows you to <br class="hidden md:block">fly for compensation or hire.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">A commercial pilot certificate allows you to <br class="hidden md:block">
+      fly for compensation or hire.</p>
   </div>
 </div>
-
-
 <div class="relative bg-white">
   <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
     <div class="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
@@ -51,7 +47,7 @@
           <p class="pt-10">When you start commercial pilot training, you'll get to learn the regulations more thoroughly and understand the limitations and requirements for different parts of the FAR.  You'll also learn additional manuevers and learn how to fly more precise.</p>
           <ul role="list" class="mt-8 space-y-8 text-gray-600">
             <li class="flex gap-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
               <span><strong class="font-semibold text-gray-900">Complete Your Instrument Rating</strong> While not technically a requirement, not having an instrument rating when completing you commercial pilot certificate limits you in the type of flying you can do for compensation.</span>
             </li>
             <li class="flex gap-x-3">
@@ -77,7 +73,6 @@
     </div>
   </div>
 </div>
-
 <!--
   This example requires some changes to your config:
   
@@ -116,9 +111,7 @@
         <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
           <figure>
             <div class="aspect-h-7 aspect-w-12 lg:aspect-none">
-              
               <%= image_tag "blue-skies-commercial-pilot-over-1000-hours.webp", alt: "Commercial Pilot Training Columbus Georgia Atlanta - Blue Skies Above Professional Flight Instruction", class: "rounded-lg object-cover object-center shadow-lg"%>
-              
             </div>
             <figcaption class="mt-3 flex text-sm text-gray-500">
               <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -143,7 +136,6 @@
           <p><strong class="font-semibold text-gray-900">Charter Pilot:</strong> Explore opportunities as a charter pilot, providing personalized and on demand flight services. Whether it's transporting business executives, leisure travelers, or cargo, charter pilots enjoy a dynamic work environment. At Blue Skies Above, we can guide you on how to transition into this exciting sector of aviation.</p>
           <p><strong class="font-semibold text-gray-900">Agricultural Pilot:</strong> Agricultural pilots, or Ag pilots shortened, is a very enjoyable career where you fly close to the ground and apply chemicals like fertilizer and insecticide on farm crops.</p>
           <p><strong class="font-semibold text-gray-900">Missionary Pilot:</strong> Combine your passion for flying with a sense of purpose by becoming a missionary pilot. Serve remote communities by providing transportation for humanitarian aid, medical supplies, or personnel. It's a fulfilling way to make a positive impact through aviation.</p>
-
           <%# 
           <ul role="list">
             <li>Quis elit egestas venenatis mattis dignissim.</li>
@@ -159,13 +151,10 @@
     </div>
   </div>
 </div>
-
-
 <!-- Image section -->
 <div class="xl:mx-auto xl:max-w-7xl px-3 xl:px-8 py-10">
   <%= image_tag "blue-skies-team-of-cfis-and-commercial-pilots.webp", alt: "Blue Skies Above team at NAFI summit with CFIs and commercial pilots", class: "lg:aspect-[5/3] w-full object-cover rounded-lg xl:rounded-3xl"%>
 </div>
-
 <div class="bg-gradient-to-br from-sky-200 to-gray-100 py-24 sm:py-32 all">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
@@ -174,12 +163,11 @@
     </div>
     <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Choose the best package that fits your aviation goals.</p>
     <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-2">
-
       <div class="max-w-sm justify-self-center bg-white rounded-3xl p-8 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100">
         <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Commercial Pilot Certificate</h3>
         <p class="mt-4 text-sm leading-6 text-gray-600">Make flying your career with Commercial Pilot Certificate</p>
         <p class="mt-4 text-sm leading-6 text-gray-600">*35 weeks to complete (approximately)</p>
-<p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
+        <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
         <p class="mt-6 flex items-baseline gap-x-1">
           <!-- Price, update based on frequency toggle state -->
           <span class="text-4xl font-bold tracking-tight text-gray-900">$25,150</span>
@@ -281,13 +269,16 @@
           </li>
         </ul>
       </div>
-
     </div>
   </div>
+  <div class="flex flex-col items-center pt-32">
+    <span>
+      You can complete your training and pay by the hour instead of through a package.  To see our hourly rates, please 
+      <%= link_to "click here",  pricing_path, data: {turbo: false}, class: "text-sky-700 hover:underline"%>
+      .
+    </span>
+  </div>
 </div>
-
-
-
 <%= render "shared/cta_were_experts" %>
 <%= render "shared/cta_next_steps" %>
 <%= render "shared/footer"%>
