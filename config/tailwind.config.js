@@ -129,6 +129,7 @@ module.exports = {
         ifr: "url('blue-skies-cessna-in-clouds.webp')",
         "sunset-flight":
           "url('blue-skies-overflying-columbus-during-sunset.webp')",
+        "sunset-dark": "url('blue-skies-fly-sunset-dark.webp')",
         "cessna-ramp": "url('blue-skies-cessna-ramp-bg.webp')",
         "cessna-airport": "url('blue-skies-cessna-in-airport.webp')",
         sunset: "url('blue-skies-sunset-bg-auburn.webp')",

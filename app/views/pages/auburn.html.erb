@@ -1,0 +1,74 @@
+<%# Head / Meta Data %>
+<% title("Pilot Training for Auburn Students | Blue Skies Above") %>
+<% meta_description("Discover the premier flight training options for Auburn University students at Blue Skies Above. Prepare for your Private Pilot License (PPL), Commercial Single Engine Land (CSEL), and Certified Flight Instructor (CFI) ratings with us.") %>
+<% meta_keywords("Auburn Pro Flight program, Auburn pilot training, flight school Auburn, CSEL Auburn, CFI Auburn, Auburn University aviation, pilot certification Auburn, flight training Alabama, Blue Skies Above") %>
+<%# og_image(image_url("meta_pic_auburn.webp")) %>
+<%# twitter_image(image_url("meta_pic_auburn_twitter.webp")) %>
+
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+
+<header class="w-full bg-sunset-dark bg-cover bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center text-white">
+  <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Pilot Training for Auburn Students</h1>
+      <h2 class="mt-6 text-xl leading-8 text-gray-200">Your Path to Becoming a Certified Pilot</h2>
+      <div class="flex flex-row lg:flex-row items-center mt-5">
+        <%= link_to "Visit School", visit_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
+        <%= link_to discovery_flight_path do %>
+          <div class="ml-5 flex group items-center">
+            <div class="mr-3">Discovery Flight</div>
+            <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+          </div>
+        <%end%>
+      </div>
+  </div>
+</header>
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-base font-semibold leading-7 text-sky-600">Welcome Auburn Students</p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Flight Training Programs</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Blue Skies Above proudly serves the Auburn area, providing top-notch flight training for future aviators. Whether you're just starting or advancing your aviation career, we offer comprehensive programs to meet your needs.</p>
+  </div>
+</div>
+
+<div class="relative bg-white">
+  <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
+    <div class="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
+      <div class="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+        <%= image_tag "commercial-checkride-pass-lanett.webp", alt: "Auburn Student", class: "absolute inset-0 h-full w-full bg-gray-50 object-cover"%>
+      </div>
+    </div>
+    <div class="px-6 lg:contents">
+      <div class="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
+        <p class="text-base font-semibold leading-7 text-sky-600">Auburn Flight Training</p>
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Programs We Offer</h1>
+        <p class="mt-6 text-xl leading-8 text-gray-700">Our programs are designed to cater to students at different stages of their flight training journey. Whether you're starting with a Private Pilot License (PPL), advancing to a Commercial Single Engine Land (CSEL) rating, or training to become a Certified Flight Instructor (CFI), we have you covered.</p>
+        <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
+          <ul role="list" class="mt-8 space-y-8 text-gray-600">
+            <li class="flex gap-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+              <span><strong class="font-semibold text-gray-900">Private Pilot License (PPL).</strong> Start your aviation journey with our PPL program, designed to take you from zero experience to a confident pilot in command.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M160-80q-33 0-56.5-23.5T80-160v-480q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v480q0 33-23.5 56.5T800-80H160Zm0-80h640v-480H160v480Zm240-560h160v-80H400v80ZM160-160v-480 480Zm280-200v120h80v-120h120v-80H520v-120h-80v120H320v80h120Z"/></svg>
+              <span><strong class="font-semibold text-gray-900">Commercial Single Engine Land (CSEL).</strong> Advance your skills with our CSEL program, perfect for those looking to pursue a professional aviation career.</span>
+            </li>
+            <li class="flex gap-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M560-80v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v120h-80v-80H520v-200H240v640h240v80H240Zm280-400Zm241 199-19-18 37 37-18-19Z"/></svg>
+              <span><strong class="font-semibold text-gray-900">Certified Flight Instructor (CFI).</strong> Train to become a flight instructor and share your passion for aviation with others.</span>
+            </li>
+          </ul>
+          <p class="mt-8">Blue Skies Above is dedicated to providing you with the best training experience. Our expert instructors, state-of-the-art facilities, and comprehensive curriculum ensure you are well-prepared for your aviation career. Contact us today to learn more about our programs and start your journey with us.</p>
+          <%= button_to "Learn More", contact_path, target: "blank", method: :get, data: { turbo: false }, class: "btn-primary " %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%= render "shared/cta_3_steps" %>
+<%= render "shared/cta_were_experts" %>
+<%= render "shared/footer"%>
