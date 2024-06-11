@@ -86,6 +86,7 @@ class PagesController < ApplicationController
   def spin_endorsement
   end
 
-  # def private_pilot_package
-  # end
+  def pricing
+  end
+
 end
