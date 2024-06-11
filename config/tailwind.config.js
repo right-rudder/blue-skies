@@ -130,6 +130,7 @@ module.exports = {
         "sunset-flight":
           "url('blue-skies-overflying-columbus-during-sunset.webp')",
         "cessna-ramp": "url('blue-skies-cessna-ramp-bg.webp')",
+        "cessna-N5378D": "url('cessna-N5378D.webp')",
         "cessna-airport": "url('blue-skies-cessna-in-airport.webp')",
         sunset: "url('blue-skies-sunset-bg-auburn.webp')",
         checkride: "url('blue-skies-checkride-commercial-pass-opelika.webp')",

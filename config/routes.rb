@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'commercial-pilot-certificate-cpl', to: 'pages#commercial_pilot', as: :cpl
   get 'certified-flight-instructor-cfi', to: 'pages#cfi', as: :cfi
   get 'flight-instructor-instrument-cfii', to: 'pages#cfii', as: :cfii
+  get 'spin-endorsement', to: 'pages#spin_endorsement', as: :spin_endorsement
   get 'should-i-become-a-pilot', to: 'pages#why_pilot', as: :why_pilot
   get 'why-choose-blue-skies-above', to: 'pages#why_bsa', as: :why_bsa
   get 'about-us', to: 'pages#about_us', as: :about_us

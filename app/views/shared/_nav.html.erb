@@ -8,14 +8,14 @@
         about : false }"
       >
         <%# Links %>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to <br>Flying?</button>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training <br>Programs</button>
-        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About <br>Us</button>
-        
-        
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="new2flying = ! new2flying, trainProgram = false, about = false">New to <br>
+          Flying?</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="trainProgram = ! trainProgram, new2flying = false, about = false">Training <br>
+          Programs</button>
+        <button class="text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300" x-on:click="about = ! about, new2flying = false, trainProgram = false">About <br>
+          Us</button>
         <%# Popup Menus %>
         <div class="relative">
-          
           <%# New 2 Flying Menu %>
           <div class="absolute -left-[32rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="new2flying"
@@ -61,8 +61,6 @@
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:text-sky-500">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                   </svg>
-
-
                 </div>
                 <div class="flex-auto">
                   <%= link_to discovery_flight_path, class: "block font-semibold text-gray-900" do%>
@@ -88,7 +86,6 @@
               <% end  %>
             </div>
           </div>
-
           <%# Training Programs Menu %>
           <div class="absolute -left-[29rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="trainProgram"
@@ -161,6 +158,20 @@
                   <p class="mt-1 text-gray-600">Bring student pilots to the next level with an Instrument Rating</p>
                 </div>
               </div>
+              <div class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <%= content_tag :svg, class: "w-6 h-6 group-hover:fill-sky-500" do %>
+                    <%= raw(File.read(Rails.root.join('app', 'assets', 'images', 'airplane-svgrepo-com.svg'))) %>
+                  <% end %>
+                </div>
+                <div class="flex-auto">
+                  <%= link_to spin_endorsement_path, data: { turbo: false }, class: "block font-semibold text-gray-900" do %>
+                    CFI Spin Endorsement
+                    <span class="absolute inset-0"></span>
+                  <% end %>
+                  <p class="mt-1 text-gray-600">Specialize in spin training for CFI candidates</p>
+                </div>
+              </div>
             </div>
             <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               <%= link_to visit_path, data: {turbo: false}, class: "flex group items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100" do%>
@@ -177,7 +188,6 @@
               <% end  %>
             </div>
           </div>
-
           <%# About Menu %>
           <div class="absolute -left-[27rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
           x-show="about"
@@ -255,52 +265,44 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
-
-
     <%# CENTER LOGO %>
     <%= link_to root_path, data: { turbo: false }, class: "-m-1.5 hidden lg:block " do%>
       <span class="sr-only">Blue Skies Above</span>
       <%# desktop logo %>
       <%#= image_tag "blue-skies-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-105 hover:brightness-105", alt: "Blue Skies Above logo"%>
       <%= image_tag "blue-skies-reverse-logo.webp", class: "h-16 xl:h-24 w-auto object-contain duration-300 hover:scale-110", alt: "Blue Skies Above logo"%>
-      
     <%end%>
     <div class="flex flex-row-reverse w-full lg:hidden justify-between">
       <%# mobile logo %>
       <div class=""></div>
       <%= image_tag "blue-skies-reverse-logo.webp", class: "h-20 -ml-8", alt: "Blue Skies Above logo"%>
       <%# HAMBURGER BUTTON %>
-       <div class="flex lg:hidden">
+      <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
           <span class="sr-only">Open main menu</span>
           <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
-      </div>   
-    </div>  
-
-    
-
+      </div>
+    </div>
     <%# RIGHT LINKS %>
     <div class="hidden lg:flex flex-1 justify-between lg:gap-x-12">
       <%= link_to visit_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        VISIT <br>SCHOOL
+        VISIT <br>
+        SCHOOL
       <% end %>
       <%= link_to discovery_flight_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        DISCOVERY <br>FLIGHT
+        DISCOVERY <br>
+        FLIGHT
       <% end %>
       <%= link_to contact_path, data: { turbo: false }, class: "flex w-full justify-end text-base xl:text-2xl tracking-wider uppercase text-white hover:scale-125 duration-300 text-center" do %>
-        CONTACT <br>US
+        CONTACT <br>
+        US
       <% end %>
     </div>
   </nav>
-
-
   <%= render "shared/nav_mobile"%>
 </header>
