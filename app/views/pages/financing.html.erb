@@ -20,46 +20,80 @@
     </p>
   </div>
 </section>
-<section class="bg-white py-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <h3 class="text-5xl font-header uppercase font-semibold text-center">Our Partnerships</h3>
-    <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <!-- Meritize Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-        <%= image_tag "meritize-logo.webp", class:"h-80 object-contain bg-gray-100" %>
-        <div class="p-6 flex flex-col flex-grow">
-          <h4 class="text-2xl font-semibold mb-2">Meritize</h4>
-          <p class="text-gray-700 mb-4 flex-grow">Meritize provides innovative financing solutions for students and professionals pursuing training in high-demand fields. Explore financing options specifically designed for aspiring pilots.</p>
-          <a href="https://www.meritize.com" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
-        </div>
+<section class="flex text-lg flex-col items-center bg-gradient-to-br from-slate-50 to-sky-200">
+  <div class="max-w-7xl px-10 flex flex-col items-center py-10">
+    <div class="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
+      <div>
+        <h2 class="text-5xl font-semibold text-center uppercase">
+          Finance with Flight Training Finance LLC
+        </h2>
+        <h3 class="pt-3 text-2xl text-center">
+          Don’t let finances be the limiting factor
+        </h3>
       </div>
-      <!-- FAA Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-        <%= image_tag "faa-logo.svg", class:"h-80 w-full object-contain bg-gray-100" %>
-        <div class="p-6 flex flex-col flex-grow">
-          <h4 class="text-2xl font-semibold mb-2">FAA</h4>
-          <p class="text-gray-700 mb-4 flex-grow">The Federal Aviation Administration sets the standards for pilot training and certification. Our partnership ensures our programs meet the highest industry standards.</p>
-          <a href="https://www.faa.gov" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
-        </div>
-      </div>
-      <!-- AOPA Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-        <%= image_tag "aopa-logo.png", class:"h-80 w-full object-contain bg-gray-100" %>
-        <div class="p-6 flex flex-col flex-grow">
-          <h4 class="text-2xl font-semibold mb-2">AOPA</h4>
-          <p class="text-gray-700 mb-4 flex-grow">The Aircraft Owners and Pilots Association advocates for the interests of general aviation pilots. Through our partnership, we offer resources and support for your aviation journey.</p>
-          <a href="https://www.aopa.org" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
-        </div>
-      </div>
-      <!-- EAA Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
-        <%= image_tag "eaa-logo.webp", class:"h-80 w-full object-contain bg-gray-100" %>
-        <div class="p-6 flex flex-col flex-grow">
-          <h4 class="text-2xl font-semibold mb-2">EAA</h4>
-          <p class="text-gray-700 mb-4 flex-grow">The Experimental Aircraft Association promotes the spirit of aviation through events, education, and community. Our collaboration opens doors to unique opportunities in aviation.</p>
-          <a href="https://www.eaa.org" target="_blank" class="mt-auto bg-sky-500 text-white py-2 px-4 rounded text-center">Learn More</a>
-        </div>
-      </div>
+      <%= image_tag "ftf-logo.webp", alt: "Flight Training Finance logo", class: "h-12 sm:h-16 md:h-20" %>
+    </div>
+    <div class="tracking-wider">
+      <p class="pt-5">
+        Embarking on your journey to becoming a pilot is an exciting endeavor, and at Blue Skies Above, we understand the importance of making flight training accessible to everyone. That's why we've partnered with Flight Training Finance to offer tailored financing solutions designed to support your flight goals.
+      </p>
+      <p class="pt-5 font-semibold text-xl">
+        Why Choose Flight Training Finance?
+      </p>
+      <ul class="list-disc pl-10 pt-5">
+        <li>
+          <strong>Personalized Solutions:</strong> We believe that every
+          student's journey is unique. With Flight Training Finance, you'll
+          have access to financing options customized to your individual
+          needs and circumstances.
+        </li>
+        <li>
+          <strong>Guidance Every Step of the Way:</strong> Our user-friendly
+          Flight Training Finance Application walks you through the process,
+          ensuring clarity and simplicity as you apply for financing.
+        </li>
+        <li>
+          <strong>Flexible Payment Plans:</strong> Whether you're looking to
+          spread out your payments or make a larger down payment, our Yellow
+          Sheet calculation tool allows you to explore different payment
+          scenarios, empowering you to find a plan that fits your budget.
+        </li>
+        <li>
+          <strong>Transparent Terms:</strong> Rest assured that with the
+          Retail Installment Contract, you'll have a clear understanding of
+          the terms of your financing agreement, providing peace of mind as
+          you pursue your dreams.
+        </li>
+      </ul>
+      <p class="pt-5">
+        If you are interested in getting started, please click
+        <a
+          href="https://www.flighttrainingfinancellc.com/application-form/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-blue-800 hover:underline text-blue-600 font-semibold"
+        >
+          here
+        </a>
+        to apply now.
+      </p>
+      <p class="pt-10 font-semibold text-xl">Partnering for Success</p>
+      <p class="pt-5">
+        Blue Skies Above and Flight Training Finance have come together to streamline the financing process, making flight training more accessible to aspiring pilots like you. Take the first step towards your aviation goals by exploring our financing options today.
+      </p>
+      <p class="pt-5">
+        Don't let financial barriers hold you back from reaching new heights. Start your journey with Blue Skies Above and Flight Training Finance.
+      </p>
+
+      <p class="pt-10 font-semibold text-xl">Additional Resources</p>
+      <ul class="list-disc pl-10">
+        <li>
+          <%= link_to "Program Guide", "ftf-program-guide.pdf", download: "ftf-program-guide.pdf", class: "hover:text-blue-800 hover:underline text-blue-600" %>
+        </li>
+        <li>
+          <%= link_to "FTF Brochure", "ftf-brochure.pdf", download: "ftf-brochure.pdf", class: "hover:text-blue-800 hover:underline text-blue-600" %>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
