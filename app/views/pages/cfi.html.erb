@@ -185,7 +185,7 @@
           <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-4xl font-bold tracking-tight text-gray-900">$9,330</span>
+            <span class="text-4xl font-bold tracking-tight text-gray-900">$257</span><span>/month</span>
           </p>
           <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
           <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
@@ -231,6 +231,8 @@
           </ul>
         </div>
       </div>
+
+      <%= link_to "See financial options", financing_path, class: "hover:underline uppercase text-sky-600 font-bold" %>
     </div>
   </div>
   <div class="flex flex-col items-center pt-32">
