@@ -83,6 +83,9 @@ class PagesController < ApplicationController
   def why_bsa
   end
 
+  def financing
+  end
+
   def spin_endorsement
   end
 
