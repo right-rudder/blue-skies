@@ -51,10 +51,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-80q-33 0-56.5-23.5T80-160v-480q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v480q0 33-23.5 56.5T800-80H160Zm0-80h640v-480H160v480Zm240-560h160v-80H400v80ZM160-160v-480 480Zm280-200v120h80v-120h120v-80H520v-120h-80v120H320v80h120Z"/></svg>
               <span><strong class="font-semibold text-gray-900">Step 2. Flight Training.</strong> Conduct flights with an experienced instructor to practice spin entries, spins, and spin recoveries. Demonstrate your ability to recover from a spin safely.</span>
             </li>
-            <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" height="24" viewBox="0 -960 960 960" width="24"><path d="M560-80v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v120h-80v-80H520v-200H240v640h240v80H240Zm280-400Zm241 199-19-18 37 37-18-19Z"/></svg>
-              <span><strong class="font-semibold text-gray-900">Step 3. Checkride Preparation.</strong> Prepare for the practical test where you will demonstrate your ability to perform and teach spins. Ensure you understand the FAA's standards and requirements.</span>
-            </li>
           </ul>
           <p class="mt-8">Blue Skies Above will provide you with all the necessary resources and instruction to pass your spin endorsement. Contact us today to schedule your training and take the next step in your aviation career.</p>
         </div>
@@ -106,8 +102,7 @@
           <ul role="list">
             <li>Receive ground training in stall awareness, spin entry, spins, and spin recovery procedures.</li>
             <li>Fly the 5378D with a CFI and practice entering spins and applying spin recovery procedures.</li>
-            <li>Make a presentation (whiteboard, PowerPoint…) explaining stall awareness, spin entry, spins, and spin recovery procedures.</li>
-            <li>Receive a logbook endorsement stating that “I certify that (First name, MI, Last name) has received the required training of section 61.183(i). I have determined that he/she is competent in instructional skills for training stall awareness, spin entry, spins, and spin recovery procedures.”</li>
+            <li>Receive spin endorsement from a qualified Blue Skies Above flight instructor.</li>
           </ul>
           <p>All this can usually be accomplished in one or two lessons and is a lot easier than you might think.</p>
         </div>
@@ -126,8 +121,8 @@
       <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Learn More About Our Training Packages</p>
     </div>
     <div class="isolate mx-auto mt-10 flex flex-col items-center max-w-md gap-8 md:max-w-2xl lg:max-w-4xl xl:mx-0 xl:max-w-none">
-      <div class="bg-white rounded-3xl lg:w-[700px] p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col lg:flex-row justify-center lg:gap-10">
-        <div class="lg:w-1/2">
+      <div class="bg-white rounded-3xl p-5 ring-1 ring-gray-200 hover:ring-sky-600 hover:ring-2 group duration-100 flex flex-col justify-center lg:gap-10">
+        <div>
           <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">CFI Spin Endorsement</h3>
           <p class="mt-4 text-sm leading-6 text-gray-600">Uses 180hp 172</p>
           <p class="mt-4 text-sm leading-6 text-gray-600">*2 weeks to complete (approximately)</p>
@@ -139,37 +134,19 @@
           <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
           <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
         </div>
-        <div class="lg:w-1/2">
-          <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+        <div>
+          <ul role="list" class="space-y-3 text-sm leading-6 text-gray-600">
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              3 lessons per week
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              2 hours of flight time
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              2 hours of flight instruction
+              2 hours of flight time with an instructor
             </li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
               3 hours of ground instruction
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Ground school kit included
             </li>
           </ul>
           <%# <p class="pt-10 italic text-gray-500">Note: Price is based on FAA minimums.  On average, student pilots require 65 hours to complete their private certificate.</p> %>
