@@ -83,13 +83,13 @@ class PagesController < ApplicationController
   def why_bsa
   end
 
-
-  # def private_pilot_package
-  # end
-
   def financing
+  end
+
+  def spin_endorsement
   end
 
   def pricing
   end
+
 end
