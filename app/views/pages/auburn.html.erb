@@ -36,7 +36,7 @@
   <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
     <div class="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
       <div class="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
-        <%= image_tag "commercial-checkride-pass-lanett.webp", alt: "Auburn Student", class: "absolute inset-0 h-full w-full bg-gray-50 object-cover"%>
+        <%= image_tag "blue-skies-auburn-university-student-pilot-programs.webp", alt: "Auburn Student", class: "absolute inset-0 h-full w-full bg-gray-50 object-cover"%>
       </div>
     </div>
     <div class="px-6 lg:contents">
@@ -45,22 +45,37 @@
         <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Programs We Offer</h1>
         <p class="mt-6 text-xl leading-8 text-gray-700">Our programs are designed to cater to students at different stages of their flight training journey. Whether you're starting with a Private Pilot License (PPL), advancing to a Commercial Single Engine Land (CSEL) rating, or training to become a Certified Flight Instructor (CFI), we have you covered.</p>
         <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-          <ul role="list" class="mt-8 space-y-8 text-gray-600">
+          <ul role="list" class="mt-8 space-y-4 text-gray-600">
             <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-              <span><strong class="font-semibold text-gray-900">Private Pilot License (PPL).</strong> Start your aviation journey with our PPL program, designed to take you from zero experience to a confident pilot in command.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
+              <span><strong class="font-semibold text-gray-900">Private Pilot Certificate (PPL).</strong> Start your aviation journey with our PPL program, designed to take you from zero experience to a confident pilot in command.</span>
+            </li>
+            <li class="ml-8 pb-8">
+              <%= link_to private_pilot_path do%>
+                <span class=" text-sky-600 hover:underline">Click here to learn more about our Private Pilot Program</span>
+              <%end%>
             </li>
             <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M160-80q-33 0-56.5-23.5T80-160v-480q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v480q0 33-23.5 56.5T800-80H160Zm0-80h640v-480H160v480Zm240-560h160v-80H400v80ZM160-160v-480 480Zm280-200v120h80v-120h120v-80H520v-120h-80v120H320v80h120Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
               <span><strong class="font-semibold text-gray-900">Commercial Single Engine Land (CSEL).</strong> Advance your skills with our CSEL program, perfect for those looking to pursue a professional aviation career.</span>
             </li>
+            <li class="ml-8 pb-8">
+              <%= link_to cpl_path do%>
+                <span class=" text-sky-600 hover:underline">Click here to learn more about our Commercial Pilot Program</span>
+              <%end%>
+            </li>
             <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" viewBox="0 0 960 960"><path d="M560-80v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v120h-80v-80H520v-200H240v640h240v80H240Zm280-400Zm241 199-19-18 37 37-18-19Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
               <span><strong class="font-semibold text-gray-900">Certified Flight Instructor (CFI).</strong> Train to become a flight instructor and share your passion for aviation with others.</span>
+            </li>
+            <li class="ml-8 pb-8">
+              <%= link_to cfi_path do%>
+                <span class=" text-sky-600 hover:underline">Click here to learn more about our Flight Instructor Program</span>
+              <%end%>
             </li>
           </ul>
           <p class="mt-8">Blue Skies Above is dedicated to providing you with the best training experience. Our expert instructors, state-of-the-art facilities, and comprehensive curriculum ensure you are well-prepared for your aviation career. Contact us today to learn more about our programs and start your journey with us.</p>
-          <%= button_to "Learn More", contact_path, target: "blank", method: :get, data: { turbo: false }, class: "btn-primary " %>
+          <%= button_to "Contact Us", contact_path, target: "blank", method: :get, data: { turbo: false }, class: "btn-primary my-10" %>
         </div>
       </div>
     </div>
