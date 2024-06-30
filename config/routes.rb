@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   get 'privacy-policy-terms-of-service', to: 'pages#tos', as: :tos
   get 'financing', to: 'pages#financing', as: :financing
   get 'pricing', to: 'pages#pricing', as: :pricing
+  get 'auburn', to: 'pages#auburn', as: :auburn
 
   post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   get 'blog', to: 'posts#index', as: :blog

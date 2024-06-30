@@ -92,4 +92,7 @@ class PagesController < ApplicationController
   def pricing
   end
 
+
+  def auburn
+  end
 end
