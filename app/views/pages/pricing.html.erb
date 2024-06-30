@@ -1,7 +1,7 @@
 <%# Head / Meta Data %>
-<% title("Pricing") %>
-<% meta_description("Pricing page") %>
-<% meta_keywords("fixed wing CFI Columbus Georgia, airplane CFI Auburn, CFI Opelika, CFII in Lafayette") %>
+<% title("Comprehensive Pricing for Pilot Training | Blue Skies Above") %>
+<% meta_description("Explore our detailed pricing for pilot training programs at Blue Skies Above. Find competitive rates for fixed wing CFI, CFII, and other aviation courses in Columbus, Auburn, Opelika, and Lafayette.") %>
+<% meta_keywords("fixed wing CFI Columbus Georgia, airplane CFI Auburn, CFI Opelika, CFII Lafayette, pilot training costs, aviation course pricing, flight training fees, competitive pilot training rates, Blue Skies Above pricing, affordable flight training") %>
 <%# og_image(image_url("meta_pic_rrm.webp")) %>
 <%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
 <%= render "shared/phone_banner"%>
@@ -52,11 +52,15 @@
             <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Private Pilot Certificate</h3>
             <p class="mt-4 text-sm leading-6 text-gray-600">FAA Minimums</p>
             <p class="mt-4 text-sm leading-6 text-gray-600">*13 weeks to complete (approximately)</p>
-            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <!-- Price, update based on frequency toggle state -->
+            <p class="mt-4 flex items-baseline gap-x-1">
               <span class="text-4xl font-bold tracking-tight text-gray-900">$11,400</span>
             </p>
+            <p class="mt-2">or</p>
+            <p class="mt-4 flex items-baseline gap-x-1">As low as</p>
+            <p class="flex items-baseline gap-x-1">
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$309</span><span>/month</span>
+            </p>
+            <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
             <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
             <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
           </div>
@@ -109,11 +113,15 @@
             <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Instrument Rating</h3>
             <p class="mt-4 text-sm leading-6 text-gray-600">Take your pilot skills to the next level with Instrument Rating</p>
             <p class="mt-4 text-sm leading-6 text-gray-600">*27 weeks to complete (approximately)</p>
-            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <!-- Price, update based on frequency toggle state -->
+            <p class="mt-4 flex items-baseline gap-x-1">
               <span class="text-4xl font-bold tracking-tight text-gray-900">$12,050</span>
             </p>
+            <p class="mt-2">or</p>
+            <p class="mt-4 flex items-baseline gap-x-1">As low as</p>
+            <p class="flex items-baseline gap-x-1">
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$388</span><span>/month</span>
+            </p>
+            <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
             <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
             <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
           </div>
@@ -166,11 +174,15 @@
             <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Commercial Pilot Certificate</h3>
             <p class="mt-4 text-sm leading-6 text-gray-600">Make flying your career with Commercial Pilot Certificate</p>
             <p class="mt-4 text-sm leading-6 text-gray-600">*35 weeks to complete (approximately)</p>
-            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <!-- Price, update based on frequency toggle state -->
+            <p class="mt-4 flex items-baseline gap-x-1">
               <span class="text-4xl font-bold tracking-tight text-gray-900">$25,150</span>
             </p>
+            <p class="mt-2">or</p>
+            <p class="mt-4 flex items-baseline gap-x-1">As low as</p>
+            <p class="flex items-baseline gap-x-1">
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$600</span><span>/month</span>
+            </p>
+            <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
             <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
             <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
           </div>
@@ -229,11 +241,15 @@
             <h3 id="tier-ppl-certificate" class="text-lg font-semibold leading-8 text-gray-900 group-hover:text-sky-600 duration-100">Certified Flight Instructor</h3>
             <p class="mt-4 text-sm leading-6 text-gray-600">FAA Minimums</p>
             <p class="mt-4 text-sm leading-6 text-gray-600">*5 weeks to complete (approximately)</p>
-            <p class="mt-6 flex items-baseline gap-x-1">Starting at</p>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <!-- Price, update based on frequency toggle state -->
+            <p class="mt-4 flex items-baseline gap-x-1">
               <span class="text-4xl font-bold tracking-tight text-gray-900">$9,330</span>
             </p>
+            <p class="mt-2">or</p>
+            <p class="mt-4 flex items-baseline gap-x-1">As low as</p>
+            <p class="flex items-baseline gap-x-1">
+              <span class="text-4xl font-bold tracking-tight text-gray-900">$257</span><span>/month</span>
+            </p>
+            <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
             <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
             <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-ppl-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
           </div>
@@ -280,6 +296,8 @@
         </div>
       </div>
     </div>
+
+    <%= link_to "See financing options", financing_path, class: "hover:underline uppercase text-sky-600 font-bold block mx-auto w-fit mt-10" %>
   </div>
 </section>
 <%= render "shared/cta_were_experts"%>
