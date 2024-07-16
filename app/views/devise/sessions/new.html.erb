@@ -32,12 +32,6 @@
           <%= form.password_field :password, placeholder: "Password", class: "placeholder-gray-300 block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" %>
         </div>
 
-        <% if @show_checkbox_recaptcha %>
-          <%= recaptcha_tags %>
-        <div class="mb-10"></div>
-        <% else %>
-          <%= recaptcha_v3(action: 'login', site_key: ENV['RECAPTCHA_SITE_KEY']) %>
-        <% end %>
 
         <div class="inline">
           <%= form.submit "Sign In", class: "rounded-lg py-3 px-5 w-full bg-custom-500 text-white inline-block font-medium cursor-pointer hover:bg-sky-700 active:bg-sky-600" %>
