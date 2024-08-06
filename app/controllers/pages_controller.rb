@@ -84,6 +84,7 @@ class PagesController < ApplicationController
   end
 
   def financing
+    @program_guide_download = ProgramGuideDownload.new
   end
 
   def spin_endorsement

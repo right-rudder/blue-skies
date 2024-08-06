@@ -1,0 +1,21 @@
+<div id="<%= dom_id program_guide_download %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= program_guide_download.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= program_guide_download.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Phone:</strong>
+    <%= program_guide_download.phone %>
+  </p>
+  <% if action_name != "show" %>
+    <%= link_to "Show this book download", program_guide_download, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this book download', edit_program_guide_download_path(program_guide_download), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

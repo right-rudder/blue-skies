@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   resources :messages
   resources :enrollments
   resources :book_downloads
+  resources :program_guide_downloads
   #resources :quiz_results
 
   # Enrollment form
@@ -53,6 +54,9 @@ Rails.application.routes.draw do
 
   # Book Download
   get 'book-download-confirmation', to: 'book_downloads#confirmation', as: :book_download_confirmation
+
+  # Program Guide Download
+  get 'program-guide-download-confirmation', to: 'program_guide_downloads#confirmation', as: :program_guide_download_confirmation
 
   # Discovery flight form
   get 'discovery-flight', to: 'discover_flights#new', as: :discovery_flight
