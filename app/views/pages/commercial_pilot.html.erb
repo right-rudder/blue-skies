@@ -9,10 +9,10 @@
 <%= render "shared/nav"%>
 <header class="w-full bg-commercial bg-cover bg-right lg:bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
   <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
-    <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Commercial Pilot Certificate</h1>
+    <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Earn Your Commercial Pilot Certificate</h1>
     <h2 class="mt-6 text-xl leading-8 text-gray-200">Start your pilot career with your commercial pilot certificate</h2>
     <div class="flex flex-row lg:flex-row items-center mt-5">
-      <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary " %>
+      <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary" %>
       <%= link_to visit_path do %>
         <div class="ml-5 flex group items-center text-white">
           <div class="mr-3">Visit School</div>
@@ -22,140 +22,116 @@
     </div>
   </div>
 </header>
-<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+<div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
-    <p class="text-base font-semibold leading-7 text-sky-600">Become a commercial pilot</p>
-    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Commercial Pilot Certificate</h2>
+    <p class="text-lg font-semibold leading-7 text-sky-600">Fly for a career</p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Become a Commercial Pilot</h2>
     <p class="mt-6 text-lg leading-8 text-gray-600">A commercial pilot certificate allows you to <br class="hidden md:block">
       fly for compensation or hire.</p>
   </div>
 </div>
-<div class="relative bg-white">
-  <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
-    <div class="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-      <div class="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
-        <%= image_tag "blue-skies-filling-gas-at-7a3-lanett-municipal-airport.webp", alt: "filling 100LL avgas for a Cessna 172 at Blue Skies Above Lanett Alabama", class: "absolute inset-0 h-full w-full bg-gray-50 object-cover object-right"%>
-      </div>
-    </div>
-    <div class="px-6 lg:contents">
-      <div class="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-        <p class="text-base font-semibold leading-7 text-sky-600">Commercial Pilot</p>
-        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Become a Commercial Pilot</h1>
-        <p class="mt-6 text-xl leading-8 text-gray-700">If you're looking to make a career out of flying and you've gained a few hundred hours of flying experience, then getting your commercial pilot certificate is next after your instrument rating.</p>
-        <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-          <p>Getting a commercial pilot certificate allows you to fly for compensation or hire.  Many career pilots start their career after getting their commercial certificate and do flight instructing, surveying, sky diving operations, and more.  For those looking to get their ATP certificate and fly in the airlines, this phase is a great time to gain flight experience while being compensated.</p>
-          <p class="pt-10">When you start commercial pilot training, you'll get to learn the regulations more thoroughly and understand the limitations and requirements for different parts of the FAR.  You'll also learn additional manuevers and learn how to fly more precise.</p>
-          <ul role="list" class="mt-8 space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  class="mt-1 h-5 w-5 flex-none fill-sky-600"><rect fill="none" height="24" width="24"/><path d="M22,5.18L10.59,16.6l-4.24-4.24l1.41-1.41l2.83,2.83l10-10L22,5.18z M19.79,10.22C19.92,10.79,20,11.39,20,12 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-4.42,3.58-8,8-8c1.58,0,3.04,0.46,4.28,1.25l1.44-1.44C16.1,2.67,14.13,2,12,2C6.48,2,2,6.48,2,12 c0,5.52,4.48,10,10,10s10-4.48,10-10c0-1.19-0.22-2.33-0.6-3.39L19.79,10.22z"/></svg>
-              <span><strong class="font-semibold text-gray-900">Complete Your Instrument Rating</strong> While not technically a requirement, not having an instrument rating when completing you commercial pilot certificate limits you in the type of flying you can do for compensation.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" height="24" viewBox="0 -960 960 960" width="24"><path d="M560-80v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v120h-80v-80H520v-200H240v640h240v80H240Zm280-400Zm241 199-19-18 37 37-18-19Z"/></svg>
-              <span><strong class="font-semibold text-gray-900">Pass Your Instrument Written Exam</strong> Study and solidify core aviation concepts.  Being able to understand if a flight is being flown under Part 91 or Part 135; and understanding concepts like common carriage are all things that you will need to learn in order to obtain your commercial pilot certificate.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"  viewBox="0 0 24 24" class="mt-1 h-5 w-5 flex-none fill-sky-600"><g><rect fill="none" height="24" width="24"/></g><g><g><rect height="2" width="11" x="3" y="10"/><rect height="2" width="11" x="3" y="6"/><rect height="2" width="7" x="3" y="14"/><polygon points="20.59,11.93 16.34,16.17 14.22,14.05 12.81,15.46 16.34,19 22,13.34"/></g></g></svg>
-              <span><strong class="font-semibold text-gray-900">Meet Minimum Requirements</strong> You'll need have flown a minimum of 250 flight hours.  In addition, there are different types of cross country trips that you are required to complete to meet the minimum requirements to take the commercial pilot practical exam.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mt-1 h-5 w-5 flex-none fill-sky-600" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-120v-80h720v80H120Zm74-200L80-514l62-12 70 62 192-52-162-274 78-24 274 246 200-54q32-9 58 12t26 56q0 22-13.5 39T830-492L194-320Z"/></svg>
-              <span><strong class="font-semibold text-gray-900">Fly With an Examiner</strong> You'll fly with a FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly as a commercial pilot and meet the requirements of the Airmen Certification Standards (ACS).</span>
-            </li>
-          </ul>
-          <p class="mt-8">Blue Skies Above will prepare you for all of the required exams with the necessary materials and education.  Give us a call and schedule a time to fly with a CFI to get started.</p>
-          <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">What to expect during commercial pilot training?</h2>
-          <p class="mt-6">Prepare to start flying at a higher standard.  When you are assigned an altitude and heading, you will be expected to fly the altitude and heading with better precision.  The standards listed in the ACS are much more strict for commercial pilots compared to private pilots and with good reason.</p>
-          <p class="mt-6 mb-10">To start commercial pilot training at Blue Skies Above, take the initial step by reaching out to Blue Skies Above team today. Connect with our team, explore the classroom and planes, and review the comprehensive syllabus. Let's kickstart your commercial pilot training.  This is your opportunity to become a more skilled and confident pilot!</p>
-          <%= button_to "Visit School", visit_path, target: "blank", method: :get, data: { turbo: false }, class: "btn-primary " %>
-        </div>
-      </div>
-    </div>
+
+<div class="bg-gradient-to-br from-sky-300 to-sky-100 px-6 py-20 sm:py-24 lg:px-24 flex flex-col lg:flex-row gap-10 items-center">
+  <div class="flex-1 text-center lg:text-right">
+    <p class="sm:text-5xl font-semibold text-sky-600 text-3xl">What is a</p>
+    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Commercial Pilot Certificate?</h2>
+  </div>
+  <div class="flex-1 flex flex-col gap-5">
+    <p class="text-lg leading-8 text-gray-600">A Commercial Pilot Certificate allows you to fly for compensation or hire, opening doors to various aviation careers such as flight instructing, surveying, skydiving operations, and more. At Blue Skies Above, we provide structured training programs that prepare you for these opportunities.</p>
+    <p class="text-lg leading-8 text-gray-600">When you start commercial pilot training, you'll deepen your understanding of aviation regulations, including the requirements for different parts of the FAR, and learn to fly with greater precision. Although not mandatory, completing your Instrument Rating alongside your Commercial Pilot Certificate expands the types of flying you can do for compensation, such as under Part 135 operations.</p>
   </div>
 </div>
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-<div class="overflow-hidden bg-white">
-  <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-    <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-sky-50 lg:block"></div>
-    <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
-      <div>
-        <h2 class="text-lg font-semibold text-sky-600">Frequently Asked</h2>
-        <h3 class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">How Do I Get Paid To Fly As A Pilot?</h3>
-      </div>
-    </div>
-    <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-      <div class="relative lg:col-start-2 lg:row-start-1">
-        <svg class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
-          <%# REMOVE DOTS 
-          <defs> 
-            <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs> %>
-          <rect width="404" height="384" class="fill-sky-100" />
-        </svg>
-        <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
-          <figure>
-            <div class="aspect-h-7 aspect-w-12 lg:aspect-none">
-              <%= image_tag "blue-skies-commercial-pilot-over-1000-hours.webp", alt: "Commercial Pilot Training Columbus Georgia Atlanta - Blue Skies Above Professional Flight Instruction", class: "rounded-lg object-cover object-center shadow-lg"%>
+
+<div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-5xl text-center">
+    <p class="text-lg font-semibold leading-7 text-sky-600">How to Get Your Commercial Pilot Certificate</p>
+    <h2 class="mt-2 text-4xl font-bold text-gray-900 sm:text-6xl">Important pre-requisites to meet before becoming a commercial pilot</h2>
+  </div>
+
+  <div class="mx-auto pb-10 sm:px-2 sm:pb-14 xl:px-20">
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
+      <div class="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+        <div class="flex flex-col bg-sky-100 hover:bg-sky-200 transition-200 p-10 rounded-xl h-full">
+          <div class="flex-shrink-0 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-16 text-sky-500" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1m-6 1c2.08 0 3.716.448 4.628.77c.891.317 1.325 1.192 1.227 2.02l-.024.155l-.722 3.61c-.196.977-1.232 1.45-2.079 1.112c-.645-.258-1.7-.604-2.75-.66l-.3-.007c-1.133.005-2.312.388-3.01.667c-.805.321-1.78-.09-2.043-.97l-.036-.143l-.722-3.609c-.174-.872.256-1.839 1.203-2.174A14 14 0 0 1 12 6m0 2c-1.719 0-3.08.355-3.856.62l.6 2.997c.683-.24 1.623-.506 2.624-.59l.738-1.474a1 1 0 1 1 1.788.894l-.352.705c.65.122 1.244.3 1.715.465l.6-2.997A12.1 12.1 0 0 0 12 8"/></g></svg>
+          </div>
+          <div class="h-full flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="min-h-12 font-semibold text-gray-900">Complete Your Instrument Rating</h3>
+              <p class="mt-2 text-gray-500">While not technically a requirement, not having an instrument rating when completing you commercial pilot certificate limits you in the type of flying you can do for compensation.</p>
             </div>
-            <figcaption class="mt-3 flex text-sm text-gray-500">
-              <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M1 8a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 018.07 3h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0016.07 6H17a2 2 0 012 2v7a2 2 0 01-2 2H3a2 2 0 01-2-2V8zm13.5 3a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM10 14a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-              </svg>
-              <span class="ml-2">Commercial Pilot Training Blue Skies Above Lanett, Alabama</span>
-            </figcaption>
-          </figure>
+            <%= link_to ifr_path, class: "font-semibold mt-5 group flex items-center w-fit hover:scale-105 hover:text-sky-700 duration-300" do %>
+              <div class="mr-3">Instrument Rating</div>
+              <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+            <% end %>
+          </div>
         </div>
-      </div>
-      <div class="mt-8 lg:mt-0">
-        <div class="mx-auto max-w-prose text-base lg:max-w-none">
-          <p class="text-lg text-gray-500">Are you a pilot getting to close to 250 hours and wondering what's next after you complete your commercial pilot training?  Depending on what your career goals are, the answer can vary drastically.</p>
+        <div class="flex flex-col bg-sky-100 hover:bg-sky-200 transition-200 p-10 rounded-xl">
+          <div class="flex-shrink-0 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-16 text-sky-500" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 1024q63 83 95 181t33 203q0 133-50 249t-137 204t-203 137t-250 50q-133 0-249-50t-204-137t-137-203t-50-250H128q-27 0-50-10t-40-27t-28-41t-10-50V256q0-27 10-50t27-40t41-28t50-10h1664q27 0 50 10t40 27t28 41t10 50zM781 1280q22-112 80-206t142-162t187-106t218-38q104 0 202 32t182 96V256H128v1024zm627 640q106 0 199-40t162-110t110-163t41-199t-40-199t-110-162t-163-110t-199-41t-199 40t-162 110t-110 163t-41 199t40 199t110 162t163 110t199 41m0-512h256v128h-384v-512h128z"/></svg>
+          </div>
+          <div class="h-full flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="min-h-12 font-semibold text-gray-900">Log Flight Hours</h3>
+              <p class="mt-2 text-gray-500">You need 250 total flight hours to get your commercial pilot certificate. 110 of these hours are normally logged when getting your PPL and IR, but the other 140 will be logged via time building.</p>
+            </div>
+            <a href="#pricing" class="font-semibold mt-5 group flex items-center w-fit hover:scale-105 hover:text-sky-700 duration-300">
+              <div class="mr-3">Time Building Package</div>
+              <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+            </a>
+          </div>
         </div>
-        <div class="prose prose-sky mx-auto mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-          <p>Once you've completed your commercial pilot training the world of aviation opens up with various opportunities to turn your passion for flying into a rewarding career. At Blue Skies Above, our flight school located at Airport 7A3 in Lanett, AL, we understand that your career goals play a crucial role in shaping your next steps. Let's explore some career opportunities that can lead you to getting paid to fly.</p>
-          <h3>Commercial Pilot Roles</h3>
-          <p>If you're looking to become an airline pilot, or a similar role that requires 1500 hours and an ATP certificate, many pilots start with these job roles to build flight time and gain experience.</p>
-          <p><strong class="font-semibold text-gray-900">Certified Flight Instructor (CFI):</strong> Becoming a Certified Flight Instructor is a common route for pilots looking to build flight hours while earning an income. As a CFI at Blue Skies Above, you can share your knowledge and skills with aspiring pilots, helping them navigate the skies safely. This role not only enhances your teaching abilities but also accelerates your own learning and mastery of flight techniques.</p>
-          <p><strong class="font-semibold text-gray-900">Survey Pilot:</strong> Engage in aerial survey missions as a survey pilot. This role involves flying over designated areas to collect data for various purposes such as mapping, environmental monitoring, or infrastructure assessments. Survey piloting offers a unique perspective and a chance to apply your flying skills in practical, real world scenarios.</p>
-          <p><strong class="font-semibold text-gray-900">Skydive Pilot:</strong> As a skydive pilot, you'll play a crucial role in creating unforgettable experiences for thrill-seekers. Fly thousands of feet in the air, provide a smooth and safe ascent for skydivers, and witness the breathtaking moments as they freefall and parachute back to the ground. </p>
-          <p><strong class="font-semibold text-gray-900">Charter Pilot:</strong> Explore opportunities as a charter pilot, providing personalized and on demand flight services. Whether it's transporting business executives, leisure travelers, or cargo, charter pilots enjoy a dynamic work environment. At Blue Skies Above, we can guide you on how to transition into this exciting sector of aviation.</p>
-          <p><strong class="font-semibold text-gray-900">Agricultural Pilot:</strong> Agricultural pilots, or Ag pilots shortened, is a very enjoyable career where you fly close to the ground and apply chemicals like fertilizer and insecticide on farm crops.</p>
-          <p><strong class="font-semibold text-gray-900">Missionary Pilot:</strong> Combine your passion for flying with a sense of purpose by becoming a missionary pilot. Serve remote communities by providing transportation for humanitarian aid, medical supplies, or personnel. It's a fulfilling way to make a positive impact through aviation.</p>
-          <%# 
-          <ul role="list">
-            <li>Quis elit egestas venenatis mattis dignissim.</li>
-            <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-            <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-          </ul>
-          <p>Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
-           %>
-          <h3>Become a Commercial Pilot</h3>
-          <p>Whether you're considering pilot opportunities in Auburn, Columbus, Opelika, Atlanta, Columbus, Georgia, Alabama; Blue Skies Above is here to support your aviation journey. Explore the diverse opportunities and aviation needs of the region while gaining the experience and flight hours needed for your chosen career path. As you approach this pivotal point in your aviation career, remember that the skies are full of possibilities, and Blue Skies Above is here to help you begin your pilot career.</p>
+        <div class="flex flex-col bg-sky-100 hover:bg-sky-200 transition-200 p-10 rounded-xl">
+          <div class="flex-shrink-0 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-16 text-sky-500" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M3 2.5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h5.25a.75.75 0 0 1 0 1.5H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6.25a.75.75 0 0 1-1.5 0V3a.5.5 0 0 0-.5-.5zm12.28 8.72a.75.75 0 0 1 0 1.06l-2.5 2.5a.75.75 0 0 1-1.06 0l-1-1a.75.75 0 1 1 1.06-1.06l.47.47l1.97-1.97a.75.75 0 0 1 1.06 0M4.75 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zM4 8a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 4 8m.75 2.5a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"/></svg>
+          </div>
+          <div class="h-full flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="min-h-12 font-semibold text-gray-900">Meet Minimum Requirements</h3>
+              <p class="mt-2 text-gray-500">Once you’re approaching 250 total flight hours, there are different types of cross-country trips that you are required to complete to meet the minimum requirements to take the commercial pilot practical exam.</p>
+            </div>
+            <a href="#pricing" class="font-semibold mt-5 group flex items-center w-fit hover:scale-105 hover:text-sky-700 duration-300">
+              <div class="mr-3">Finish-Up</div>
+              <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col bg-sky-100 hover:bg-sky-200 transition-200 p-10 rounded-xl">
+          <div class="flex-shrink-0 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-16 text-sky-500" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="m1.204 4.056l1.833-1.834S9.759 4.463 13.63 6.704l4.31-4.31c.643-.643 1.461-1.089 2.363-1.212c.688-.094 1.532-.182 2.29-.182l.407.407c0 .757-.088 1.602-.182 2.29c-.123.902-.569 1.72-1.212 2.364l-4.31 4.31c2.241 3.87 4.482 10.592 4.482 10.592l-1.834 1.833s-3.666-5.296-6.722-8.352c0 0-2.264 1.45-5.703 4.89c0 0 .407 1.629.407 3.259L7.519 23s-1.63-2.037-3.056-3.463S1 16.482 1 16.482l.407-.408c1.63 0 3.26.407 3.26.407c3.439-3.439 4.889-5.703 4.889-5.703C6.5 7.722 1.204 4.056 1.204 4.056Z"/></svg>
+          </div>
+          <div class="h-full flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="min-h-12 font-semibold text-gray-900">Fly With an Examiner</h3>
+              <p class="mt-2 text-gray-500">You'll fly with an FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly as a commercial pilot in a TAA aircraft and meet the requirements of the Airmen Certification Standards (ACS).</p>
+            </div>
+            <a href="https://flytheblueskies.com/posts/blue-skies-above-acquires-a-new-taa-plane" class="font-semibold mt-5 group flex items-center w-fit hover:scale-105 hover:text-sky-700 duration-300">
+              <div class="mr-3">Your TAA Plane</div>
+              <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Image section -->
-<div class="xl:mx-auto xl:max-w-7xl px-3 xl:px-8 py-10">
-  <%= image_tag "blue-skies-team-of-cfis-and-commercial-pilots.webp", alt: "Blue Skies Above team at NAFI summit with CFIs and commercial pilots", class: "lg:aspect-[5/3] w-full object-cover rounded-lg xl:rounded-3xl"%>
+
+<div class="px-6 py-20 sm:py-24 lg:px-24 flex flex-col lg:flex-row gap-10 items-center">
+  <div class="flex-1 flex flex-col gap-5">
+    <%= image_tag "taa-cessna-blue-skies-above-lanett-municipal-airport.webp" %>
+  </div>
+  <div class="flex-1 flex flex-col gap-2">
+    <p class="sm:text-xl font-semibold text-sky-600 text-3xl">Training with Blue Skies</p>
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">What to Expect During Training</h2>
+    <p class="text-lg leading-8 text-gray-600">Prepare to fly at a higher standard, where precision is key. The ACS standards for commercial pilots are stricter compared to private pilots, ensuring you develop the skills needed to fly professionally. At Blue Skies Above, we offer a structured syllabus, experienced instructors, and access to a modern fleet, giving you the tools to become a more skilled and confident pilot.</p>
+    <p class="text-lg leading-8 text-gray-600">You’ll be flying in our newest Technically Advanced Aircraft (TAA), the Cessna 172, for some of your training. Check out the details below.</p>
+    <a href="https://flytheblueskies.com/posts/blue-skies-above-acquires-a-new-taa-plane" class="btn-primary w-fit">
+      Our TAA Cessna
+    </a>
+  </div>
 </div>
-<div class="bg-gradient-to-br from-sky-200 to-gray-100 py-24 sm:py-32 all">
+
+<div class="bg-gradient-to-br from-sky-200 to-gray-100 py-24 sm:py-32 all scroll-my-32" id="pricing">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
       <h2 class="text-base font-semibold leading-7 text-sky-600">Pricing</h2>
@@ -179,7 +155,8 @@
         </p>
         <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
         <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
-        <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+        <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 bg-sky-600 text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+        <%= link_to "Learn More", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-2 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
           <li class="flex gap-x-3">
             <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -241,7 +218,8 @@
           </p>
           <p class="text-sm">with <%= link_to "Flight Training Financing", financing_path, class: "inline hover:underline" %></p>
         <%# <a href="#" aria-describedby="tier-ppl-certificate" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200">Book now</a> %>
-        <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 group-hover:bg-sky-600 group-hover:text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+        <%= link_to "Enroll Today", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 bg-sky-600 text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+        <%= link_to "Learn More", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "mt-2 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
           <li class="flex gap-x-3">
             <svg class="h-6 w-5 flex-none text-sky-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
