@@ -98,4 +98,7 @@ class PagesController < ApplicationController
 
   def time_building
   end
+
+  def finish_up
+  end
 end

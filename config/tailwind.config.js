@@ -145,6 +145,8 @@ module.exports = {
         commercial: "url('blue-skies-commercial-pilot-training-opelika.webp')",
         "time-building":
           "url('flying-through-clouds-in-blue-skies-above-taa-plane.webp')",
+        "finish-up":
+          "url('tail-number-of-taa-plane-blue-skies-above-columbus-ga.webp')",
         cfi: "url('blue-skies-cfi-bg-dual-recieved-instructor-auburn.webp')",
         cfii: "url('blue-skies-cfii-bg.webp')",
       },
