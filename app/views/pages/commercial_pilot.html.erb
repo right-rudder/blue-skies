@@ -22,6 +22,7 @@
     </div>
   </div>
 </header>
+
 <div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
     <p class="text-lg font-semibold leading-7 text-sky-600">Fly for a career</p>
@@ -270,6 +271,72 @@
     </span>
   </div>
 </div>
+
+<div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-3xl text-center">
+    <p class="text-lg font-semibold leading-7 text-sky-600">Pilot Career Paths</p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">What Careers are Available to Commercial Pilots?</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Once you complete your commercial pilot training, various aviation roles become accessible, allowing you to build flight time and gain experience while getting paid to fly. Some of these roles include:</p>
+    <%= link_to "Enroll Now", enroll_path, data: {turbo: false}, aria: { describedby: "tier-commercial-csel-certificate" }, class: "w-fit mx-auto mt-6 mb-12 block rounded-md py-3 px-5 text-center text-lg font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-sky-600 bg-sky-600 text-white ring-1 ring-inset ring-sky-200 hover:scale-105 duration-200"%>
+  </div>
+
+  <ul id="timeline-ul">
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date leading-none">Certified Flight Instructor (CFI)</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Teach aspiring pilots, enhance your skills, and build flight hours.</div>
+        </div>
+      </li>
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date leading-none">Survey Pilot</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Conduct aerial surveys for mapping, environmental monitoring, or infrastructure assessments.</div>
+        </div>
+      </li>
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date leading-none">Skydive Pilot</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Provide smooth and safe ascents for skydivers, contributing to their thrilling experiences.</div>
+        </div>
+      </li>
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date after:border-2 after:text-main-red">
+          Charter Pilot
+        </div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Offer personalized flight services, transporting business executives, leisure travelers, or cargo.</div>
+        </div>
+      </li>
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date leading-none">
+          Agricultural Pilot
+        </div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Apply fertilizers and insecticides on crops, flying close to the ground.</div>
+        </div>
+      </li>
+      <li style="--accent-color:#0584c7" class="relative">
+        <div class="date leading-none">Missionary Pilot</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-sky-100 to-sky-100"
+        >
+          <div class="title text-xl">Serve remote communities by transporting humanitarian aid, medical supplies, or personnel.</div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+
 <%= render "shared/cta_were_experts" %>
 <%= render "shared/cta_next_steps" %>
 <%= render "shared/footer"%>
