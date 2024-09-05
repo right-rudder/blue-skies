@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   get 'financing', to: 'pages#financing', as: :financing
   get 'pricing', to: 'pages#pricing', as: :pricing
   get 'auburn-university-pilot', to: 'pages#auburn', as: :auburn
+  get 'time-building-package', to: 'pages#time_building', as: :time_building
+  get 'finish-up-package', to: 'pages#finish_up', as: :finish_up
 
   post 'uploader/image', to: 'uploader#image' #add upload image to posts 
   get 'blog', to: 'posts#index', as: :blog

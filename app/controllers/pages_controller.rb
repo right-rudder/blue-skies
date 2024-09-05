@@ -93,7 +93,12 @@ class PagesController < ApplicationController
   def pricing
   end
 
-
   def auburn
+  end
+
+  def time_building
+  end
+
+  def finish_up
   end
 end
