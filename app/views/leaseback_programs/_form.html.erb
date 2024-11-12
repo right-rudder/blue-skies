@@ -1,0 +1,52 @@
+<%= form_with(model: leaseback_program, class: "contents") do |form| %>
+  <% if leaseback_program.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(leaseback_program.errors.count, "error") %> prohibited this leaseback_program from being saved:</h2>
+
+      <ul>
+        <% leaseback_program.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :aircraft_manufacturer %>
+    <%= form.text_field :aircraft_manufacturer, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :aircraft_model %>
+    <%= form.text_field :aircraft_model, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :aircraft_year %>
+    <%= form.text_field :aircraft_year, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :message %>
+    <%= form.text_area :message, rows: 4, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit "APPLY", class: "btn-primary mb-10 lg:mb-0" %>
+  </div>
+<% end %>
