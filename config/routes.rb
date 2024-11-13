@@ -45,6 +45,8 @@ Rails.application.routes.draw do
   resources :program_guide_downloads
   resources :leaseback_programs
   #resources :quiz_results
+  #
+  get 'leaseback-program', to: 'leaseback_programs#index'
 
   # Enrollment form
   get 'enroll-at-blue-skies', to: 'enrollments#new', as: :enroll
