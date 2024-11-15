@@ -143,6 +143,7 @@ module.exports = {
         "auburn-bg-mobile":
           "url('blue-skies-auburn-pilot-program-how-to.webp')",
         commercial: "url('blue-skies-commercial-pilot-training-opelika.webp')",
+        multi: "url('multi-engine-plane.webp')",
         "time-building":
           "url('flying-through-clouds-in-blue-skies-above-taa-plane.webp')",
         "finish-up":
