@@ -101,4 +101,7 @@ class PagesController < ApplicationController
 
   def finish_up
   end
+
+  def multi_engine
+  end
 end
