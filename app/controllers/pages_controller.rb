@@ -103,5 +103,6 @@ class PagesController < ApplicationController
   end
 
   def multi_engine
+    @multi_engine_rating = MultiEngineRating.new
   end
 end

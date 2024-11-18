@@ -1,0 +1,21 @@
+<div class="w-full">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+
+  <% content_for :title, "Multi engine ratings" %>
+
+  <div class="flex justify-between items-center">
+    <h1 class="font-bold text-4xl">Multi engine ratings</h1>
+    <%= link_to "New multi engine rating", new_multi_engine_rating_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+  </div>
+
+  <div id="multi_engine_ratings" class="min-w-full">
+    <% @multi_engine_ratings.each do |multi_engine_rating| %>
+      <%= render multi_engine_rating %>
+      <p>
+        <%= link_to "Show this multi engine rating", multi_engine_rating, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+      </p>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+module MultiEngineRatingsHelper
+end
