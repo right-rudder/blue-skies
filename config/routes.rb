@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :multi_engine_ratings
 
   # 404/500 pages
   get 'errors/not_found'
@@ -47,6 +48,7 @@ Rails.application.routes.draw do
   #resources :quiz_results
   #
   get 'leaseback-program', to: 'leaseback_programs#index', as: :leaseback
+  get 'multi-engine-rating', to: 'multi_engine_ratings#new', as: :multi_engine
 
   # Enrollment form
   get 'enroll-at-blue-skies', to: 'enrollments#new', as: :enroll
