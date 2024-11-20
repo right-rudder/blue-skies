@@ -9,9 +9,12 @@
 <header class="w-full bg-multi bg-cover bg-right lg:bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
   <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
     <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Earn Your Multi-Engine Rating</h1>
-    <h2 class="mt-6 text-xl leading-8 text-gray-200">Advance your pilot qualifications with a multi-engine rating</h2>
+    <h2 class="mt-6 text-xl leading-8 text-gray-200 font-semibold">Advance your pilot qualifications with a multi-engine rating</h2>
+    <h2 class="mt-2 text-xl leading-8 text-gray-200 max-w-4xl font-semibold">
+      We’re getting ready to purchase a brand-new multi-engine airplane, and with it, we’re launching our new multi-engine training program. Don’t miss your chance—sign up now to join the waitlist!
+    </h2>
     <div class="flex flex-row lg:flex-row items-center mt-5">
-      <%= link_to "Enroll Today", enroll_path, target: "blank", data: { turbo: false }, class: "btn-primary" %>
+      <a href="#multi-engine-form" class="btn-primary">Register Now</a>
       <%= link_to visit_path do %>
         <div class="ml-5 flex group items-center text-white">
           <div class="mr-3">Visit School</div>
@@ -74,7 +77,7 @@
       </div>
     </div>
 
-    <div class="mx-10 lg:px-16 lg:w-1/2">
+    <div class="mx-10 lg:px-16 lg:w-1/2" id="multi-engine-form">
       <%= render "multi_engine_ratings/form", multi_engine_rating: @multi_engine_rating %>
     </div>
     
