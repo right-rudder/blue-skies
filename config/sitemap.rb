@@ -37,7 +37,7 @@ add '/should-i-become-a-pilot'
 add '/privacy-policy-terms-of-service'
 add '/why-choose-blue-skies-above'
 add '/about-us'
-
+add '/blue-skies-above-booklet.pdf'
 add '/blog'
 
 #forms
