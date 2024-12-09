@@ -1,0 +1,70 @@
+<%# Head / Meta Data %>
+<% title("Multi-Engine Instructor Training Program | Blue Skies Above") %>
+<% meta_description("Advance your teaching skills with our Multi-Engine Instructor Training Program. Learn how to instruct in multi-engine aircraft and meet FAA standards with confidence.") %>
+<% meta_keywords("Multi-Engine Instructor Training, MEI Training, Twin Engine Instructor Certification, FAA Multi-Engine Instructor, Multi-Engine Flight Instructor Program, Advanced Flight Instructor Certification, Multi-Engine Instructor Rating, Teaching Multi-Engine Skills, Multi-Engine Aircraft Training, MEI Endorsement, Multi-Engine Flight School, Instructor Training Multi-Engine") %>
+<%# og_image(image_url("meta_pic_rrm_mei.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_mei_twitter.webp")) %>
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+
+<header class="w-full bg-mei bg-cover bg-right lg:bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
+  <div class="px-5 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
+    <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Become a Multi-Engine Instructor</h1>
+    <h2 class="mt-6 text-xl leading-8 text-gray-200 font-semibold">Take your aviation career to the next level with MEI certification</h2>
+    <h2 class="mt-2 text-xl leading-8 text-gray-200 max-w-4xl font-semibold">
+      Our Multi-Engine Instructor Training Program launches in 2025. Reserve your spot today and join the future of aviation instruction!
+    </h2>
+    <div class="flex flex-row lg:flex-row items-center mt-5">
+      <a href="#multi-engine-form" class="btn-primary">Join the Program</a>
+      <%= link_to visit_path do %>
+        <div class="ml-5 flex group items-center text-white">
+          <div class="mr-3">Visit School</div>
+          <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</header>
+
+<div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-3xl text-center">
+    <p class="text-lg font-semibold leading-7 text-sky-600">Elevate Your Aviation Career</p>
+    <h2 class="mt-2 text-4xl font-bold text-gray-900 sm:text-6xl">Multi-Engine Instructor Training Program</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Learn to teach multi-engine operations with confidence and skill. <br class="hidden md:block">
+      Our program is designed to prepare you for success as an instructor in twin-engine aircraft.</p>
+  </div>
+</div>
+
+<div class="bg-gradient-to-br from-sky-300 to-sky-100 px-6 py-20 sm:py-24 lg:px-24 flex flex-col lg:flex-row gap-10 items-center">
+  <div class="flex-1 text-center lg:text-right">
+    <p class="sm:text-5xl font-semibold text-sky-600 text-3xl">Why Become a</p>
+    <h2 class="text-4xl font-bold text-gray-900 sm:text-6xl">Multi-Engine Instructor?</h2>
+  </div>
+  <div class="flex-1 flex flex-col gap-5">
+    <p class="text-lg leading-8 text-gray-600">As a Multi-Engine Instructor, you’ll be equipped to teach the next generation of pilots how to operate complex, twin-engine aircraft. Our MEI Training Program focuses on the skills you need to provide top-notch instruction and help students succeed in their aviation goals.</p>
+    <p class="text-lg leading-8 text-gray-600">From handling emergencies to mastering advanced aerodynamics, you’ll develop expertise in the unique challenges of multi-engine instruction. Our program ensures you’ll be ready to meet FAA standards and confidently train aspiring pilots.</p>
+  </div>
+</div>
+
+<section class="bg-gradient-to-l from-slate-200 to-blue-50 py-24">
+  <div class="lg:flex lg:flex-row items-center">
+
+    <div class="mx-0 lg:w-1/2">
+      <div class="px-6 py-24 sm:py-12 lg:px-8">
+        <div class="mx-auto max-w-5xl">
+          <p class="text-lg font-semibold leading-7 text-sky-600">Prepare to Take Flight!</p>
+          <h2 class="mt-2 max-w-3xl text-4xl font-bold tracking-wide text-gray-900 sm:text-6xl">Launching in 2025</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Our new Multi-Engine Instructor Training Program is designed for certified flight instructors looking to specialize in twin-engine operations. With limited spots available, secure your place today and be among the first to train in our advanced program.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-10 lg:px-16 lg:w-1/2" id="multi-engine-form">
+      <%= render "multi_engine_ratings/form", multi_engine_rating: @multi_engine_rating %>
+    </div>
+
+  </div>
+</section>
+
+<%= render "shared/cta_were_experts" %>
+<%= render "shared/footer"%>

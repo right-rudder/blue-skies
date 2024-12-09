@@ -134,6 +134,7 @@ module.exports = {
         "cessna-N5378D": "url('cessna-N5378D.webp')",
         "cessna-airport": "url('blue-skies-cessna-in-airport.webp')",
         sunset: "url('blue-skies-sunset-bg-auburn.webp')",
+        mei: "url('stock-multi-engine.jpg')",
         checkride: "url('blue-skies-checkride-commercial-pass-opelika.webp')",
         checkride2:
           "url('blue-skies-checkride-commercial-pass-opelika-2.webp')",

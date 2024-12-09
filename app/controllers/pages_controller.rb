@@ -101,4 +101,8 @@ class PagesController < ApplicationController
 
   def finish_up
   end
+
+  def mei
+    @multi_engine_rating = MultiEngineRating.new
+  end
 end

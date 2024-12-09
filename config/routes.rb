@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   # get 'private-pilot-certificate-ppl-package', to: 'pages#private_pilot_package', as: :ppl_package
   get 'instrument-rating-ifr', to: 'pages#instrument_rating', as: :ifr
   get 'commercial-pilot-certificate-cpl', to: 'pages#commercial_pilot', as: :cpl
+  get 'multi-engine-instructor-mei', to: 'pages#mei', as: :mei
   get 'certified-flight-instructor-cfi', to: 'pages#cfi', as: :cfi
   get 'flight-instructor-instrument-cfii', to: 'pages#cfii', as: :cfii
   get 'spin-endorsement', to: 'pages#spin_endorsement', as: :spin_endorsement
