@@ -10,10 +10,13 @@
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6">
     <div class="mx-auto max-w-screen-lg text-center mb-8 lg:mb-16">
       <h2 class="mb-4 text-4xl font-bold text-slate-900 ">Our Fleet</h2>
+      <p class="font-light text-slate-500 sm:text-xl dark:text-slate-400 max-w-2xl mx-auto mb-10">
+        We have a variety of aircraft to meet your training and rental needs.  Our fleet is well maintained and ready to fly.
+      </p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-10 mx-auto place-content-center">
         <div class="flex flex-col max-w-sm lg:max-w-none lg:flex-row lg:items-center justify-between bg-slate-100 rounded-xl">
-          <div class="w-full lg:w-1/2 grid"><%= image_tag "blue-skies-cessna.webp", alt: "Cessna N717G", class: "w-[27rem] h-[20rem] object-cover rounded-xl"%></div>
-          <div class="w-full lg:w-1/2 flex flex-col justify-between">
+          <div class="w-full lg:w-1/2 grid"><%= image_tag "cessna-n717g.webp", alt: "Cessna N717G", class: "w-[27rem] h-full lg:h-[16rem] object-cover rounded-xl"%></div>
+          <div class="w-full lg:w-1/2 flex flex-col j ustify-between">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Tail Number:</p>
               <p class="font-bold text-custom-700 lg:text-xl text-start">N717G</p>
@@ -21,33 +24,28 @@
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Power:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">180HP</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">160HP</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Model:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172N</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Max Speed:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">124 Knots</p>
+              <p class="font-light text-slate-600 lg:text-xl text-start">Features:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-end">Dual G5 / G530 Nav System</p>
             </div>
-            <hr class="border border-slate-600">
-            <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Rental Price:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">$160/hour wet</p>
-            </div>
-            <%=link_to visit_path, data: { turbo: false }, class: "" do%>
+            <%=link_to visit_path, target: "_blank", data: { turbo: false }, class: "" do%>
               <div class="btn-primary hover:scale-100 uppercase text-lg">
-                Rent Now
+                Like this plane? Come fly it!
               </div>
             <% end %>
           </div>
         </div>
         <div class="flex flex-col max-w-sm lg:max-w-none lg:flex-row lg:items-center justify-between bg-slate-100 rounded-xl">
-          <div class="w-full lg:w-1/2 grid"><%= image_tag "blue-skies-cessna-n5378d.webp", alt: "Cessna N5378D", class: "w-[27rem] h-[20rem] object-cover rounded-xl"%></div>
-          <div class="w-full lg:w-1/2 flex flex-col justify-between">
+          <div class="w-full lg:w-1/2 grid"><%= image_tag "cessna-n5378d.webp", alt: "Cessna N5378D", class: "w-[27rem] h-full lg:h-[16rem] object-cover rounded-xl"%></div>
+          <div class="w-full lg:w-1/2 flex flex-col j ustify-between">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Tail Number:</p>
               <p class="font-bold text-custom-700 lg:text-xl text-start">N5378D</p>
@@ -60,31 +58,26 @@
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Model:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172N</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Max Speed:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">124 Knots</p>
+              <p class="font-light text-slate-600 lg:text-xl text-start">Features:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-end">Dual G5 / G430 Nav System</p>
             </div>
-            <hr class="border border-slate-600">
-            <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Rental Price:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">$160/hour wet</p>
-            </div>
-            <%=link_to visit_path, data: { turbo: false }, class: "" do%>
+            <%=link_to visit_path, target: "_blank", data: { turbo: false }, class: "" do%>
               <div class="btn-primary hover:scale-100 uppercase text-lg">
-                Rent Now
+                Like this plane? Come fly it!
               </div>
             <% end %>
           </div>
         </div>
         <div class="flex flex-col max-w-sm lg:max-w-none lg:flex-row lg:items-center justify-between bg-slate-100 rounded-xl">
-          <div class="w-full lg:w-1/2 grid"><%= image_tag "blue-skies-cessna-n7102w.webp", alt: "Cessna N7102W", class: "w-[27rem] h-[20rem] object-cover rounded-xl"%></div>
-          <div class="w-full lg:w-1/2 flex flex-col justify-between">
+          <div class="w-full lg:w-1/2 grid"><%= image_tag "cessna-n5225d.webp", alt: "Cessna N5225D", class: "w-[27rem] h-full lg:h-[16rem] object-cover rounded-xl"%></div>
+          <div class="w-full lg:w-1/2 flex flex-col j ustify-between">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Tail Number:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">N7102W</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">N5225D</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
@@ -94,31 +87,26 @@
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Model:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172N</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Max Speed:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">124 Knots</p>
+              <p class="font-light text-slate-600 lg:text-xl text-start">Features:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-end">Dual G5 / G430 Nav System</p>
             </div>
-            <hr class="border border-slate-600">
-            <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Rental Price:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">$160/hour wet</p>
-            </div>
-            <%=link_to visit_path, data: { turbo: false }, class: "" do%>
+            <%=link_to visit_path, target: "_blank", data: { turbo: false }, class: "" do%>
               <div class="btn-primary hover:scale-100 uppercase text-lg">
-                Rent Now
+                Like this plane? Come fly it!
               </div>
             <% end %>
           </div>
         </div>
         <div class="flex flex-col max-w-sm lg:max-w-none lg:flex-row lg:items-center justify-between bg-slate-100 rounded-xl">
-          <div class="w-full lg:w-1/2 grid"><%= image_tag "blue-skies-cessna-N1496M.webp", alt: "Cessna N1496M", class: "w-[27rem] h-[20rem] object-cover rounded-xl"%></div>
-          <div class="w-full lg:w-1/2 flex flex-col justify-between">
+          <div class="w-full lg:w-1/2 h-full"><%= image_tag "cessna-n738sr.webp", alt: "Cessna N738SR", class: "h-full w-full lg:w-[27rem] lg:h-[16rem] object-cover rounded-xl"%></div>
+          <div class="w-full lg:w-1/2 flex flex-col j ustify-between">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Tail Number:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">N1496M</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">N738SR</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
@@ -128,25 +116,50 @@
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
               <p class="font-light text-slate-600 lg:text-xl text-start">Model:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172N</p>
             </div>
             <hr class="border border-slate-600">
             <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Max Speed:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">124 Knots</p>
+              <p class="font-light text-slate-600 lg:text-xl text-start">Features:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-end">Dual G5 / G530 Nav System</p>
             </div>
-            <hr class="border border-slate-600">
-            <div class="flex w-full justify-between p-3">
-              <p class="font-light text-slate-600 lg:text-xl text-start">Rental Price:</p>
-              <p class="font-bold text-custom-700 lg:text-xl text-start">$160/hour wet</p>
-            </div>
-            <%=link_to visit_path, data: { turbo: false }, class: "" do%>
+            <%=link_to visit_path, target: "_blank", data: { turbo: false }, class: "" do%>
               <div class="btn-primary hover:scale-100 uppercase text-lg">
-                Rent Now
+                Like this plane? Come fly it!
               </div>
             <% end %>
           </div>
         </div>
+        <div class="flex flex-col max-w-sm lg:max-w-none lg:flex-row lg:items-center justify-between bg-slate-100 rounded-xl">
+          <div class="w-full lg:w-1/2 grid"><%= image_tag "cessna-n246sp.webp", alt: "Cessna N246SP", class: "w-[27rem] h-full lg:h-[16rem] object-cover rounded-xl"%></div>
+          <div class="w-full lg:w-1/2 flex flex-col j ustify-between">
+            <div class="flex w-full justify-between p-3">
+              <p class="font-light text-slate-600 lg:text-xl text-start">Tail Number:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">N246SP</p>
+            </div>
+            <hr class="border border-slate-600">
+            <div class="flex w-full justify-between p-3">
+              <p class="font-light text-slate-600 lg:text-xl text-start">Power:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">180HP</p>
+            </div>
+            <hr class="border border-slate-600">
+            <div class="flex w-full justify-between p-3">
+              <p class="font-light text-slate-600 lg:text-xl text-start">Model:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-start">Cessna 172N</p>
+            </div>
+            <hr class="border border-slate-600">
+            <div class="flex w-full justify-between p-3">
+              <p class="font-light text-slate-600 lg:text-xl text-start">Features:</p>
+              <p class="font-bold text-custom-700 lg:text-xl text-end">Dual Dynon Skyview / GTN 650 Touch Screen</p>
+            </div>
+            <%=link_to visit_path, target: "_blank", data: { turbo: false }, class: "" do%>
+              <div class="btn-primary hover:scale-100 uppercase text-lg">
+                Like this plane? Come fly it!
+              </div>
+            <% end %>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
