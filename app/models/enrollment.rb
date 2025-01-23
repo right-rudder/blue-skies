@@ -27,6 +27,7 @@ class Enrollment < ApplicationRecord
       Preferred date: #{self.preferred_date} #{self.preferred_availability}
       Alternate date: #{self.alternate_date} #{self.alternate_availability}
       ",
+      "Program of interest" => "#{self.location}"
     }     
     HTTParty.post(ghl_url, body: ghl_payload.to_json, headers: { "Content-Type" => "application/json" })
   end
