@@ -151,6 +151,7 @@ module.exports = {
           "url('tail-number-of-taa-plane-blue-skies-above-columbus-ga.webp')",
         cfi: "url('blue-skies-cfi-bg-dual-recieved-instructor-auburn.webp')",
         cfii: "url('blue-skies-cfii-bg.webp')",
+        "pro-flight": "url('airplane-cockpit.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
