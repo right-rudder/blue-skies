@@ -8,9 +8,6 @@
 <%= render "shared/phone_banner"%>
 <%= render "shared/nav"%>
 
-
-
-
 <div class="relative isolate overflow-hidden bg-gradient-to-b from-sky-100/20 lg:pt-20">
   <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-sky-600/10 ring-1 ring-sky-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-6 pb-8 sm:pb-20 lg:px-8">
@@ -41,6 +38,12 @@
     </div>
     <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
   </div>
+</div>
+
+<div class="bg-gradient-to-t from-sky-600 to-sky-400 flex md:gap-10 text-center gap-5 p-5 text-white items-center justify-center flex-col md:flex-row">
+  <svg xmlns="http://www.w3.org/2000/svg" class="size-8 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+  <p class="text-xl font-semibold">Are you considering a professional flight program at a university? </p>
+  <%= link_to "Click to Learn More", pro_flight_path, class: "btn-secondary text-lg" %>
 </div>
 
 <div class=" bg-sky-700 lg:">
