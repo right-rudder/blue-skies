@@ -1,0 +1,86 @@
+<%# Head / Meta Data %>
+<% title("Pro-Flight Program | Blue Skies Above") %>
+<% meta_description("Take your aviation career to new heights with the Blue Skies Above Pro Flight Program. Learn about structured flight training, certification timelines, and how to become a professional pilot through a comprehensive and efficient training pathway.") %>
+<% meta_keywords("Professional Flight Program, Pro Pilot Training, Flight School, Part 61 vs Part 141 Training, Commercial Pilot Pathway, Aviation Degree, Airline Pilot Training, Private Pilot Certificate, Instrument Rating, Commercial Pilot License, CFI Training, Flight Instructor Certification, Accelerated Flight Training, Pilot Career Path, Aviation Training Program, FAA Pilot Certifications") %>
+<%# og_image(image_url("meta_pic_rrm.webp")) %>
+<%# twitter_image(image_url("meta_pic_rrm_twitter.webp")) %>
+<%= render "shared/phone_banner"%>
+<%= render "shared/nav"%>
+<header class="w-full bg-pro-flight bg-cover bg-right lg:bg-center h-screen-3/4 lg:h-screen-4/5 flex justify-center items-center">
+  <div class="px-5 backdrop-brightness-50 py-24 lg:py-32 flex flex-col justify-start items-center lg:items-end h-full w-full text-center lg:text-right">
+    <h1 class="text-4xl font-bold tracking-tight sm:text-6xl text-white">Considering a Professional Flight Program at a University? </h1>
+    <h2 class="mt-6 text-xl leading-8 text-gray-200 font-semibold">Explore the benefits of completing your flight training at a Part 61 school instead of a university</h2>
+    <div class="flex flex-row lg:flex-row items-center mt-5">
+      <a href="#professional-flight-form" class="btn-primary">Register Now</a>
+      <%= link_to visit_path do %>
+        <div class="ml-5 flex group items-center text-white">
+          <div class="mr-3">Visit School</div>
+          <div aria-hidden="true" class="group-hover:animate-bounce-right">→</div>
+        </div>
+      <%end%>
+    </div>
+  </div>
+</header>
+
+<div class="bg-white px-6 py-24 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-5xl text-center">
+    <p class="text-lg font-semibold leading-7 text-sky-600">Take Control of Your Flight Training</p>
+    <h2 class="mt-2 text-4xl font-bold text-gray-900 sm:text-6xl">Is a Pro Flight Program the Right Fit?</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+      You may want to consider Part 61 flight schools like Blue Skies Above, which offer flexibility, personalized instruction, and cost-effective training to help you earn your pilot certifications at your own pace. If you're looking for a more tailored approach outside of a university program, this path may be ideal for you.
+    </p>
+  </div>
+</div>
+
+<div class="bg-gradient-to-br from-sky-300 to-sky-100 px-6 py-20 sm:py-24 lg:px-24 flex flex-col lg:flex-row gap-10 items-center">
+  <div class="flex-1 text-center lg:text-right">
+    <p class="sm:text-5xl font-semibold text-sky-600 text-3xl">Benefits of a</p>
+    <h2 class="text-4xl font-bold text-gray-900 sm:text-6xl">Part 61 Program</h2>
+  </div>
+  <ul class="flex-1 flex flex-col gap-5 list-disc pl-5">
+    <li class="text-lg leading-8 text-gray-600">
+      <strong>Recession-proof your career:</strong> Earn a separate degree as a backup while completing your certifications and ratings at a Part 61 school.
+    </li>
+    <li class="text-lg leading-8 text-gray-600">
+      <strong>Save time and money:</strong> Many students in university flight programs accumulate up to $500K in student loans, while you can go from zero to hero for under $100K at Blue Skies Above.
+    </li>
+    <li class="text-lg leading-8 text-gray-600">
+      <strong>Expand your career options:</strong> A university pro flight program awards a degree solely in aviation, but choosing a different degree provides greater flexibility in case of industry downturns, medical disqualifications, or furloughs.
+    </li>
+  </ul>
+</div>
+
+<div class="px-6 py-20 sm:py-24 lg:px-24 flex flex-col lg:flex-row gap-10 items-center">
+  <div class="flex-1 flex flex-col gap-4">
+    <p class="text-3xl font-semibold text-sky-600 sm:text-xl">How to get started?</p>
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Take Off With Blue Skies Above</h2>
+    <p class="text-lg leading-8 text-gray-600">
+      At Blue Skies Above, we make learning to fly an exciting, structured, and rewarding experience. Whether you're pursuing a lifelong dream or an aviation career, our dedicated instructors are here to guide you every step of the way.
+    </p>
+    <p class="text-lg leading-8 text-gray-600">
+      Click the link below to learn more about our <strong>training programs</strong> and how to get started.
+    </p>
+    <%= link_to pilot_programs_path, class: "btn-primary w-fit" do %>
+      Learn More
+    <% end %>
+  </div>
+</div>
+
+<section class="bg-gradient-to-l from-slate-200 to-blue-50 py-24 scroll-m-20" id="professional-flight-form">
+  <h3 class="text-5xl text-center font-semibold">Register now!</h3>
+  <p class="text-xl text-center max-w-5xl mx-auto my-5">If you aim to complete your Private Pilot Certificate by the spring semester, we recommend starting at least six months in advance, regardless of prior experience.</p>
+  <div class="lg:flex lg:flex-row items-center">
+    <div class="mx-10 lg:w-1/2">
+      <%= image_tag "blue-skies-above-student-pilot-passing-cfi-checkride.webp" %>
+    </div>
+
+    <div class="mx-10 lg:px-16 lg:w-1/2" >
+      <%= render "form", professional_flight_program: @professional_flight_program %>
+    </div>
+    
+  </div>
+</section>
+
+
+<%= render "shared/cta_were_experts" %>
+<%= render "shared/footer"%>

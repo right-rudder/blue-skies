@@ -51,6 +51,8 @@ Rails.application.routes.draw do
   #
   get 'leaseback-program', to: 'leaseback_programs#index', as: :leaseback
   get 'multi-engine-rating', to: 'multi_engine_ratings#new', as: :multi_engine
+  get 'professional-flight-program', to: 'professional_flight_programs#new', as: :pro_flight
+  resources :professional_flight_programs, only: %i[ create ]
 
   # Enrollment form
   get 'enroll-at-blue-skies', to: 'enrollments#new', as: :enroll
