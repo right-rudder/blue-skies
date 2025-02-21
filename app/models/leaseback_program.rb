@@ -1,6 +1,7 @@
 class LeasebackProgram < ApplicationRecord
   before_validation :strip_phone_number
   after_save :to_ghl
+  after_save :to_portal
   
   validates :name, presence: true
   validates :phone, presence: true, format: { with: /\A\d{10}\z/, message: "must be a valid 10-digit phone number" }
@@ -26,5 +27,25 @@ class LeasebackProgram < ApplicationRecord
       "message" => "#{self.message}",
     }     
     HTTParty.post(ghl_url, body: ghl_payload.to_json, headers: { "Content-Type" => "application/json" })
+  end
+
+  def to_portal
+    portal_url = "https://portal.rightruddermarketing.com/api/leads"
+    api_key = ENV['PORTAL_API_KEY']
+    portal_payload = {
+      "first_name": "#{self.name.strip.squeeze(" ").split(" ").first}",
+      "last_name": "#{self.name.strip.squeeze(" ").split(" ").second}",
+      "email": "#{self.email}",
+      "phone": "#{self.phone}",
+      "campaign": "leaseback_program",
+      "account_id": 3, #Blue skies account ID
+      "metadata": {
+        "Aircraft_manufacturer": "#{self.aircraft_manufacturer}",
+        "Aircraft_model": "#{self.aircraft_model}",
+        "Aircraft_year": "#{self.aircraft_year}",
+        "Message": "#{self.message}",
+      }
+    }     
+    HTTParty.post(portal_url, body: portal_payload.to_json, headers: { "Content-Type": "application/json", "X-API-Key": api_key })
   end
 end
