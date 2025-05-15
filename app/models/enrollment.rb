@@ -42,7 +42,7 @@ class Enrollment < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "enrollment",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
       "metadata": {
         "Interested program": "#{self.location}",
         "Goals": "#{self.goals}",

@@ -36,7 +36,7 @@ class ProfessionalFlightProgram < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "pro_flight",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
       "metadata": {
         "start_date": "#{self.start_date}",
         "target_date": "#{self.target_date}",

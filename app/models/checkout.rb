@@ -40,7 +40,7 @@ class Checkout < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "visit_school",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
       "metadata": {
         "Interested program": "#{self.interested_aircraft}",
         "Certificates held:": "#{self.certifications}",

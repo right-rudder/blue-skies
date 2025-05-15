@@ -30,7 +30,7 @@ class BookDownload < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "book_download",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
     }     
     HTTParty.post(portal_url, body: portal_payload.to_json, headers: { "Content-Type": "application/json", "X-API-Key": api_key })
   end

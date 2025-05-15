@@ -32,7 +32,7 @@ class MultiEngineRating < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "multi_engine_rating_program",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
       "metadata": {
         "message": "#{self.message}"
       }

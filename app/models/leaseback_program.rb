@@ -38,7 +38,7 @@ class LeasebackProgram < ApplicationRecord
       "email": "#{self.email}",
       "phone": "#{self.phone}",
       "campaign": "leaseback_program",
-      "account_id": 3, #Blue skies account ID
+      "account_random_id": "ac_mdbja2js", #Blue skies account ID
       "metadata": {
         "Aircraft_manufacturer": "#{self.aircraft_manufacturer}",
         "Aircraft_model": "#{self.aircraft_model}",
